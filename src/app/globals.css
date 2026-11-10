@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* ── Default Theme: Okabe-Ito Colorblind Accessible High Contrast ── */
+:root, [data-theme="colorblind"], [data-theme="default"] {
+  --background: #0c1219;
+  --surface-deep: #060a0f;
+  --surface: #141c26;
+  --surface-raised: #1d2736;
+  --surface-hover: #28374c;
+  --border: #364861;
+  --border-bright: #56b4e9;
+
+  --primary: #56b4e9;
+  --primary-dim: #0072b2;
+  --primary-glow: rgba(86, 180, 233, 0.22);
+
+  --danger: #d55e00;
+  --warning: #e69f00;
+  --success: #009e73;
+
+  --text: #c0d3e8;
+  --text-muted: #7189a6;
+  --text-bright: #f0f7ff;
+  --text-heading: #ffffff;
+}
+
+/* ── 1. Midnight Stealth (Tactical Operations Dark Blue) ── */
+[data-theme="midnight-stealth"] {
+  --background: #080b12;
+  --surface-deep: #0c0f18;
+  --surface: #111622;
+  --surface-raised: #161d2e;
+  --surface-hover: #1a2236;
+  --border: #1e2a3e;
+  --border-bright: #2a3854;
+
+  --primary: #5a8fd4;
+  --primary-dim: #2e5a8f;
+  --primary-glow: rgba(90, 143, 212, 0.10);
+
+  --danger: #c05252;
+  --warning: #b88b3a;
+  --success: #44a070;
+
+  --text: #8fa8c8;
+  --text-muted: #4d6580;
+  --text-bright: #cddaeb;
+  --text-heading: #e0eaf5;
+}
+
+/* ── 2. Old School Neon Green (Matrix / VT220 Terminal) ── */
+[data-theme="neon-green"] {
+  --background: #040d07;
+  --surface-deep: #020804;
+  --surface: #0a170d;
+  --surface-raised: #0f2214;
+  --surface-hover: #16321d;
+  --border: #183e22;
+  --border-bright: #00ff66;
+
+  --primary: #00ff66;
+  --primary-dim: #008f39;
+  --primary-glow: rgba(0, 255, 102, 0.18);
+
+  --danger: #ff334b;
+  --warning: #ffcc00;
+  --success: #00ff66;
+
+  --text: #70df93;
+  --text-muted: #387c4d;
+  --text-bright: #b8ffd2;
+  --text-heading: #e0ffec;
+}
+
+/* ── 3. Black & White (Monochrome Minimalist) ── */
+[data-theme="black-and-white"] {
+  --background: #080808;
+  --surface-deep: #000000;
+  --surface: #121212;
+  --surface-raised: #1c1c1c;
+  --surface-hover: #262626;
+  --border: #333333;
+  --border-bright: #888888;
+
+  --primary: #f0f0f0;
+  --primary-dim: #888888;
+  --primary-glow: rgba(255, 255, 255, 0.15);
+
+  --danger: #ff4d4d;
+  --warning: #d9d9d9;
+  --success: #ffffff;
+
+  --text: #a8a8a8;
+  --text-muted: #616161;
+  --text-bright: #ffffff;
+  --text-heading: #ffffff;
+}
+
+/* ── 4. 80s Theme (Synthwave / Outrun) ── */
+[data-theme="synthwave-80s"] {
+  --background: #110a24;
+  --surface-deep: #0b0518;
+  --surface: #190f33;
+  --surface-raised: #231647;
+  --surface-hover: #311f61;
+  --border: #3e2675;
+  --border-bright: #ff2a85;
+
+  --primary: #ff2a85;
+  --primary-dim: #99144d;
+  --primary-glow: rgba(255, 42, 133, 0.22);
+
+  --danger: #ff3b68;
+  --warning: #ffbb00;
+  --success: #00f0ff;
+
+  --text: #baa8e2;
+  --text-muted: #6b5894;
+  --text-bright: #00f0ff;
+  --text-heading: #ff71ce;
+}
+
+/* ── 5. Cyberpunk Theme (Night City Neon Yellow & Cyan) ── */
+[data-theme="cyberpunk"] {
+  --background: #0d0e15;
+  --surface-deep: #06070a;
+  --surface: #131724;
+  --surface-raised: #1c2235;
+  --surface-hover: #252d47;
+  --border: #2c3653;
+  --border-bright: #fcee0a;
+
+  --primary: #fcee0a;
+  --primary-dim: #a19803;
+  --primary-glow: rgba(252, 238, 10, 0.20);
+
+  --danger: #ff0055;
+  --warning: #ff9900;
+  --success: #00ff9f;
+
+  --text: #96a3b6;
+  --text-muted: #536077;
+  --text-bright: #ffffff;
+  --text-heading: #00f0ff;
+}
+
+/* ── 6. Dracula Dark (Gothic Purple & Mint) ── */
+[data-theme="dracula"] {
+  --background: #21222c;
+  --surface-deep: #191a21;
+  --surface: #282a36;
+  --surface-raised: #343746;
+  --surface-hover: #44475a;
+  --border: #44475a;
+  --border-bright: #6272a4;
+
+  --primary: #bd93f9;
+  --primary-dim: #6d5494;
+  --primary-glow: rgba(189, 147, 249, 0.20);
+
+  --danger: #ff5555;
+  --warning: #ffb86c;
+  --success: #50fa7b;
+
+  --text: #abb2bf;
+  --text-muted: #6272a4;
+  --text-bright: #f8f8f2;
+  --text-heading: #8be9fd;
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+html, body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+}
+
+a { color: var(--primary); text-decoration: none; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-bright); }
+
+/* ── Global button hover ── */
+button { transition: all 0.15s ease; }
+button:hover { filter: brightness(1.12); }
+button:active { transform: scale(0.98); }
+
+/* ── Selection ── */
+::selection {
+  background: var(--primary-dim);
+  color: var(--text-bright);
+}
+
+/* ── Form inputs ── */
+select, input[type="text"], input[type="search"], input[type="password"] {
+  background: var(--surface-deep);
+  border: 1px solid var(--border);
+  color: var(--text-bright);
+  border-radius: 6px;
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+select:focus, input:focus {
+  border-color: var(--primary-dim);
+  box-shadow: 0 0 0 2px var(--primary-glow);
+  outline: none;
+}
+
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to   { opacity: 1; max-height: 800px; }
+}
+.fade-in { animation: fadeIn 0.25s ease both; }
+
+/* ── Hide Next.js dev indicator ── */
+[data-nextjs-toast],
+nextjs-portal,
+[data-next-badge],
+body > [style*="position: fixed"][style*="bottom"],
+#__next-build-indicator { display: none !important; }
+
+/* ── Muninn Tactical Additions ── */
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card:hover {
+  border-color: var(--border-bright);
+}
+
+.card-raised {
+  background: var(--surface-raised);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+.pulse-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 8px var(--success);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
