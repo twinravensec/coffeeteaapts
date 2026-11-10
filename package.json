@@ -2,7 +2,7 @@
   "name": "coffee-tea-apts",
   "version": "1.0.0",
   "private": true,
-  "description": "Coffee, Tea & APTs — Brewing detections, spilling threat intel tea, and tracking APTs",
+  "description": "Coffee, Tea & APTs \u2014 Brewing detections, spilling threat intel tea, and tracking APTs",
   "scripts": {
     "compile:blog": "node scripts/compile-blog.mjs",
     "dev": "node scripts/compile-blog.mjs && next dev --webpack -p 3000",
@@ -19,7 +19,6 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.19.37",
     "@types/react": "^19",
     "@types/react-dom": "^19",
