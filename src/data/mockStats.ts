@@ -1,7 +1,7 @@
 import { MuninnStats } from "../types/stats";
 
 export const MOCK_STATS: MuninnStats = {
-  "total_detectors": 1524,
+  "total_detectors": 1506,
   "active_sources": 10,
   "tactics_covered": 14,
   "mitre_coverage_percent": 88,

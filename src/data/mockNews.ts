@@ -37,22 +37,6 @@ export const MOCK_NEWS: NewsItem[] = [
     "is_breaking": true
   },
   {
-    "id": "719ef522af1261b1ac7c29366d545191",
-    "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-    "published_at": "2026-11-10T05:10:00Z",
-    "relative_time": "1h ago",
-    "summary": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations. The campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a",
-    "cves": [],
-    "mitre_tags": [
-      "T1566",
-      "T1558"
-    ],
-    "category": "APT",
-    "is_breaking": false
-  },
-  {
     "id": "be2e34357ed1a1f66a05b21b94d6504e",
     "title": "MI5 Says China\u2019s MSS Funded Research Involving 100+ U.K.-Linked Academics",
     "source": "The Hacker News",
@@ -75,19 +59,6 @@ export const MOCK_NEWS: NewsItem[] = [
     "published_at": "2026-11-10T04:00:00Z",
     "relative_time": "2h ago",
     "summary": "Sometimes I have to smile, or my interest is triggered, when I review new User Agent Strings in the honeypot logs.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "84798a064e1fb5f7ac45a338a6b7fc3a",
-    "title": "Anthropic asks Claude users to share voice data for AI model training",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
-    "published_at": "2026-11-10T03:20:00Z",
-    "relative_time": "3h ago",
-    "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
     "cves": [],
     "mitre_tags": [],
     "category": "Vulnerability",
@@ -136,19 +107,6 @@ export const MOCK_NEWS: NewsItem[] = [
     ],
     "category": "Advisory",
     "is_breaking": true
-  },
-  {
-    "id": "1465fcc37a1e78c7bc24f17c83df903d",
-    "title": "Google Gemini could soon get full access to your Mac\u2019s files, apps and the web",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
-    "published_at": "2026-11-10T00:50:00Z",
-    "relative_time": "5h ago",
-    "summary": "Google's Gemini could soon access any file on your macOS device, open apps, browse the web, and perform actions without asking for permission every time. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
   },
   {
     "id": "926aeff07fa3abb55509746f32924b0e",

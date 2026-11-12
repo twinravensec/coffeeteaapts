@@ -12,8 +12,7 @@ const OUTPUT_FILE = path.resolve(__dirname, '../src/data/compiledBlog.json');
 console.log('[*] Compiling Markdown blog posts from:', CONTENT_DIR);
 
 if (!fs.existsSync(CONTENT_DIR)) {
-  console.error('[-] Error: Content directory does not exist:', CONTENT_DIR);
-  process.exit(1);
+  fs.mkdirSync(CONTENT_DIR, { recursive: true });
 }
 
 const files = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md') && f.toLowerCase() !== 'readme.md');
