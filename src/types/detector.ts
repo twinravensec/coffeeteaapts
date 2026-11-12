@@ -1,5 +1,5 @@
 export type DetectionSeverity = 'critical' | 'high' | 'medium' | 'low';
-export type DetectionStatus = 'production' | 'hunting' | 'testing' | 'experimental' | 'draft';
+export type DetectionStatus = 'production' | 'verified' | 'hunting';
 export type DetectionLibrary = 
   | 'Sigma' 
   | 'Splunk' 

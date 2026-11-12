@@ -3,7 +3,7 @@ node_modules/
 /.pnp
 .pnp.js
 
-# Testing
+# Test Coverage
 /coverage
 
 # Next.js build output

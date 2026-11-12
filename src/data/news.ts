@@ -1,6 +1,6 @@
 import { NewsItem } from "../types/news";
 
-export const MOCK_NEWS: NewsItem[] = [
+export const NEWS_FEED: NewsItem[] = [
   {
     "id": "6400e4974d45bdcb9f223fc24364b1a1",
     "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",

@@ -3,10 +3,10 @@ import { NewsItem } from '../types/news';
 import { BlogPost } from '../types/blog';
 import { MuninnStats } from '../types/stats';
 
-import { MOCK_DETECTORS } from '../data/mockDetectors';
-import { MOCK_NEWS } from '../data/mockNews';
-import { MOCK_BLOG_POSTS } from '../data/mockBlog';
-import { MOCK_STATS } from '../data/mockStats';
+import { DETECTORS } from '../data/detectors';
+import { NEWS_FEED } from '../data/news';
+import { BLOG_POSTS } from '../data/blog';
+import { PLATFORM_STATS } from '../data/stats';
 
 export interface DetectorFilterOptions {
   searchQuery?: string;
@@ -41,7 +41,7 @@ export async function getDetectors(options?: DetectorFilterOptions): Promise<Pub
     return [];
   }
 
-  let results = [...MOCK_DETECTORS];
+  let results = [...DETECTORS];
 
   // 1. Detection Library Filter
   if (hasLibrary) {
@@ -117,7 +117,7 @@ export async function getDetectors(options?: DetectorFilterOptions): Promise<Pub
 
 export async function getDetectorById(id: string): Promise<PublicDetector | null> {
   await new Promise(r => setTimeout(r, 10));
-  return MOCK_DETECTORS.find(d => d.id === id) || null;
+  return DETECTORS.find(d => d.id === id) || null;
 }
 
 /**
@@ -126,7 +126,7 @@ export async function getDetectorById(id: string): Promise<PublicDetector | null
 export async function getNewsFeed(options?: NewsFilterOptions): Promise<NewsItem[]> {
   await new Promise(r => setTimeout(r, 10));
 
-  let results = [...MOCK_NEWS];
+  let results = [...NEWS_FEED];
 
   if (!options) return results;
 
@@ -152,12 +152,12 @@ export async function getNewsFeed(options?: NewsFilterOptions): Promise<NewsItem
  */
 export async function getBlogPosts(): Promise<BlogPost[]> {
   await new Promise(r => setTimeout(r, 10));
-  return MOCK_BLOG_POSTS.filter(p => p.status === 'published');
+  return BLOG_POSTS.filter(p => p.status === 'published');
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   await new Promise(r => setTimeout(r, 10));
-  return MOCK_BLOG_POSTS.find(p => p.slug === slug) || null;
+  return BLOG_POSTS.find(p => p.slug === slug) || null;
 }
 
 /**
@@ -166,7 +166,7 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> 
 export async function getMuninnStats(): Promise<MuninnStats> {
   await new Promise(r => setTimeout(r, 10));
   return {
-    ...MOCK_STATS,
-    total_detectors: MOCK_DETECTORS.length
+    ...PLATFORM_STATS,
+    total_detectors: DETECTORS.length
   };
 }
