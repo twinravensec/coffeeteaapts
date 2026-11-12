@@ -46,10 +46,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item, onSelect }) => {
             marginBottom: '8px'
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Badge sourceName={item.source}>{item.source}</Badge>
-            {item.is_breaking && <Badge variant="critical">CRITICAL ALERT</Badge>}
-          </div>
+          <Badge sourceName={item.source}>{item.source}</Badge>
           <span
             className="font-mono"
             style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}
