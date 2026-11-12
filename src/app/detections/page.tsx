@@ -8,6 +8,15 @@ import { getDetectors } from '../../services/api';
 import { DetectionCard } from '../../components/detections/DetectionCard';
 import { DetectionFilterBar } from '../../components/detections/DetectionFilterBar';
 import { DetectionDetailModal } from '../../components/detections/DetectionDetailModal';
+import { Badge } from '../../components/ui/Badge';
+
+const TRACKED_LIBRARIES = [
+  { id: 'Sigma', name: 'Sigma (YAML)', badgeKey: 'sigma' },
+  { id: 'Splunk', name: 'Splunk (SPL)', badgeKey: 'splunk' },
+  { id: 'Elastic', name: 'Elastic (EQL & ES|QL)', badgeKey: 'elastic' },
+  { id: 'Google Chronicle (YARA-L)', name: 'Google Chronicle (YARA-L 2.0)', badgeKey: 'chronicle' },
+  { id: 'CrowdStrike', name: 'CrowdStrike Falcon (FQL)', badgeKey: 'crowdstrike' }
+];
 
 const PAGE_SIZE = 10;
 
@@ -169,9 +178,42 @@ export default function DetectionsCatalogPage() {
             >
               Detection Rules Catalog
             </h1>
-            <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', maxWidth: '820px', lineHeight: 1.5 }}>
-              Browse and inspect open Detection-as-Code logic across Google Chronicle YARA-L 2.0, Elastic EQL, Splunk SPL, Sigma, and CrowdStrike Falcon. Filter by keyword, detection library, platform, severity, and ATT&amp;CK tactic.
+            <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', maxWidth: '820px', lineHeight: 1.5, marginBottom: '8px' }}>
+              Community detections against the following libraries:
             </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                flexWrap: 'wrap'
+              }}
+            >
+              {TRACKED_LIBRARIES.map((lib) => {
+                const isActive = library.toLowerCase() === lib.id.toLowerCase();
+                return (
+                  <button
+                    key={lib.id}
+                    type="button"
+                    onClick={() => setLibrary(isActive ? 'all' : lib.id)}
+                    title={`Filter by ${lib.name}`}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                      outline: 'none',
+                      opacity: library === 'all' || isActive ? 1 : 0.45,
+                      boxShadow: isActive ? '0 0 0 2px var(--primary)' : 'none',
+                      borderRadius: '4px',
+                      transition: 'all 0.15s ease'
+                    }}
+                  >
+                    <Badge libraryName={lib.badgeKey}>{lib.name}</Badge>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Filter Toolbar */}

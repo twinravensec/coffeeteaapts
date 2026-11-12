@@ -6,6 +6,15 @@ import { getDetectors } from '../../services/api';
 import { DetectionCard } from './DetectionCard';
 import { DetectionFilterBar } from './DetectionFilterBar';
 import { DetectionDetailModal } from './DetectionDetailModal';
+import { Badge } from '../ui/Badge';
+
+const TRACKED_LIBRARIES = [
+  { id: 'Sigma', name: 'Sigma (YAML)', badgeKey: 'sigma' },
+  { id: 'Splunk', name: 'Splunk (SPL)', badgeKey: 'splunk' },
+  { id: 'Elastic', name: 'Elastic (EQL & ES|QL)', badgeKey: 'elastic' },
+  { id: 'Google Chronicle (YARA-L)', name: 'Google Chronicle (YARA-L 2.0)', badgeKey: 'chronicle' },
+  { id: 'CrowdStrike', name: 'CrowdStrike Falcon (FQL)', badgeKey: 'crowdstrike' }
+];
 
 const PAGE_SIZE = 10;
 
@@ -69,7 +78,7 @@ export const DetectionLibraryBlock: React.FC = () => {
     <section id="detections" style={{ padding: '36px 0', borderBottom: '1px solid var(--border)' }}>
       <div className="container">
         {/* Block Header */}
-        <div style={{ marginBottom: '18px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+        <div style={{ marginBottom: '18px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
               <span
@@ -101,9 +110,42 @@ export const DetectionLibraryBlock: React.FC = () => {
             <h2 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-heading)', letterSpacing: '-0.02em' }}>
               Public Detection Rule Library
             </h2>
-            <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+            <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px', marginBottom: '8px' }}>
               Community detections against the following libraries:
             </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                flexWrap: 'wrap'
+              }}
+            >
+              {TRACKED_LIBRARIES.map((lib) => {
+                const isActive = library.toLowerCase() === lib.id.toLowerCase();
+                return (
+                  <button
+                    key={lib.id}
+                    type="button"
+                    onClick={() => setLibrary(isActive ? 'none' : lib.id)}
+                    title={`Filter by ${lib.name}`}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                      outline: 'none',
+                      opacity: library === 'none' || library === 'all' || isActive ? 1 : 0.45,
+                      boxShadow: isActive ? '0 0 0 2px var(--primary)' : 'none',
+                      borderRadius: '4px',
+                      transition: 'all 0.15s ease'
+                    }}
+                  >
+                    <Badge libraryName={lib.badgeKey}>{lib.name}</Badge>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Quick link to full catalog */}
