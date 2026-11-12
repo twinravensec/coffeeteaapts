@@ -102,7 +102,7 @@ export const DetectionLibraryBlock: React.FC = () => {
               Public Detection Rule Library
             </h2>
             <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px' }}>
-              Multi-engine detection logic across Sigma, Splunk SPL, Elastic EQL, Google Chronicle YARA-L 2.0, and CrowdStrike Falcon.
+              Community detections against the following libraries:
             </p>
           </div>
 
