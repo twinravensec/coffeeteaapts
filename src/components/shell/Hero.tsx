@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 maxWidth: '780px'
               }}
             >
-              Your morning review.
+              Centralized news feed and community for quicker pivot.
             </p>
           </div>
 
