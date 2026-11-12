@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Coffee, Tea & APTs — Threat Intelligence & Detection Engineering",
-  description: "Brewing detections, spilling threat intel tea, and tracking APTs. Real-time OSINT cyber threat stream, community Detection-as-Code registry, and technical adversary research.",
+  description: "Brewing detections, spilling threat intel tea, and tracking APTs. Your morning review.",
 };
 
 export default function RootLayout({

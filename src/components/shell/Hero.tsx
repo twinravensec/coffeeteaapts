@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 maxWidth: '780px'
               }}
             >
-              Real-time OSINT cyber threat stream, community Detection-as-Code registry across 14 MITRE ATT&amp;CK tactics, and technical adversary research.
+              Your morning review.
             </p>
           </div>
 
