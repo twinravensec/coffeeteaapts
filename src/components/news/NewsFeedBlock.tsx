@@ -99,7 +99,7 @@ export const NewsFeedBlock: React.FC = () => {
             Feed
           </h2>
           <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px' }}>
-            Curated threat advisories, critical zero-days, and vulnerability disclosures published today across active OSINT feeds.
+            Today's OSINT wall: threat advisories, critical zero-days, and vulnerability disclosures across active feeds.
           </p>
         </div>
 
