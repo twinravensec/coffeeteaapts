@@ -10,7 +10,7 @@ interface NewsCardProps {
   onMarkAsRead?: (id: string) => void;
 }
 
-export const NewsCard: React.FC<NewsCardProps> = ({ item, onSelect, onMarkAsRead }) => {
+export const NewsCard: React.FC<NewsCardProps> = ({ item, onSelect }) => {
   return (
     <div
       className="card"
@@ -119,50 +119,18 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item, onSelect, onMarkAsRead
           )}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', paddingLeft: '8px' }}>
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => {
-              e.stopPropagation();
-              onMarkAsRead?.(item.id);
-            }}
-            className="font-mono"
-            style={{
-              fontSize: '0.68rem',
-              color: 'var(--text-muted)',
-              border: '1px solid var(--border)',
-              borderRadius: '4px',
-              padding: '2px 7px',
-              textDecoration: 'none',
-              transition: 'all 0.15s ease',
-              whiteSpace: 'nowrap'
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.color = 'var(--primary)';
-              e.currentTarget.style.borderColor = 'var(--primary)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.color = 'var(--text-muted)';
-              e.currentTarget.style.borderColor = 'var(--border)';
-            }}
-            title="Open official advisory directly and dismiss from feed"
-          >
-            ADVISORY &nearr;
-          </a>
-          <span
-            className="font-mono"
-            style={{
-              fontSize: '0.7rem',
-              color: 'var(--primary)',
-              fontWeight: 600,
-              whiteSpace: 'nowrap'
-            }}
-          >
-            DETAILS &rarr;
-          </span>
-        </div>
+        <span
+          className="font-mono"
+          style={{
+            fontSize: '0.7rem',
+            color: 'var(--primary)',
+            fontWeight: 600,
+            whiteSpace: 'nowrap',
+            paddingLeft: '8px'
+          }}
+        >
+          DETAILS &rarr;
+        </span>
       </div>
     </div>
   );
