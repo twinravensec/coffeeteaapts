@@ -4,7 +4,7 @@
 
 Coffee, Tea & APTs is a public threat intelligence briefing, Detection-as-Code (DaC) registry, and adversary research portal built for security analysts, defenders, and detection engineers.
 
-**Live Portal:** [https://twinravensec.github.io/coffeeteaapts/](https://twinravensec.github.io/coffeeteaapts/)
+**Live Portal:** [https://coffeeteaapts.com](https://coffeeteaapts.com)
 
 ---
 
@@ -20,6 +20,12 @@ Coffee, Tea & APTs is a public threat intelligence briefing, Detection-as-Code (
 * **Muninn Blog:** Technical research papers covering adversary tradecraft, telemetry blind spots, and detection engineering mechanics.
 * **Colorblind-First Interface:** Default Okabe-Ito high-contrast colorblind-safe palette, plus 6 selectable tactical dark themes.
 * **Privacy & Architecture:** Pre-compiled static architecture with zero runtime tracking, zero cookies, and full client-side search and filtering.
+
+---
+
+## Contact
+
+Have questions? Ask Muninn: [twinravensec@gmail.com](mailto:twinravensec@gmail.com)
 
 ---
 
