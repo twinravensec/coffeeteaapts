@@ -1,10 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { THEMES, applyTheme, getCurrentTheme } from '../../theme';
 
 export const Header: React.FC = () => {
+  const pathname = usePathname();
+  const isFeed = pathname?.startsWith('/feed') || pathname?.startsWith('/news');
+  const isDetections = pathname?.startsWith('/detections');
+  const isBlog = pathname?.startsWith('/blog');
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('colorblind');
 
@@ -92,43 +97,55 @@ export const Header: React.FC = () => {
         {/* Tactical Nav Tabs */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
           <a
-            href="/#news"
-            style={linkStyle}
+            href="/feed"
+            style={{
+              ...linkStyle,
+              background: isFeed ? 'var(--surface-raised)' : 'transparent',
+              color: isFeed ? 'var(--text-bright)' : 'var(--text-muted)'
+            }}
             onMouseOver={(e) => {
               e.currentTarget.style.color = 'var(--text-bright)';
               e.currentTarget.style.background = 'var(--surface)';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.color = 'var(--text-muted)';
-              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.color = isFeed ? 'var(--text-bright)' : 'var(--text-muted)';
+              e.currentTarget.style.background = isFeed ? 'var(--surface-raised)' : 'transparent';
             }}
           >
             Feed
           </a>
           <a
             href="/detections"
-            style={linkStyle}
+            style={{
+              ...linkStyle,
+              background: isDetections ? 'var(--surface-raised)' : 'transparent',
+              color: isDetections ? 'var(--text-bright)' : 'var(--text-muted)'
+            }}
             onMouseOver={(e) => {
               e.currentTarget.style.color = 'var(--text-bright)';
               e.currentTarget.style.background = 'var(--surface)';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.color = 'var(--text-muted)';
-              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.color = isDetections ? 'var(--text-bright)' : 'var(--text-muted)';
+              e.currentTarget.style.background = isDetections ? 'var(--surface-raised)' : 'transparent';
             }}
           >
             Detection Library
           </a>
           <a
             href="/blog"
-            style={linkStyle}
+            style={{
+              ...linkStyle,
+              background: isBlog ? 'var(--surface-raised)' : 'transparent',
+              color: isBlog ? 'var(--text-bright)' : 'var(--text-muted)'
+            }}
             onMouseOver={(e) => {
               e.currentTarget.style.color = 'var(--text-bright)';
               e.currentTarget.style.background = 'var(--surface)';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.color = 'var(--text-muted)';
-              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.color = isBlog ? 'var(--text-bright)' : 'var(--text-muted)';
+              e.currentTarget.style.background = isBlog ? 'var(--surface-raised)' : 'transparent';
             }}
           >
             Muninn Blog

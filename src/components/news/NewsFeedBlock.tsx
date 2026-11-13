@@ -123,41 +123,82 @@ export const NewsFeedBlock: React.FC = () => {
     <section id="news" style={{ padding: '36px 0', borderBottom: '1px solid var(--border)' }}>
       <div className="container">
         {/* Block Header */}
-        <div style={{ marginBottom: '18px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <span
-              className="font-mono"
-              style={{
-                fontSize: '0.72rem',
-                fontWeight: 700,
-                color: 'var(--text-muted)',
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase'
-              }}
-            >
-              OSINT THREAT STREAM • TODAY
-            </span>
-            <span
-              className="font-mono"
-              style={{
-                fontSize: '0.68rem',
-                padding: '2px 8px',
-                borderRadius: '4px',
-                background: 'var(--surface-raised)',
-                border: '1px solid var(--border)',
-                color: 'var(--text-muted)'
-              }}
-            >
-              10 ADVISORIES PER PAGE
-            </span>
-            <span className="pulse-indicator" />
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            marginBottom: '18px'
+          }}
+        >
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <span
+                className="font-mono"
+                style={{
+                  fontSize: '0.72rem',
+                  fontWeight: 700,
+                  color: 'var(--text-muted)',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                OSINT THREAT STREAM &bull; TODAY
+              </span>
+              <span
+                className="font-mono"
+                style={{
+                  fontSize: '0.68rem',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  background: 'var(--surface-raised)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text-muted)'
+                }}
+              >
+                10 ADVISORIES PER PAGE
+              </span>
+              <span className="pulse-indicator" />
+            </div>
+            <h2 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-heading)', letterSpacing: '-0.02em', margin: 0 }}>
+              Feed
+            </h2>
+            <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px', marginBottom: 0 }}>
+              Today's OSINT wall: threat advisories, critical zero-days, and vulnerability disclosures across active feeds.
+            </p>
           </div>
-          <h2 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-heading)', letterSpacing: '-0.02em' }}>
-            Feed
-          </h2>
-          <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '2px' }}>
-            Today's OSINT wall: threat advisories, critical zero-days, and vulnerability disclosures across active feeds.
-          </p>
+
+          {/* Quick link to full dedicated feed */}
+          <a
+            href="/feed"
+            style={{
+              padding: '8px 16px',
+              borderRadius: '6px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              background: 'var(--surface-raised)',
+              border: '1px solid var(--border)',
+              color: 'var(--text-bright)',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              transition: 'border-color 0.15s, color 0.15s'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.borderColor = 'var(--primary)';
+              e.currentTarget.style.color = 'var(--primary)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.borderColor = 'var(--border)';
+              e.currentTarget.style.color = 'var(--text-bright)';
+            }}
+          >
+            <span>Open Dedicated Feed</span>
+            <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&rarr;</span>
+          </a>
         </div>
 
         {/* Filter Bar */}

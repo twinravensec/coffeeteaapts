@@ -93,7 +93,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/#news" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <a href="/feed" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Feed
                 </a>
               </li>
