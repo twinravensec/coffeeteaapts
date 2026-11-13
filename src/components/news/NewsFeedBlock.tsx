@@ -12,7 +12,14 @@ const SOURCES = [
   'The Hacker News',
   'BleepingComputer',
   'CISA Cybersecurity Advisories',
-  'SANS Internet Storm Center'
+  'SANS Internet Storm Center',
+  'CrowdStrike Blog',
+  'Huntress Blog',
+  'Cisco Talos Intelligence',
+  'Wired Security',
+  'Ars Technica Security',
+  'Microsoft Threat Intelligence',
+  'SentinelOne Blog'
 ];
 
 const READ_STORAGE_KEY = 'cta_read_news_articles';

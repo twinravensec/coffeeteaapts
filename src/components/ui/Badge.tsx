@@ -62,6 +62,27 @@ export const Badge: React.FC<BadgeProps> = ({
       if (s.includes('sans')) {
         return { bg: 'rgba(0, 114, 178, 0.14)', border: 'rgba(0, 114, 178, 0.40)', text: '#56b4e9' };
       }
+      if (s.includes('crowdstrike')) {
+        return { bg: 'rgba(213, 94, 0, 0.14)', border: 'rgba(213, 94, 0, 0.40)', text: 'var(--danger)' };
+      }
+      if (s.includes('huntress')) {
+        return { bg: 'rgba(230, 159, 0, 0.14)', border: 'rgba(230, 159, 0, 0.40)', text: 'var(--warning)' };
+      }
+      if (s.includes('talos')) {
+        return { bg: 'rgba(0, 158, 115, 0.14)', border: 'rgba(0, 158, 115, 0.40)', text: 'var(--success)' };
+      }
+      if (s.includes('wired')) {
+        return { bg: 'rgba(86, 180, 233, 0.14)', border: 'rgba(86, 180, 233, 0.40)', text: 'var(--primary)' };
+      }
+      if (s.includes('ars')) {
+        return { bg: 'rgba(204, 121, 167, 0.14)', border: 'rgba(204, 121, 167, 0.40)', text: '#cc79a7' };
+      }
+      if (s.includes('microsoft')) {
+        return { bg: 'rgba(0, 114, 178, 0.14)', border: 'rgba(0, 114, 178, 0.40)', text: '#56b4e9' };
+      }
+      if (s.includes('sentinel')) {
+        return { bg: 'rgba(86, 180, 233, 0.14)', border: 'rgba(86, 180, 233, 0.40)', text: 'var(--primary)' };
+      }
     }
 
     switch (variant) {

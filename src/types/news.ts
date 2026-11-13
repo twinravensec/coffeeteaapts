@@ -2,7 +2,15 @@ export type NewsSource =
   | 'The Hacker News' 
   | 'BleepingComputer' 
   | 'CISA Cybersecurity Advisories' 
-  | 'SANS Internet Storm Center';
+  | 'SANS Internet Storm Center'
+  | 'CrowdStrike Blog'
+  | 'Huntress Blog'
+  | 'Cisco Talos Intelligence'
+  | 'Wired Security'
+  | 'Ars Technica Security'
+  | 'Microsoft Threat Intelligence'
+  | 'SentinelOne Blog'
+  | string;
 
 export interface NewsItem {
   id: string;

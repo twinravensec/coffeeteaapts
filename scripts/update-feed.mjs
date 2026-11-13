@@ -29,6 +29,41 @@ const FEEDS = [
     source: 'SANS Internet Storm Center',
     url: 'https://isc.sans.edu/rssfeed_full.xml',
     category: 'Threat Intel'
+  },
+  {
+    source: 'CrowdStrike Blog',
+    url: 'https://www.crowdstrike.com/en-us/blog/feed/',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'Huntress Blog',
+    url: 'https://www.huntress.com/blog/rss.xml',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'Cisco Talos Intelligence',
+    url: 'https://blog.talosintelligence.com/rss/',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'Wired Security',
+    url: 'https://www.wired.com/feed/category/security/latest/rss',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'Ars Technica Security',
+    url: 'https://arstechnica.com/security/feed/',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'Microsoft Threat Intelligence',
+    url: 'https://www.microsoft.com/en-us/security/blog/feed/',
+    category: 'Threat Intel'
+  },
+  {
+    source: 'SentinelOne Blog',
+    url: 'https://www.sentinelone.com/blog/feed/',
+    category: 'Threat Intel'
   }
 ];
 
@@ -106,27 +141,34 @@ function determineCategory(source, title, summary, defaultCategory) {
   return defaultCategory || 'Threat Intel';
 }
 
+function isExcluded(title) {
+  return /\b(gemini|chatgpt|copilot|claude|openai|anthropic|ai agent|ai model|artificial intelligence|\bai\b)\b/i.test(title);
+}
+
 function parseFeedItems(xmlText, sourceConfig) {
   const items = [];
-  const itemMatches = xmlText.match(/<item[\s\S]*?<\/item>/gi) || [];
+  const entryMatches = xmlText.match(/<(?:item|entry)[\s\S]*?<\/(?:item|entry)>/gi) || [];
 
-  for (const block of itemMatches) {
+  for (const block of entryMatches) {
     const titleMatch = block.match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/i);
-    const linkMatch = block.match(/<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/i);
-    const pubDateMatch = block.match(/<(?:pubDate|dc:date)>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/(?:pubDate|dc:date)>/i);
-    const descMatch = block.match(/<(?:description|summary|content:encoded)>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/(?:description|summary|content:encoded)>/i);
-
-    if (!titleMatch || !linkMatch) continue;
-
-    const title = cleanText(titleMatch[1]);
-    const url = cleanText(linkMatch[1]);
-    let summary = cleanText(descMatch ? descMatch[1] : '');
-
-    // Skip consumer AI/chatbot noise to keep feed focused on pure cyber defense
-    if (/\b(gemini|chatgpt|copilot|claude|openai|anthropic|ai agent|ai model|artificial intelligence|\bai\b)\b/i.test(title)) {
-      continue;
+    let url = '';
+    const linkTagMatch = block.match(/<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/i);
+    if (linkTagMatch && linkTagMatch[1].trim().startsWith('http')) {
+      url = cleanText(linkTagMatch[1]);
+    } else {
+      const hrefMatch = block.match(/<link[^>]+href=["']([^"']+)["']/i);
+      if (hrefMatch) url = cleanText(hrefMatch[1]);
     }
 
+    const pubDateMatch = block.match(/<(?:pubDate|dc:date|updated|published)>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/(?:pubDate|dc:date|updated|published)>/i);
+    const descMatch = block.match(/<(?:description|summary|content|content:encoded)>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/(?:description|summary|content|content:encoded)>/i);
+
+    if (!titleMatch || !url) continue;
+
+    const title = cleanText(titleMatch[1]);
+    if (isExcluded(title)) continue;
+
+    let summary = cleanText(descMatch ? descMatch[1] : '');
     if (summary.length > 320) {
       summary = summary.slice(0, 317) + '...';
     }
@@ -165,7 +207,7 @@ function parseFeedItems(xmlText, sourceConfig) {
 }
 
 async function updateThreatFeeds() {
-  console.log('[*] Fetching live OSINT threat feeds...');
+  console.log('[*] Fetching live OSINT threat feeds across 11 authoritative sources...');
   const allFetchedItems = [];
 
   for (const feed of FEEDS) {
@@ -173,9 +215,11 @@ async function updateThreatFeeds() {
       console.log(`[>] Querying ${feed.source}...`);
       const res = await fetch(feed.url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; CoffeeTeaAPTs/1.0; +https://coffeeteaapts.com)'
+          'User-Agent': 'Mozilla/5.0 (compatible; CoffeeTeaAPTs/1.0; +https://coffeeteaapts.com)',
+          'Accept': 'text/html,application/xhtml+xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8'
         },
-        signal: AbortSignal.timeout(15000)
+        redirect: 'follow',
+        signal: AbortSignal.timeout(12000)
       });
 
       if (!res.ok) {
@@ -214,9 +258,7 @@ async function updateThreatFeeds() {
   // Deduplicate by URL and ID, applying strict filter
   const itemMap = new Map();
   for (const item of [...allFetchedItems, ...existingItems]) {
-    if (/\b(gemini|chatgpt|copilot|claude|openai|anthropic|ai agent|ai model|artificial intelligence|\bai\b)\b/i.test(item.title)) {
-      continue;
-    }
+    if (isExcluded(item.title)) continue;
     const key = item.url || item.id;
     if (!itemMap.has(key)) {
       itemMap.set(key, item);
@@ -226,7 +268,7 @@ async function updateThreatFeeds() {
   // Sort descending by published_at
   const merged = Array.from(itemMap.values())
     .sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime())
-    .slice(0, 35); // Keep the top 35 freshest threat advisories
+    .slice(0, 60); // Keep top 60 richest threat advisories
 
   // Recalculate relative times at compile time
   for (const item of merged) {
@@ -238,13 +280,15 @@ async function updateThreatFeeds() {
   fs.writeFileSync(NEWS_FILE, outputCode, 'utf-8');
   console.log(`[+] Successfully wrote ${merged.length} threat feed items to ${NEWS_FILE}`);
 
-  // Update stats.ts last_sync
+  // Update stats.ts
   if (fs.existsSync(STATS_FILE)) {
     let statsContent = fs.readFileSync(STATS_FILE, 'utf-8');
     const nowIso = new Date().toISOString();
     statsContent = statsContent.replace(/"last_sync": "[^"]*"/, `"last_sync": "${nowIso}"`);
+    statsContent = statsContent.replace(/"active_sources": \d+/, `"active_sources": 11`);
+    statsContent = statsContent.replace(/"monitored_feeds": \d+/, `"monitored_feeds": 11`);
     fs.writeFileSync(STATS_FILE, statsContent, 'utf-8');
-    console.log(`[+] Updated stats.ts last_sync to ${nowIso}`);
+    console.log(`[+] Updated stats.ts last_sync and active_sources to 11`);
   }
 }
 

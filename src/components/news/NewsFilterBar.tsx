@@ -72,7 +72,7 @@ export const NewsFilterBar: React.FC<NewsFilterBarProps> = ({
           >
             {sources.map((src) => (
               <option key={src} value={src}>
-                {src === 'All' ? 'All Feeds (4)' : src}
+                {src === 'All' ? `All Feeds (${sources.length - 1})` : src}
               </option>
             ))}
           </select>
