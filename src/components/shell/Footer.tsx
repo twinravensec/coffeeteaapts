@@ -44,17 +44,30 @@ export const Footer: React.FC = () => {
                 marginBottom: '12px'
               }}
             >
-              Public threat intelligence briefing, Detection-as-Code registry, and technical adversary research.
+              Public threat intelligence briefing, Detection-as-Code registry, and technical adversary research. Built for Muninn as a single operational access point.
             </p>
-            <div
-              className="font-mono"
-              style={{
-                fontSize: '0.68rem',
-                color: 'var(--primary)',
-                fontWeight: 600
-              }}
-            >
-              VERSION 1.0.0-PUBLIC
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+              <div
+                className="font-mono"
+                style={{
+                  fontSize: '0.68rem',
+                  color: 'var(--primary)',
+                  fontWeight: 600
+                }}
+              >
+                VERSION 1.0.0-PUBLIC
+              </div>
+              <a
+                href="mailto:twinravensec@gmail.com"
+                className="font-mono"
+                style={{
+                  fontSize: '0.68rem',
+                  color: 'var(--text-muted)',
+                  textDecoration: 'underline'
+                }}
+              >
+                twinravensec@gmail.com
+              </a>
             </div>
           </div>
 
@@ -88,6 +101,27 @@ export const Footer: React.FC = () => {
                 <a href="/blog" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Muninn Blog
                 </a>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (typeof window !== 'undefined') {
+                      window.dispatchEvent(new Event('open-muninn-welcome'));
+                    }
+                  }}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    fontSize: '0.78rem',
+                    color: 'var(--text-muted)',
+                    cursor: 'pointer',
+                    textAlign: 'left'
+                  }}
+                >
+                  Muninn Dispatch Note
+                </button>
               </li>
               <li>
                 <a href="https://attack.mitre.org" target="_blank" rel="noreferrer" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
