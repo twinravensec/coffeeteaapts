@@ -147,12 +147,41 @@ export async function getNewsFeed(options?: NewsFilterOptions): Promise<NewsItem
   return results;
 }
 
+export interface BlogFilterOptions {
+  category?: string;
+  searchQuery?: string;
+}
+
 /**
- * Fetch published security research blog posts.
+ * Fetch published security research blog posts with optional category and keyword filtering.
  */
-export async function getBlogPosts(): Promise<BlogPost[]> {
+export async function getBlogPosts(options?: BlogFilterOptions): Promise<BlogPost[]> {
   await new Promise(r => setTimeout(r, 10));
-  return BLOG_POSTS.filter(p => p.status === 'published');
+  let results = BLOG_POSTS.filter(p => p.status === 'published');
+
+  if (!options) return results;
+
+  if (options.category && options.category !== 'all') {
+    results = results.filter(
+      p => p.category.toLowerCase() === options.category?.toLowerCase()
+    );
+  }
+
+  if (options.searchQuery && options.searchQuery.trim() !== '') {
+    const q = options.searchQuery.toLowerCase().trim();
+    results = results.filter(
+      p =>
+        p.title.toLowerCase().includes(q) ||
+        p.summary.toLowerCase().includes(q) ||
+        p.author.name.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q) ||
+        p.tags.some(tag => tag.toLowerCase().includes(q)) ||
+        p.mitre_techniques.some(t => t.toLowerCase().includes(q)) ||
+        (p.platforms && p.platforms.some(plat => plat.toLowerCase().includes(q)))
+    );
+  }
+
+  return results;
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {

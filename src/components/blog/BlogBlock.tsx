@@ -5,11 +5,9 @@ import { BlogPost } from '../../types/blog';
 import { getBlogPosts } from '../../services/api';
 import { FeaturedArticleCard } from './FeaturedArticleCard';
 import { BlogCard } from './BlogCard';
-import { BlogReaderModal } from './BlogReaderModal';
 
 export const BlogBlock: React.FC = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,31 +31,77 @@ export const BlogBlock: React.FC = () => {
     <section id="blog" style={{ padding: '36px 0 20px 0' }}>
       <div className="container">
         {/* Block Header */}
-        <div style={{ marginBottom: '18px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <span
-              className="font-mono"
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            marginBottom: posts.length > 0 || loading ? '18px' : '0'
+          }}
+        >
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <span
+                className="font-mono"
+                style={{
+                  fontSize: '0.72rem',
+                  fontWeight: 700,
+                  color: 'var(--text-muted)',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                PUBLICATIONS &amp; RESEARCH
+              </span>
+            </div>
+            <h2
               style={{
-                fontSize: '0.72rem',
-                fontWeight: 700,
-                color: 'var(--text-muted)',
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase'
+                fontSize: '1.45rem',
+                fontWeight: 800,
+                color: 'var(--text-heading)',
+                letterSpacing: '-0.02em'
               }}
             >
-              PUBLICATIONS &amp; RESEARCH
-            </span>
+              Muninn Blog
+            </h2>
           </div>
-          <h2 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-heading)', letterSpacing: '-0.02em' }}>
-            Muninn Blog
-          </h2>
+
+          <a
+            href="/blog"
+            style={{
+              padding: '8px 16px',
+              borderRadius: '6px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              background: 'var(--surface-raised)',
+              border: '1px solid var(--border)',
+              color: 'var(--text-bright)',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.borderColor = 'var(--primary)';
+              e.currentTarget.style.color = 'var(--primary)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.borderColor = 'var(--border)';
+              e.currentTarget.style.color = 'var(--text-bright)';
+            }}
+          >
+            <span>Open Muninn Blog</span>
+            <span>&rarr;</span>
+          </a>
         </div>
 
         {loading ? (
           <div
             className="font-mono"
             style={{
-              padding: '48px 0',
+              padding: '32px 0',
               textAlign: 'center',
               color: 'var(--text-muted)',
               fontSize: '0.78rem'
@@ -65,58 +109,27 @@ export const BlogBlock: React.FC = () => {
           >
             LOADING MUNINN BLOG...
           </div>
-        ) : posts.length === 0 ? (
-          <div
-            className="card"
-            style={{
-              padding: '44px 24px',
-              textAlign: 'center',
-              background: 'var(--surface)',
-              border: '1px solid var(--border)',
-              borderRadius: '8px',
-              color: 'var(--text-muted)'
-            }}
-          >
-            <div
-              className="font-mono"
-              style={{
-                fontSize: '1.05rem',
-                fontWeight: 800,
-                letterSpacing: '0.1em',
-                color: 'var(--primary)',
-                marginBottom: '8px'
-              }}
-            >
-              COMING SOON
-            </div>
-            <div style={{ fontSize: '0.82rem', maxWidth: '480px', margin: '0 auto', lineHeight: 1.5, color: 'var(--text-muted)' }}>
-              Technical research papers, threat hunting guides, and detection tradecraft deep-dives are currently in drafting.
-            </div>
-          </div>
-        ) : (
+        ) : posts.length > 0 ? (
           <>
             {/* Featured Post */}
-            {featuredPost && (
-              <FeaturedArticleCard post={featuredPost} onRead={setSelectedPost} />
-            )}
+            {featuredPost && <FeaturedArticleCard post={featuredPost} />}
 
             {/* Remaining Grid */}
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
-                gap: '16px'
-              }}
-            >
-              {regularPosts.map((post) => (
-                <BlogCard key={post.id} post={post} onRead={setSelectedPost} />
-              ))}
-            </div>
+            {regularPosts.length > 0 && (
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
+                  gap: '16px'
+                }}
+              >
+                {regularPosts.map((post) => (
+                  <BlogCard key={post.id} post={post} />
+                ))}
+              </div>
+            )}
           </>
-        )}
-
-        {/* Reader Modal */}
-        <BlogReaderModal post={selectedPost} onClose={() => setSelectedPost(null)} />
+        ) : null}
       </div>
     </section>
   );

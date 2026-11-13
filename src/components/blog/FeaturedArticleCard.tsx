@@ -3,17 +3,32 @@
 import React from 'react';
 import { BlogPost } from '../../types/blog';
 import { Badge } from '../ui/Badge';
+import { formatPublicationDate } from './BlogPostTemplate';
 
 interface FeaturedArticleCardProps {
   post: BlogPost;
-  onRead: (post: BlogPost) => void;
+  onRead?: (post: BlogPost) => void;
 }
 
 export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, onRead }) => {
+  const href = `/blog/${post.slug}/`;
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (onRead) {
+      e.preventDefault();
+      onRead(post);
+    }
+  };
+
   return (
-    <div
+    <a
+      href={href}
+      onClick={handleClick}
       className="card"
       style={{
+        display: 'block',
+        textDecoration: 'none',
+        color: 'inherit',
         padding: '24px 28px',
         background: 'var(--surface)',
         border: '1px solid var(--border-bright)',
@@ -22,7 +37,6 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
         cursor: 'pointer',
         boxShadow: '0 4px 16px rgba(0,0,0,0.2)'
       }}
-      onClick={() => onRead(post)}
       onMouseOver={(e) => {
         e.currentTarget.style.borderColor = 'var(--primary)';
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.4)';
@@ -49,7 +63,7 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
             padding: '2px 8px',
             borderRadius: '4px',
             backgroundColor: 'var(--primary)',
-            color: '#ffffff',
+            color: '#060a0f',
             letterSpacing: '0.06em'
           }}
         >
@@ -57,7 +71,7 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
         </span>
         <Badge variant="info">{post.category}</Badge>
         <span className="font-mono" style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-          {post.reading_time} &bull; {new Date(post.published_at).toLocaleDateString()}
+          {post.reading_time} &bull; {formatPublicationDate(post.published_at)}
         </span>
       </div>
 
@@ -118,16 +132,15 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
           </div>
           <div>
             <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-bright)' }}>
-              {post.author.name} <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>({post.author.role})</span>
+              {post.author.name}{' '}
+              <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>
+                ({post.author.role})
+              </span>
             </div>
           </div>
         </div>
 
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onRead(post);
-          }}
+        <span
           style={{
             padding: '6px 14px',
             borderRadius: '4px',
@@ -143,8 +156,8 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
         >
           <span>Read Paper</span>
           <span style={{ fontSize: '0.85rem', lineHeight: 1 }}>&rarr;</span>
-        </button>
+        </span>
       </div>
-    </div>
+    </a>
   );
 };

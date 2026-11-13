@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <li>
-                <a href="/#detections" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <a href="/detections" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Detection Library
                 </a>
               </li>
@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/#blog" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <a href="/blog" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Muninn Blog
                 </a>
               </li>

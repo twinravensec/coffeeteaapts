@@ -1,0 +1,43 @@
+name: Daily OSINT Feed Ingestion
+
+on:
+  schedule:
+    # Runs every morning at 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ingest-feeds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Ingest Threat Feeds
+        run: node scripts/update-feed.mjs
+
+      - name: Commit and Push Updates
+        run: |
+          if [ -n "$(git status --porcelain src/data/news.ts src/data/stats.ts)" ]; then
+            git config --global user.name "Twin Raven Security"
+            git config --global user.email "info@twinravensec.com"
+            git add src/data/news.ts src/data/stats.ts
+            git commit -m "Muninn update"
+            git push origin main
+          else
+            echo "No feed updates detected."
+          fi

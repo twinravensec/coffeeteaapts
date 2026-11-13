@@ -6,12 +6,23 @@ import { Badge } from '../ui/Badge';
 
 interface BlogCardProps {
   post: BlogPost;
-  onRead: (post: BlogPost) => void;
+  onRead?: (post: BlogPost) => void;
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
+  const href = `/blog/${post.slug}/`;
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (onRead) {
+      e.preventDefault();
+      onRead(post);
+    }
+  };
+
   return (
-    <div
+    <a
+      href={href}
+      onClick={handleClick}
       className="card"
       style={{
         padding: '18px 20px',
@@ -23,9 +34,10 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
         background: 'var(--surface)',
         border: '1px solid var(--border)',
         borderRadius: '8px',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+        textDecoration: 'none',
+        color: 'inherit'
       }}
-      onClick={() => onRead(post)}
       onMouseOver={(e) => {
         e.currentTarget.style.borderColor = 'var(--border-bright)';
         e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.35)';
@@ -130,6 +142,6 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
           </span>
         </div>
       </div>
-    </div>
+    </a>
   );
 };

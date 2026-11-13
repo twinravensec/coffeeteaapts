@@ -15,13 +15,16 @@ if (!fs.existsSync(CONTENT_DIR)) {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
 }
 
-const files = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md') && f.toLowerCase() !== 'readme.md');
+const files = fs
+  .readdirSync(CONTENT_DIR)
+  .filter(f => f.endsWith('.md') && f.toLowerCase() !== 'readme.md');
 
 const posts = [];
 
 for (const file of files) {
   const filePath = path.join(CONTENT_DIR, file);
   const rawContent = fs.readFileSync(filePath, 'utf-8');
+  const isTemplateFile = file === '_template.md' || file.startsWith('_');
 
   // Match frontmatter between --- and ---
   const match = rawContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
@@ -39,13 +42,23 @@ for (const file of files) {
 
     const wordCount = bodyContent.split(/\s+/).filter(Boolean).length;
     const autoReadingTime = `${Math.max(1, Math.ceil(wordCount / 200))} min read`;
+    const defaultSlug = isTemplateFile
+      ? file.replace(/^_+/, '').replace(/\.md$/, '')
+      : file.replace(/\.md$/, '');
+
+    let status = 'published';
+    if (isTemplateFile || data.status === 'template') {
+      status = 'template';
+    } else if (data.status === 'draft') {
+      status = 'draft';
+    }
 
     const post = {
-      id: data.id || `post-${file.replace(/\.md$/, '')}`,
-      slug: data.slug || file.replace(/\.md$/, ''),
+      id: data.id || `post-${defaultSlug}`,
+      slug: data.slug || defaultSlug,
       title: data.title || 'Untitled Post',
       summary: data.summary || '',
-      author: typeof data.author === 'object' ? {
+      author: typeof data.author === 'object' && data.author !== null ? {
         name: data.author.name || 'Staff Researcher',
         role: data.author.role || 'Detection Engineer',
         handle: data.author.handle || '@twinraven'
@@ -57,15 +70,17 @@ for (const file of files) {
       published_at: data.published_at ? String(data.published_at) : new Date().toISOString().split('T')[0],
       reading_time: data.reading_time || autoReadingTime,
       category: data.category || 'Detection Engineering',
-      tags: Array.isArray(data.tags) ? data.tags : [],
-      mitre_techniques: Array.isArray(data.mitre_techniques) ? data.mitre_techniques : [],
+      tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
+      mitre_techniques: Array.isArray(data.mitre_techniques) ? data.mitre_techniques.map(String) : [],
+      ...(Array.isArray(data.platforms) ? { platforms: data.platforms.map(String) } : {}),
+      ...(data.tlp ? { tlp: String(data.tlp) } : {}),
       content_markdown: bodyContent,
       is_featured: Boolean(data.is_featured),
-      status: data.status === 'draft' ? 'draft' : 'published'
+      status
     };
 
     posts.push(post);
-    console.log(`[+] Processed: "${post.title}" (${post.slug})`);
+    console.log(`[+] Processed: "${post.title}" (${post.slug}) [${post.status}]`);
   } catch (err) {
     console.error(`[-] Error parsing frontmatter in ${file}:`, err.message);
   }
@@ -75,4 +90,5 @@ for (const file of files) {
 posts.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(posts, null, 2), 'utf-8');
-console.log(`[*] Successfully compiled ${posts.length} blog posts into ${OUTPUT_FILE}`);
+const publishedCount = posts.filter(p => p.status === 'published').length;
+console.log(`[*] Successfully compiled ${posts.length} total blog entries (${publishedCount} published) into ${OUTPUT_FILE}`);

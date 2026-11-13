@@ -120,7 +120,7 @@ export const Header: React.FC = () => {
             Detection Library
           </a>
           <a
-            href="/#blog"
+            href="/blog"
             style={linkStyle}
             onMouseOver={(e) => {
               e.currentTarget.style.color = 'var(--text-bright)';

@@ -4,6 +4,14 @@ export interface BlogAuthor {
   handle: string;
 }
 
+export type BlogCategory =
+  | 'Adversary Tradecraft'
+  | 'Detection Engineering'
+  | 'Threat Hunting'
+  | 'Architecture';
+
+export type BlogTlp = 'TLP:CLEAR' | 'TLP:GREEN' | 'TLP:AMBER';
+
 export interface BlogPost {
   id: string;
   slug: string;
@@ -12,10 +20,12 @@ export interface BlogPost {
   author: BlogAuthor;
   published_at: string;
   reading_time: string;
-  category: 'Adversary Tradecraft' | 'Detection Engineering' | 'Threat Hunting' | 'Architecture';
+  category: BlogCategory;
   tags: string[];
   mitre_techniques: string[];
+  platforms?: string[];
+  tlp?: BlogTlp;
   content_markdown: string;
   is_featured?: boolean;
-  status: 'published' | 'draft';
+  status: 'published' | 'draft' | 'template';
 }

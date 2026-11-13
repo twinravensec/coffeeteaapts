@@ -26,6 +26,59 @@ export const DetectionDetailModal: React.FC<DetectionDetailModalProps> = ({
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const getFileExtension = () => {
+    if (activeTab === 'raw') {
+      switch (detector.raw_format?.toLowerCase()) {
+        case 'yaml':
+        case 'yml':
+          return '.yml';
+        case 'toml':
+          return '.toml';
+        case 'yara':
+          return '.yaral';
+        case 'json':
+          return '.json';
+        case 'fql':
+          return '.fql';
+        default:
+          return '.txt';
+      }
+    }
+
+    switch (detector.logic.language.toLowerCase()) {
+      case 'sigma':
+        return '.yml';
+      case 'spl':
+        return '.spl';
+      case 'eql':
+      case 'esql':
+        return '.eql';
+      case 'yara-l':
+      case 'yaral':
+        return '.yaral';
+      case 'fql':
+        return '.fql';
+      default:
+        return '.txt';
+    }
+  };
+
+  const handleDownload = () => {
+    const content = activeTab === 'raw' ? detector.raw_content : detector.logic.query;
+    const ext = getFileExtension();
+    const cleanId = detector.id.replace(/[^a-zA-Z0-9_-]/g, '_');
+    const filename = `${cleanId}${ext}`;
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   const getLanguageLabel = () => {
     switch (detector.logic.language.toLowerCase()) {
       case 'sigma':
@@ -194,21 +247,45 @@ export const DetectionDetailModal: React.FC<DetectionDetailModalProps> = ({
             </button>
           </div>
 
-          <button
-            onClick={handleCopy}
-            style={{
-              padding: '6px 12px',
-              borderRadius: '4px',
-              backgroundColor: copied ? 'var(--accent-emerald)' : 'var(--surface-raised)',
-              border: '1px solid var(--border-bright)',
-              color: copied ? '#080b12' : 'var(--text-bright)',
-              fontSize: '12px',
-              fontWeight: 600,
-              fontFamily: 'JetBrains Mono, monospace'
-            }}
-          >
-            {copied ? 'COPIED TO CLIPBOARD!' : 'COPY LOGIC'}
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <button
+              onClick={handleCopy}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '4px',
+                backgroundColor: copied ? 'var(--success)' : 'var(--surface-raised)',
+                border: '1px solid var(--border-bright)',
+                color: copied ? '#080b12' : 'var(--text-bright)',
+                fontSize: '12px',
+                fontWeight: 600,
+                fontFamily: 'JetBrains Mono, monospace',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease'
+              }}
+              title="Copy detection logic to clipboard"
+            >
+              {copied ? 'COPIED TO CLIPBOARD' : 'COPY LOGIC'}
+            </button>
+
+            <button
+              onClick={handleDownload}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '4px',
+                backgroundColor: 'var(--surface-raised)',
+                border: '1px solid var(--border-bright)',
+                color: 'var(--primary)',
+                fontSize: '12px',
+                fontWeight: 600,
+                fontFamily: 'JetBrains Mono, monospace',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease'
+              }}
+              title={`Download rule as ${getFileExtension()}`}
+            >
+              DOWNLOAD ({getFileExtension().toUpperCase()})
+            </button>
+          </div>
         </div>
 
         {/* Code Box */}
