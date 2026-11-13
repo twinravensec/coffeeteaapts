@@ -2,12 +2,180 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "b18b7197a903ab0a4d58a45bfe904792",
+    "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+    "published_at": "2026-11-13T19:38:36.000Z",
+    "relative_time": "2h ago",
+    "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "d68a7ef917d6381222a908d29436380f",
+    "title": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+    "source": "Wired Security",
+    "url": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
+    "published_at": "2026-11-13T19:08:57.000Z",
+    "relative_time": "2h ago",
+    "summary": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "b554d80f345a86b046ca22a3e3e30f7d",
+    "title": "The Good, the Bad and the Ugly in Cybersecurity - Week 46 (2026)",
+    "source": "SentinelOne Blog",
+    "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
+    "published_at": "2026-11-13T17:46:55.000Z",
+    "relative_time": "4h ago",
+    "summary": "Authorities dismantle crypto scams and seize malware ops, Turla deploys Cereal to spy on governments, and attackers breach Railway to steal AI secrets.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "c8ef556c39f87e11c3eeafeda7f8de86",
+    "title": "German military drone operations disrupted by cyberattack",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+    "published_at": "2026-11-13T17:31:56.000Z",
+    "relative_time": "4h ago",
+    "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "156af9a24f9208211a672c227e4162c3",
+    "title": "The Microsoft Outage Is a Warning for the World",
+    "source": "Wired Security",
+    "url": "https://www.wired.com/story/the-microsoft-outage-is-a-warning-for-the-world/",
+    "published_at": "2026-11-13T17:15:54.000Z",
+    "relative_time": "4h ago",
+    "summary": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "b5af83d54bc054532c93c5fa7200aaca",
+    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "published_at": "2026-11-13T16:53:08.000Z",
+    "relative_time": "4h ago",
+    "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460,...",
+    "cves": [
+      "CVE-2026-6460"
+    ],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "cc5bf82c102acb68e2fff504824fdbae",
+    "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+    "published_at": "2026-11-13T16:26:32.000Z",
+    "relative_time": "5h ago",
+    "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
+    "cves": [],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "212e30a9407b3854fa0e6528280ae936",
+    "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+    "published_at": "2026-11-13T16:21:43.000Z",
+    "relative_time": "5h ago",
+    "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "563cd8d18fd7e0e55ff4c50158a2d5ab",
+    "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "published_at": "2026-11-13T15:27:05.000Z",
+    "relative_time": "6h ago",
+    "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server'...",
+    "cves": [],
+    "mitre_tags": [
+      "T1078.004"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "6518422fdf409b18d1cb31ebb43b7034",
+    "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+    "published_at": "2026-11-13T14:28:58.000Z",
+    "relative_time": "7h ago",
+    "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordi...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "APT",
+    "is_breaking": false
+  },
+  {
+    "id": "ecbf45d82abd2f8e53843a6fa45bc919",
+    "title": "GeoVision Camera Software Abused to Deploy XMRig Cryptominer",
+    "source": "Huntress Blog",
+    "url": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
+    "published_at": "2026-11-13T14:00:00.000Z",
+    "relative_time": "7h ago",
+    "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, tried to disable Defender, and deployed XMRig. Get the IoCs and next steps.",
+    "cves": [],
+    "mitre_tags": [
+      "T1562.001"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "e01f78786aae3f8bff87c4251430365d",
+    "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+    "published_at": "2026-11-13T13:54:20.000Z",
+    "relative_time": "7h ago",
+    "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attac...",
+    "cves": [],
+    "mitre_tags": [
+      "T1071"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "16b0956de67ecdf0bb5ffe875b17dffe",
     "title": "Microsoft says November security updates cause printing issues",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
     "published_at": "2026-11-13T12:27:40.000Z",
-    "relative_time": "42m ago",
+    "relative_time": "9h ago",
     "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -15,12 +183,25 @@ export const NEWS_FEED: NewsItem[] = [
     "is_breaking": false
   },
   {
+    "id": "86b0e3c8ebdec21df0dc3098dd802ace",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Cybersecurity Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "published_at": "2026-11-13T12:00:00.000Z",
+    "relative_time": "9h ago",
+    "summary": "<div class=\"OutlineElement Ltr SCXW1462417 BCX8\"> <p>CISA has added two new vulnerabilities to its <a class=\"Hyperlink SCXW1462417 BCX8\" href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\" rel=\"noreferrer noopener\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active ...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Advisory",
+    "is_breaking": true
+  },
+  {
     "id": "9e14c9af6278c0705e3edde77d18a4f6",
     "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
     "published_at": "2026-11-13T11:10:40.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir thi...",
     "cves": [],
     "mitre_tags": [],
@@ -33,7 +214,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
     "published_at": "2026-11-13T10:55:03.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "10h ago",
     "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, accordin...",
     "cves": [],
     "mitre_tags": [
@@ -48,7 +229,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
     "published_at": "2026-11-13T10:44:22.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "11h ago",
     "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
     "cves": [],
     "mitre_tags": [
@@ -64,7 +245,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
     "published_at": "2026-11-13T09:36:18.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "12h ago",
     "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -77,7 +258,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
     "published_at": "2026-11-13T08:34:20.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "13h ago",
     "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -90,7 +271,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
     "published_at": "2026-11-13T08:05:49.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "13h ago",
     "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October ...",
     "cves": [],
     "mitre_tags": [
@@ -107,7 +288,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
     "published_at": "2026-11-13T05:43:28.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "16h ago",
     "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we ...",
     "cves": [],
     "mitre_tags": [
@@ -122,7 +303,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33518",
     "published_at": "2026-11-13T03:41:41.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "18h ago",
     "summary": "Introduction &#xd;",
     "cves": [],
     "mitre_tags": [],
@@ -135,7 +316,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33516",
     "published_at": "2026-11-13T02:00:03.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "19h ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -148,7 +329,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
     "published_at": "2026-11-12T22:53:10.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "22h ago",
     "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
     "cves": [],
     "mitre_tags": [
@@ -163,7 +344,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
     "published_at": "2026-11-12T22:25:30.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "23h ago",
     "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
     "cves": [],
     "mitre_tags": [
@@ -178,7 +359,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/major-microsoft-outlook-outage-hits-365-customers-north-america/",
     "published_at": "2026-11-12T20:01:33.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "Microsoft says its systems are experiencing “elevated loads” as the company races to end an outage impacting its business and enterprise customers.",
     "cves": [],
     "mitre_tags": [],
@@ -191,7 +372,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
     "published_at": "2026-11-12T19:51:16.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
     "cves": [],
     "mitre_tags": [
@@ -206,7 +387,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
     "published_at": "2026-11-12T19:12:55.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]",
     "cves": [],
     "mitre_tags": [
@@ -221,7 +402,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
     "published_at": "2026-11-12T19:00:00.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "Amy reflects on a formative college anthropology course that taught her the power of asking questions to bridge cultural gaps.",
     "cves": [],
     "mitre_tags": [],
@@ -234,7 +415,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
     "published_at": "2026-11-12T18:07:15.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine accoun...",
     "cves": [],
     "mitre_tags": [],
@@ -247,7 +428,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
     "published_at": "2026-11-12T18:02:51.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to ge...",
     "cves": [],
     "mitre_tags": [],
@@ -260,7 +441,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
     "published_at": "2026-11-12T17:50:27.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privil...",
     "cves": [],
     "mitre_tags": [
@@ -275,7 +456,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "published_at": "2026-11-12T17:00:00.000Z",
-    "relative_time": "20h ago",
+    "relative_time": "1d ago",
     "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [
@@ -290,7 +471,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
     "published_at": "2026-11-12T16:27:01.000Z",
-    "relative_time": "20h ago",
+    "relative_time": "1d ago",
     "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the fla...",
     "cves": [],
     "mitre_tags": [
@@ -305,7 +486,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
     "published_at": "2026-11-12T16:04:00.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]",
     "cves": [],
     "mitre_tags": [
@@ -320,7 +501,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
     "published_at": "2026-11-12T15:38:49.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-12...",
     "cves": [],
     "mitre_tags": [
@@ -336,7 +517,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
     "published_at": "2026-11-12T15:07:20.000Z",
-    "relative_time": "22h ago",
+    "relative_time": "1d ago",
     "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -349,7 +530,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
     "published_at": "2026-11-12T15:00:10.000Z",
-    "relative_time": "22h ago",
+    "relative_time": "1d ago",
     "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -362,7 +543,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
     "published_at": "2026-11-12T14:36:47.000Z",
-    "relative_time": "22h ago",
+    "relative_time": "1d ago",
     "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -375,7 +556,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
     "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "Threat actors used a convincing Microsoft Teams meeting-booking lure to conceal device code phishing and trick victims into authorizing attacker access.",
     "cves": [],
     "mitre_tags": [],
@@ -388,7 +569,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/apples-homeview-tries-face-authentication-without-faceid/",
     "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology that has yet to be challenged in the wild.",
     "cves": [],
     "mitre_tags": [],
@@ -680,191 +861,6 @@ export const NEWS_FEED: NewsItem[] = [
       "T1190"
     ],
     "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "c0f67c36585381e52e88c141c8275707",
-    "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33512",
-    "published_at": "2026-11-12T02:00:03.000Z",
-    "relative_time": "1d ago",
-    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "9e3d403bf68c591269d5188b42391615",
-    "title": "SCKit Worm Installs Rogue ScreenConnect Clients and Session Cookie Relays Across Hundreds of Endpoints",
-    "source": "Huntress Blog",
-    "url": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect",
-    "published_at": "2026-11-12T02:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "Attackers are using cloud-hosted ScreenConnect panels to install rogue clients on hundreds of managed endpoints.",
-    "cves": [],
-    "mitre_tags": [
-      "T1078.004"
-    ],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "186b89e643002eb51fa9d535ae339dc3",
-    "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
-    "source": "Microsoft Threat Intelligence",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
-    "published_at": "2026-11-11T19:49:57.000Z",
-    "relative_time": "1d ago",
-    "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2 appeared first on Microsof...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190",
-      "T1071"
-    ],
-    "category": "APT",
-    "is_breaking": false
-  },
-  {
-    "id": "64f11ca01d2b42972fe8b4ba21b60c20",
-    "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33508",
-    "published_at": "2026-11-11T18:28:43.000Z",
-    "relative_time": "1d ago",
-    "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. &#xd;",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": true
-  },
-  {
-    "id": "572021c2e58edaab250cf540bc1c34d3",
-    "title": "Lessons from 59 Linux Kernel Bug Reports",
-    "source": "Microsoft Threat Intelligence",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
-    "published_at": "2026-11-11T16:55:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings ...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "a59f63d021cca1e45552a10a931f2af8",
-    "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-    "published_at": "2026-11-11T16:12:46.000Z",
-    "relative_time": "1d ago",
-    "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that cou...",
-    "cves": [
-      "CVE-2026-108186"
-    ],
-    "mitre_tags": [
-      "T1190",
-      "T1548"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "8f2f29688e4a72c8e6160eebfd52a56f",
-    "title": "Google DeepMind just mathematically verified key parts of Signal",
-    "source": "Ars Technica Security",
-    "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
-    "published_at": "2026-11-11T14:08:57.000Z",
-    "relative_time": "1d ago",
-    "summary": "The four-week project hints that AI could make formal verification far more practical.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "0ba244cf0e376eaf40a698cc58fc928f",
-    "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-    "published_at": "2026-11-11T14:01:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow w...",
-    "cves": [],
-    "mitre_tags": [
-      "T1059.001"
-    ],
-    "category": "APT",
-    "is_breaking": false
-  },
-  {
-    "id": "76db4888ae750859d07496c8f176cd7f",
-    "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-    "published_at": "2026-11-11T12:19:40.000Z",
-    "relative_time": "2d ago",
-    "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing ...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "a6fe07d3eb0ff8def70762b4627ec297",
-    "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
-    "published_at": "2026-11-11T12:01:59.000Z",
-    "relative_time": "2d ago",
-    "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think through how such age...",
-    "cves": [],
-    "mitre_tags": [
-      "T1078.004"
-    ],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "49c6078f58065719c5d15676375804b4",
-    "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-    "published_at": "2026-11-11T12:00:53.000Z",
-    "relative_time": "2d ago",
-    "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate C...",
-    "cves": [],
-    "mitre_tags": [
-      "T1059.001"
-    ],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "1847c39d5f7545f6cfc847e522559873",
-    "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-    "published_at": "2026-11-11T08:17:53.000Z",
-    "relative_time": "2d ago",
-    "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoi...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "abd93facc520e02e6d47b017d28cd038",
-    "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-    "published_at": "2026-11-11T06:04:02.000Z",
-    "relative_time": "2d ago",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
     "is_breaking": true
   }
 ];

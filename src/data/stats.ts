@@ -6,5 +6,5 @@ export const PLATFORM_STATS: MuninnStats = {
   "tactics_covered": 14,
   "mitre_coverage_percent": 88,
   "monitored_feeds": 11,
-  "last_sync": "2026-11-13T13:09:54.845Z"
+  "last_sync": "2026-11-13T21:48:05.593Z"
 };
