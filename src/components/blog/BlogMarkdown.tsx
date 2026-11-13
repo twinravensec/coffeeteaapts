@@ -36,7 +36,7 @@ export const BlogMarkdown: React.FC<BlogMarkdownProps> = ({ content }) => {
       className="markdown-content"
       style={{
         color: 'var(--text)',
-        fontSize: '0.92rem',
+        fontSize: '0.94rem',
         lineHeight: 1.75
       }}
     >
@@ -47,11 +47,13 @@ export const BlogMarkdown: React.FC<BlogMarkdownProps> = ({ content }) => {
             <h2
               id={slugifyHeading(children)}
               style={{
-                fontSize: '1.5rem',
+                fontSize: '1.35rem',
                 fontWeight: 800,
                 color: 'var(--text-heading)',
-                marginTop: '36px',
-                marginBottom: '16px',
+                borderTop: '1px solid var(--border)',
+                paddingTop: '28px',
+                marginTop: '32px',
+                marginBottom: '14px',
                 letterSpacing: '-0.02em'
               }}
             >
@@ -62,14 +64,14 @@ export const BlogMarkdown: React.FC<BlogMarkdownProps> = ({ content }) => {
             <h2
               id={slugifyHeading(children)}
               style={{
-                fontSize: '1.28rem',
+                fontSize: '1.3rem',
                 fontWeight: 800,
                 color: 'var(--text-heading)',
-                marginTop: '36px',
+                borderTop: '1px solid var(--border)',
+                paddingTop: '28px',
+                marginTop: '32px',
                 marginBottom: '14px',
-                paddingBottom: '8px',
-                borderBottom: '1px solid var(--border)',
-                letterSpacing: '-0.015em'
+                letterSpacing: '-0.02em'
               }}
             >
               {children}
@@ -82,7 +84,7 @@ export const BlogMarkdown: React.FC<BlogMarkdownProps> = ({ content }) => {
                 fontSize: '1.05rem',
                 fontWeight: 700,
                 color: 'var(--text-heading)',
-                marginTop: '26px',
+                marginTop: '24px',
                 marginBottom: '10px'
               }}
             >
@@ -94,7 +96,7 @@ export const BlogMarkdown: React.FC<BlogMarkdownProps> = ({ content }) => {
               id={slugifyHeading(children)}
               className="font-mono"
               style={{
-                fontSize: '0.84rem',
+                fontSize: '0.82rem',
                 fontWeight: 700,
                 color: 'var(--primary)',
                 letterSpacing: '0.04em',

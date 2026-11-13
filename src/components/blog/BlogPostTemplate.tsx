@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { BlogPost } from '../../types/blog';
 import { Header } from '../shell/Header';
 import { Footer } from '../shell/Footer';
-import { Badge, BadgeVariant } from '../ui/Badge';
+import { Badge } from '../ui/Badge';
 import { BlogMarkdown } from './BlogMarkdown';
 import { BlogCard } from './BlogCard';
 
@@ -26,19 +26,6 @@ export function formatPublicationDate(dateStr: string): string {
   }
   const parsed = new Date(dateStr);
   return Number.isNaN(parsed.getTime()) ? dateStr : parsed.toLocaleDateString();
-}
-
-function getMitreUrl(techniqueId: string): string {
-  const cleanId = techniqueId.trim().toUpperCase().replace(/\./g, '/');
-  return `https://attack.mitre.org/techniques/${cleanId}/`;
-}
-
-function getTlpVariant(tlp?: string): BadgeVariant {
-  if (!tlp) return 'neutral';
-  const upper = tlp.toUpperCase();
-  if (upper.includes('AMBER')) return 'high';
-  if (upper.includes('GREEN')) return 'technique';
-  return 'neutral';
 }
 
 export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
@@ -83,13 +70,13 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                   marginBottom: '10px'
                 }}
               >
-                PUBLICATION NOT FOUND
+                POST NOT FOUND
               </div>
               <h1 style={{ fontSize: '1.5rem', marginBottom: '12px', color: 'var(--text-heading)' }}>
-                Requested Research Article Unavailable
+                Requested Post Unavailable
               </h1>
               <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
-                The requested publication could not be found.
+                The requested post could not be found.
               </p>
               <a
                 href="/blog"
@@ -123,7 +110,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
 
       <main style={{ flex: 1, padding: '32px 0 64px 0' }}>
         <div className="container">
-          <article style={{ maxWidth: '1020px', margin: '0 auto' }}>
+          <article style={{ maxWidth: '960px', margin: '0 auto' }}>
             {/* Top Navigation Bar: Breadcrumbs & Back Link */}
             <div
               style={{
@@ -191,7 +178,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                 }}
               >
                 <span>&larr;</span>
-                <span>ALL PUBLICATIONS</span>
+                <span>ALL POSTS</span>
               </a>
             </div>
 
@@ -203,8 +190,8 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                   border: '1px solid var(--border)',
                   borderLeft: '4px solid var(--warning)',
                   borderRadius: '0 8px 8px 0',
-                  padding: '14px 18px',
-                  marginBottom: '20px',
+                  padding: '12px 18px',
+                  marginBottom: '18px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
@@ -212,354 +199,234 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                   gap: '10px'
                 }}
               >
-                <div>
-                  <div
+                <div style={{ fontSize: '0.8rem', color: 'var(--text)' }}>
+                  <span
                     className="font-mono"
                     style={{
                       fontSize: '0.7rem',
                       fontWeight: 700,
                       color: 'var(--warning)',
                       letterSpacing: '0.06em',
-                      marginBottom: '4px'
+                      marginRight: '10px'
                     }}
                   >
-                    {post.status === 'template'
-                      ? 'TEMPLATE STYLEGUIDE PREVIEW • UNLISTED FROM PUBLIC FEED'
-                      : 'DRAFT PREVIEW • UNLISTED FROM PUBLIC FEED'}
-                  </div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text)' }}>
-                    {post.status === 'template'
-                      ? 'Copy content/blog/_template.md to content/blog/<your-slug>.md and set status: published to publish a new paper.'
-                      : 'Update status: published in YAML frontmatter when ready to list this publication.'}
-                  </div>
+                    {post.status === 'template' ? 'TEMPLATE PREVIEW' : 'DRAFT PREVIEW'}
+                  </span>
+                  Unlisted from public feed &mdash; copy <code>content/blog/_template.md</code> and set{' '}
+                  <code>status: published</code> to publish.
                 </div>
                 <Badge variant="high">{post.status.toUpperCase()}</Badge>
               </div>
             )}
 
-            {/* Tactical Article Header Card */}
-            <header
+            {/* Single Unified Continuous Article Container */}
+            <div
               style={{
                 backgroundColor: 'var(--surface)',
                 border: '1px solid var(--border)',
                 borderRadius: '8px',
-                padding: '28px 32px',
-                marginBottom: '20px',
+                overflow: 'hidden',
                 boxShadow: '0 4px 18px rgba(0, 0, 0, 0.2)'
               }}
             >
-              {/* Top Badges & Timestamps */}
-              <div
+              {/* 1. Header Block */}
+              <header
                 style={{
+                  padding: '28px 36px',
+                  backgroundColor: 'var(--surface-deep)',
+                  borderBottom: '1px solid var(--border)'
+                }}
+              >
+                {/* Date • Author • ID */}
+                <div
+                  className="font-mono"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    flexWrap: 'wrap',
+                    fontSize: '0.73rem',
+                    color: 'var(--text-muted)',
+                    marginBottom: '12px'
+                  }}
+                >
+                  <span style={{ color: 'var(--primary)', fontWeight: 600 }}>
+                    {formatPublicationDate(post.date)}
+                  </span>
+                  <span>&bull;</span>
+                  <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
+                    {post.author}
+                  </span>
+                  <span>&bull;</span>
+                  <span>ID: {post.id}</span>
+                </div>
+
+                {/* Title */}
+                <h1
+                  style={{
+                    fontSize: '1.9rem',
+                    lineHeight: 1.25,
+                    fontWeight: 800,
+                    color: 'var(--text-heading)',
+                    letterSpacing: '-0.02em',
+                    marginBottom: post.summary ? '14px' : '0'
+                  }}
+                >
+                  {post.title}
+                </h1>
+
+                {/* Summary */}
+                {post.summary && (
+                  <p
+                    style={{
+                      fontSize: '0.95rem',
+                      lineHeight: 1.65,
+                      color: 'var(--text)',
+                      margin: 0
+                    }}
+                  >
+                    {post.summary}
+                  </p>
+                )}
+
+                {/* Dedicated Sources Bar/List */}
+                {post.link_to_sources.length > 0 && (
+                  <div
+                    style={{
+                      marginTop: '20px',
+                      backgroundColor: 'var(--surface)',
+                      border: '1px solid var(--border)',
+                      borderRadius: '6px',
+                      padding: '12px 16px'
+                    }}
+                  >
+                    <div
+                      className="font-mono"
+                      style={{
+                        fontSize: '0.68rem',
+                        fontWeight: 700,
+                        color: 'var(--primary)',
+                        letterSpacing: '0.06em',
+                        textTransform: 'uppercase',
+                        marginBottom: '8px'
+                      }}
+                    >
+                      SOURCES
+                    </div>
+                    <ul
+                      style={{
+                        listStyle: 'none',
+                        margin: 0,
+                        padding: 0,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '6px'
+                      }}
+                    >
+                      {post.link_to_sources.map((src, idx) => (
+                        <li
+                          key={`${src.url}-${idx}`}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'baseline',
+                            gap: '8px',
+                            flexWrap: 'wrap',
+                            fontSize: '0.82rem'
+                          }}
+                        >
+                          {src.title && (
+                            <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
+                              {src.title}:
+                            </span>
+                          )}
+                          <a
+                            href={src.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-mono"
+                            style={{
+                              fontSize: '0.76rem',
+                              color: 'var(--primary)',
+                              wordBreak: 'break-all',
+                              borderBottom: '1px dashed var(--primary-dim)'
+                            }}
+                          >
+                            {src.url} &#8599;
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </header>
+
+              {/* 2. Continuous Body: Main Write-Up + Dynamic ## Header 2 Sections */}
+              <div style={{ padding: '32px 36px' }}>
+                <BlogMarkdown content={post.content_markdown} />
+              </div>
+
+              {/* 3. Footer Bar */}
+              <footer
+                style={{
+                  padding: '16px 36px',
+                  backgroundColor: 'var(--surface-deep)',
+                  borderTop: '1px solid var(--border)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   flexWrap: 'wrap',
-                  gap: '10px',
-                  marginBottom: '14px'
+                  gap: '12px'
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                  {post.is_featured && (
-                    <span
-                      className="font-mono"
-                      style={{
-                        fontSize: '0.68rem',
-                        fontWeight: 800,
-                        padding: '2px 8px',
-                        borderRadius: '4px',
-                        backgroundColor: 'var(--primary)',
-                        color: '#060a0f',
-                        letterSpacing: '0.06em'
-                      }}
-                    >
-                      FEATURED RESEARCH
-                    </span>
-                  )}
-                  <Badge variant="info">{post.category}</Badge>
-                  {post.tlp && <Badge variant={getTlpVariant(post.tlp)}>{post.tlp}</Badge>}
-                </div>
-
-                <span
+                <div
                   className="font-mono"
                   style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}
                 >
-                  {post.reading_time} &bull; {formatPublicationDate(post.published_at)}
-                </span>
-              </div>
+                  <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
+                    {post.author}
+                  </span>{' '}
+                  &bull; {formatPublicationDate(post.date)} &bull; {post.id}
+                </div>
 
-              {/* Headline */}
-              <h1
-                style={{
-                  fontSize: '1.85rem',
-                  lineHeight: 1.28,
-                  fontWeight: 800,
-                  color: 'var(--text-heading)',
-                  letterSpacing: '-0.02em',
-                  marginBottom: '22px'
-                }}
-              >
-                {post.title}
-              </h1>
-
-              {/* Metadata Grid (matching DetectionDetailModal) */}
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                  gap: '14px',
-                  backgroundColor: 'var(--surface-raised)',
-                  border: '1px solid var(--border)',
-                  borderRadius: '8px',
-                  padding: '16px 18px'
-                }}
-              >
-                {/* Author */}
-                <div>
-                  <div
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                  <button
+                    type="button"
+                    onClick={handleCopyPermalink}
                     className="font-mono"
-                    style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginBottom: '6px' }}
+                    style={{
+                      padding: '6px 12px',
+                      borderRadius: '6px',
+                      backgroundColor: copiedLink ? 'var(--success)' : 'var(--surface-raised)',
+                      border: `1px solid ${copiedLink ? 'var(--success)' : 'var(--border-bright)'}`,
+                      color: copiedLink ? '#060a0f' : 'var(--text-bright)',
+                      fontSize: '0.7rem',
+                      fontWeight: 700,
+                      cursor: 'pointer'
+                    }}
                   >
-                    RESEARCH AUTHOR
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <div
-                      className="font-mono"
-                      style={{
-                        width: '28px',
-                        height: '28px',
-                        borderRadius: '4px',
-                        backgroundColor: 'var(--surface)',
-                        border: '1px solid var(--border-bright)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontSize: '0.78rem',
-                        fontWeight: 700,
-                        color: 'var(--primary)',
-                        flexShrink: 0
-                      }}
-                    >
-                      {post.author.name[0]}
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-bright)' }}>
-                        {post.author.name}
-                      </div>
-                      <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                        {post.author.role} ({post.author.handle})
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    {copiedLink ? 'LINK COPIED!' : 'COPY LINK'}
+                  </button>
 
-                {/* Published & Reading Time */}
-                <div>
-                  <div
-                    className="font-mono"
-                    style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginBottom: '6px' }}
+                  <a
+                    href="/blog"
+                    style={{
+                      padding: '6px 14px',
+                      borderRadius: '6px',
+                      backgroundColor: 'var(--surface-raised)',
+                      border: '1px solid var(--border)',
+                      color: 'var(--text-bright)',
+                      fontSize: '0.76rem',
+                      fontWeight: 600,
+                      textDecoration: 'none'
+                    }}
                   >
-                    PUBLICATION DATE
-                  </div>
-                  <div style={{ fontSize: '0.84rem', fontWeight: 600, color: 'var(--text-bright)' }}>
-                    {formatPublicationDate(post.published_at)}
-                  </div>
-                  <div className="font-mono" style={{ fontSize: '0.72rem', color: 'var(--primary)', marginTop: '2px' }}>
-                    EST. {post.reading_time.toUpperCase()}
-                  </div>
+                    &larr; Back to Muninn Blog
+                  </a>
                 </div>
-
-                {/* Platforms (if provided) */}
-                {post.platforms && post.platforms.length > 0 && (
-                  <div>
-                    <div
-                      className="font-mono"
-                      style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginBottom: '6px' }}
-                    >
-                      TARGET PLATFORMS
-                    </div>
-                    <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
-                      {post.platforms.map((plat) => (
-                        <Badge key={plat} variant="platform">
-                          {plat}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* MITRE ATT&CK Techniques */}
-                {post.mitre_techniques.length > 0 && (
-                  <div>
-                    <div
-                      className="font-mono"
-                      style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginBottom: '6px' }}
-                    >
-                      MITRE ATT&amp;CK COVERAGE
-                    </div>
-                    <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
-                      {post.mitre_techniques.map((tech) => (
-                        <a
-                          key={tech}
-                          href={getMitreUrl(tech)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ textDecoration: 'none' }}
-                          title={`View ${tech} on MITRE ATT&CK`}
-                        >
-                          <Badge variant="technique">{tech}</Badge>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Topic Tags */}
-              {post.tags.length > 0 && (
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    flexWrap: 'wrap',
-                    marginTop: '14px'
-                  }}
-                >
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="font-mono"
-                      style={{
-                        fontSize: '0.68rem',
-                        color: 'var(--text-muted)',
-                        backgroundColor: 'var(--surface-raised)',
-                        padding: '2px 7px',
-                        borderRadius: '4px',
-                        border: '1px solid var(--border)'
-                      }}
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </header>
-
-            {/* Executive Summary Callout */}
-            {post.summary && (
-              <section
-                aria-label="Executive Summary"
-                style={{
-                  backgroundColor: 'var(--surface-raised)',
-                  border: '1px solid var(--border)',
-                  borderLeft: '4px solid var(--primary)',
-                  borderRadius: '0 8px 8px 0',
-                  padding: '18px 24px',
-                  marginBottom: '20px'
-                }}
-              >
-                <div
-                  className="font-mono"
-                  style={{
-                    fontSize: '0.7rem',
-                    fontWeight: 700,
-                    color: 'var(--primary)',
-                    letterSpacing: '0.06em',
-                    marginBottom: '6px'
-                  }}
-                >
-                  EXECUTIVE SUMMARY
-                </div>
-                <p
-                  style={{
-                    fontSize: '0.92rem',
-                    lineHeight: 1.65,
-                    color: 'var(--text-bright)',
-                    margin: 0
-                  }}
-                >
-                  {post.summary}
-                </p>
-              </section>
-            )}
-
-            {/* Main Markdown Article Body */}
-            <div
-              style={{
-                backgroundColor: 'var(--surface)',
-                border: '1px solid var(--border)',
-                borderRadius: '8px',
-                padding: '32px 36px',
-                boxShadow: '0 4px 18px rgba(0, 0, 0, 0.18)'
-              }}
-            >
-              <BlogMarkdown content={post.content_markdown} />
+              </footer>
             </div>
 
-            {/* Article Footer Attribution & Share Bar */}
-            <div
-              style={{
-                marginTop: '20px',
-                backgroundColor: 'var(--surface)',
-                border: '1px solid var(--border)',
-                borderRadius: '8px',
-                padding: '18px 24px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                flexWrap: 'wrap',
-                gap: '14px'
-              }}
-            >
-              <div>
-                <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-bright)' }}>
-                  Published by {post.author.name}{' '}
-                  <span style={{ color: 'var(--primary)' }}>({post.author.handle})</span>
-                </div>
-                <div className="font-mono" style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
-                  {post.category.toUpperCase()} &bull; {formatPublicationDate(post.published_at)}
-                </div>
-              </div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-                <button
-                  type="button"
-                  onClick={handleCopyPermalink}
-                  className="font-mono"
-                  style={{
-                    padding: '7px 14px',
-                    borderRadius: '6px',
-                    backgroundColor: copiedLink ? 'var(--success)' : 'var(--surface-raised)',
-                    border: `1px solid ${copiedLink ? 'var(--success)' : 'var(--border-bright)'}`,
-                    color: copiedLink ? '#060a0f' : 'var(--text-bright)',
-                    fontSize: '0.72rem',
-                    fontWeight: 700,
-                    cursor: 'pointer'
-                  }}
-                >
-                  {copiedLink ? 'PERMALINK COPIED!' : 'COPY ARTICLE LINK'}
-                </button>
-
-                <a
-                  href="/blog"
-                  style={{
-                    padding: '7px 16px',
-                    borderRadius: '6px',
-                    backgroundColor: 'var(--surface-raised)',
-                    border: '1px solid var(--border)',
-                    color: 'var(--text-bright)',
-                    fontSize: '0.78rem',
-                    fontWeight: 600,
-                    textDecoration: 'none'
-                  }}
-                >
-                  &larr; Back to Muninn Blog
-                </a>
-              </div>
-            </div>
-
-            {/* Related Publications */}
+            {/* Related Posts */}
             {relatedPosts.length > 0 && (
               <section style={{ marginTop: '36px' }}>
                 <div style={{ marginBottom: '14px' }}>
@@ -572,7 +439,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                       letterSpacing: '0.08em'
                     }}
                   >
-                    MORE FROM MUNINN RESEARCH
+                    MORE POSTS
                   </span>
                 </div>
                 <div

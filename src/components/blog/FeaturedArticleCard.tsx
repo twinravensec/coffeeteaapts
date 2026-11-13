@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { BlogPost } from '../../types/blog';
-import { Badge } from '../ui/Badge';
 import { formatPublicationDate } from './BlogPostTemplate';
 
 interface FeaturedArticleCardProps {
@@ -47,18 +46,20 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
       }}
     >
       <div
+        className="font-mono"
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
           marginBottom: '10px',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+          fontSize: '0.72rem',
+          color: 'var(--text-muted)'
         }}
       >
         <span
-          className="font-mono"
           style={{
-            fontSize: '0.68rem',
+            fontSize: '0.66rem',
             fontWeight: 800,
             padding: '2px 8px',
             borderRadius: '4px',
@@ -67,17 +68,18 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
             letterSpacing: '0.06em'
           }}
         >
-          FEATURED RESEARCH
+          LATEST POST
         </span>
-        <Badge variant="info">{post.category}</Badge>
-        <span className="font-mono" style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-          {post.reading_time} &bull; {formatPublicationDate(post.published_at)}
+        <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
+          {formatPublicationDate(post.date)}
         </span>
+        <span>&bull;</span>
+        <span>ID: {post.id}</span>
       </div>
 
       <h3
         style={{
-          fontSize: '1.25rem',
+          fontSize: '1.3rem',
           lineHeight: 1.35,
           fontWeight: 800,
           color: 'var(--text-heading)',
@@ -89,7 +91,7 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
 
       <p
         style={{
-          fontSize: '0.85rem',
+          fontSize: '0.88rem',
           lineHeight: 1.6,
           color: 'var(--text)',
           marginBottom: '18px',
@@ -111,33 +113,8 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
           paddingTop: '14px'
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div
-            style={{
-              width: '26px',
-              height: '26px',
-              borderRadius: '4px',
-              backgroundColor: 'var(--surface-raised)',
-              border: '1px solid var(--border)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: 'JetBrains Mono, monospace',
-              fontSize: '0.75rem',
-              fontWeight: 700,
-              color: 'var(--primary)'
-            }}
-          >
-            {post.author.name[0]}
-          </div>
-          <div>
-            <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-bright)' }}>
-              {post.author.name}{' '}
-              <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>
-                ({post.author.role})
-              </span>
-            </div>
-          </div>
+        <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-bright)' }}>
+          {post.author}
         </div>
 
         <span
@@ -154,7 +131,7 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
             gap: '6px'
           }}
         >
-          <span>Read Paper</span>
+          <span>Read Post</span>
           <span style={{ fontSize: '0.85rem', lineHeight: 1 }}>&rarr;</span>
         </span>
       </div>

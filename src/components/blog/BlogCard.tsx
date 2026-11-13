@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { BlogPost } from '../../types/blog';
-import { Badge } from '../ui/Badge';
+import { formatPublicationDate } from './BlogPostTemplate';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -30,7 +30,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
         flexDirection: 'column',
         justifyContent: 'space-between',
         cursor: 'pointer',
-        gap: '12px',
+        gap: '14px',
         background: 'var(--surface)',
         border: '1px solid var(--border)',
         borderRadius: '8px',
@@ -48,25 +48,28 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
       }}
     >
       <div>
-        {/* Category & Read Time */}
+        {/* Date & ID */}
         <div
+          className="font-mono"
           style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            fontSize: '0.68rem',
+            color: 'var(--text-muted)',
             marginBottom: '8px'
           }}
         >
-          <Badge variant="info">{post.category}</Badge>
-          <span className="font-mono" style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-            {post.reading_time}
+          <span style={{ color: 'var(--primary)', fontWeight: 600 }}>
+            {formatPublicationDate(post.date)}
           </span>
+          <span>{post.id}</span>
         </div>
 
         {/* Title */}
         <h3
           style={{
-            fontSize: '0.98rem',
+            fontSize: '1.02rem',
             lineHeight: 1.35,
             fontWeight: 700,
             color: 'var(--text-heading)',
@@ -79,8 +82,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
         {/* Summary */}
         <p
           style={{
-            fontSize: '0.82rem',
-            lineHeight: 1.5,
+            fontSize: '0.83rem',
+            lineHeight: 1.55,
             color: 'var(--text)',
             display: '-webkit-box',
             WebkitLineClamp: 3,
@@ -92,55 +95,25 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
         </p>
       </div>
 
-      <div>
-        {/* Tags */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '5px',
-            flexWrap: 'wrap',
-            marginBottom: '10px'
-          }}
+      {/* Author Footer */}
+      <div
+        style={{
+          borderTop: '1px solid var(--border)',
+          paddingTop: '10px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between'
+        }}
+      >
+        <span style={{ fontSize: '0.76rem', fontWeight: 600, color: 'var(--text-bright)' }}>
+          {post.author}
+        </span>
+        <span
+          className="font-mono"
+          style={{ fontSize: '0.7rem', color: 'var(--primary)', fontWeight: 600 }}
         >
-          {post.tags.map((tag) => (
-            <span
-              key={tag}
-              className="font-mono"
-              style={{
-                fontSize: '0.68rem',
-                color: 'var(--text-muted)',
-                backgroundColor: 'var(--surface-raised)',
-                padding: '2px 5px',
-                borderRadius: '3px',
-                border: '1px solid var(--border)'
-              }}
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-
-        {/* Author Footer */}
-        <div
-          style={{
-            borderTop: '1px solid var(--border)',
-            paddingTop: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between'
-          }}
-        >
-          <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-bright)' }}>
-            {post.author.name}
-          </span>
-          <span
-            className="font-mono"
-            style={{ fontSize: '0.7rem', color: 'var(--primary)', fontWeight: 600 }}
-          >
-            READ &rarr;
-          </span>
-        </div>
+          READ &rarr;
+        </span>
       </div>
     </a>
   );

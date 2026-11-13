@@ -24,8 +24,8 @@ export const BlogBlock: React.FC = () => {
     };
   }, []);
 
-  const featuredPost = posts.find((p) => p.is_featured) || posts[0];
-  const regularPosts = posts.filter((p) => p.id !== featuredPost?.id);
+  const latestPost = posts[0];
+  const remainingPosts = posts.slice(1);
 
   return (
     <section id="blog" style={{ padding: '36px 0 20px 0' }}>
@@ -53,7 +53,7 @@ export const BlogBlock: React.FC = () => {
                   textTransform: 'uppercase'
                 }}
               >
-                PUBLICATIONS &amp; RESEARCH
+                WRITE-UPS &amp; RESEARCH
               </span>
             </div>
             <h2
@@ -111,11 +111,9 @@ export const BlogBlock: React.FC = () => {
           </div>
         ) : posts.length > 0 ? (
           <>
-            {/* Featured Post */}
-            {featuredPost && <FeaturedArticleCard post={featuredPost} />}
+            {latestPost && <FeaturedArticleCard post={latestPost} />}
 
-            {/* Remaining Grid */}
-            {regularPosts.length > 0 && (
+            {remainingPosts.length > 0 && (
               <div
                 style={{
                   display: 'grid',
@@ -123,7 +121,7 @@ export const BlogBlock: React.FC = () => {
                   gap: '16px'
                 }}
               >
-                {regularPosts.map((post) => (
+                {remainingPosts.map((post) => (
                   <BlogCard key={post.id} post={post} />
                 ))}
               </div>

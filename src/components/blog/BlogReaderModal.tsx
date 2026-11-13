@@ -3,8 +3,8 @@
 import React from 'react';
 import { BlogPost } from '../../types/blog';
 import { Modal } from '../ui/Modal';
-import { Badge } from '../ui/Badge';
 import { BlogMarkdown } from './BlogMarkdown';
+import { formatPublicationDate } from './BlogPostTemplate';
 
 interface BlogReaderModalProps {
   post: BlogPost | null;
@@ -19,60 +19,72 @@ export const BlogReaderModal: React.FC<BlogReaderModalProps> = ({ post, onClose 
       isOpen={!!post}
       onClose={onClose}
       title={post.title}
-      subtitle={`By ${post.author.name} (${post.author.role}) • ${post.reading_time} • Published ${new Date(post.published_at).toLocaleDateString()}`}
+      subtitle={`${formatPublicationDate(post.date)} • ${post.author} • ID: ${post.id}`}
       maxWidth="880px"
     >
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {/* Meta Header */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            flexWrap: 'wrap',
-            marginBottom: '24px',
-            borderBottom: '1px solid var(--border)',
-            paddingBottom: '16px'
-          }}
-        >
-          <Badge variant="info">{post.category}</Badge>
-          {post.mitre_techniques.map((t) => (
-            <Badge key={t} variant="technique">
-              {t}
-            </Badge>
-          ))}
-          {post.tags.map((tag) => (
-            <Badge key={tag} variant="neutral">
-              #{tag}
-            </Badge>
-          ))}
+        {post.summary && (
+          <p
+            style={{
+              fontSize: '0.95rem',
+              lineHeight: 1.65,
+              color: 'var(--text-bright)',
+              marginBottom: '20px'
+            }}
+          >
+            {post.summary}
+          </p>
+        )}
+
+        {post.link_to_sources.length > 0 && (
+          <div
+            style={{
+              backgroundColor: 'var(--surface-raised)',
+              border: '1px solid var(--border)',
+              borderRadius: '6px',
+              padding: '12px 16px',
+              marginBottom: '24px'
+            }}
+          >
+            <div
+              className="font-mono"
+              style={{
+                fontSize: '0.68rem',
+                fontWeight: 700,
+                color: 'var(--primary)',
+                letterSpacing: '0.06em',
+                marginBottom: '6px'
+              }}
+            >
+              SOURCES
+            </div>
+            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              {post.link_to_sources.map((src, idx) => (
+                <li key={`${src.url}-${idx}`} style={{ fontSize: '0.8rem' }}>
+                  {src.title && <strong style={{ color: 'var(--text-bright)', marginRight: '6px' }}>{src.title}:</strong>}
+                  <a
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono"
+                    style={{ fontSize: '0.75rem', color: 'var(--primary)' }}
+                  >
+                    {src.url} &#8599;
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: '24px' }}>
+          <BlogMarkdown content={post.content_markdown} />
         </div>
 
-        {/* Executive Summary callout */}
         <div
           style={{
-            backgroundColor: 'var(--surface-raised)',
-            borderLeft: '4px solid var(--primary)',
-            padding: '16px 20px',
-            borderRadius: '0 8px 8px 0',
-            fontSize: '14px',
-            lineHeight: 1.6,
-            color: 'var(--text-bright)',
-            marginBottom: '32px'
-          }}
-        >
-          <strong style={{ color: 'var(--primary)' }}>Executive Summary: </strong>
-          {post.summary}
-        </div>
-
-        {/* Markdown Rendered Body */}
-        <BlogMarkdown content={post.content_markdown} />
-
-        {/* Footer info */}
-        <div
-          style={{
-            marginTop: '40px',
-            paddingTop: '24px',
+            marginTop: '36px',
+            paddingTop: '20px',
             borderTop: '1px solid var(--border)',
             display: 'flex',
             alignItems: 'center',
@@ -81,8 +93,8 @@ export const BlogReaderModal: React.FC<BlogReaderModalProps> = ({ post, onClose 
             gap: '12px'
           }}
         >
-          <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-            Author Contact: <span style={{ color: 'var(--primary)' }}>{post.author.handle}</span>
+          <div className="font-mono" style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+            {post.author} &bull; {formatPublicationDate(post.date)}
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <a
@@ -113,7 +125,7 @@ export const BlogReaderModal: React.FC<BlogReaderModalProps> = ({ post, onClose 
                 cursor: 'pointer'
               }}
             >
-              Close Reader
+              Close
             </button>
           </div>
         </div>

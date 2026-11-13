@@ -3,23 +3,14 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../../components/shell/Header';
 import { Footer } from '../../components/shell/Footer';
-import { BlogPost, BlogCategory } from '../../types/blog';
+import { BlogPost } from '../../types/blog';
 import { getBlogPosts } from '../../services/api';
 import { FeaturedArticleCard } from '../../components/blog/FeaturedArticleCard';
 import { BlogCard } from '../../components/blog/BlogCard';
 
-const CATEGORIES: ('all' | BlogCategory)[] = [
-  'all',
-  'Adversary Tradecraft',
-  'Detection Engineering',
-  'Threat Hunting',
-  'Architecture'
-];
-
 export default function BlogCatalogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [allPublishedCount, setAllPublishedCount] = useState<number>(0);
-  const [category, setCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -31,7 +22,7 @@ export default function BlogCatalogPage() {
     let isMounted = true;
     setLoading(true);
 
-    getBlogPosts({ category, searchQuery }).then((items) => {
+    getBlogPosts({ searchQuery }).then((items) => {
       if (isMounted) {
         setPosts(items);
         setLoading(false);
@@ -41,21 +32,11 @@ export default function BlogCatalogPage() {
     return () => {
       isMounted = false;
     };
-  }, [category, searchQuery]);
+  }, [searchQuery]);
 
-  const hasActiveFilters = category !== 'all' || searchQuery.trim() !== '';
-  const showHeroFeatured = !hasActiveFilters && posts.length > 0;
-  const featuredPost = showHeroFeatured
-    ? posts.find((p) => p.is_featured) || posts[0]
-    : null;
-  const gridPosts = featuredPost
-    ? posts.filter((p) => p.id !== featuredPost.id)
-    : posts;
-
-  const handleReset = () => {
-    setCategory('all');
-    setSearchQuery('');
-  };
+  const hasActiveSearch = searchQuery.trim() !== '';
+  const latestPost = !hasActiveSearch && posts.length > 0 ? posts[0] : null;
+  const gridPosts = latestPost ? posts.slice(1) : posts;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -101,7 +82,7 @@ export default function BlogCatalogPage() {
                   textTransform: 'uppercase'
                 }}
               >
-                PUBLICATIONS &amp; RESEARCH
+                WRITE-UPS &amp; RESEARCH
               </span>
               <span
                 className="font-mono"
@@ -114,7 +95,7 @@ export default function BlogCatalogPage() {
                   color: 'var(--text-muted)'
                 }}
               >
-                {allPublishedCount} {allPublishedCount === 1 ? 'PUBLICATION' : 'PUBLICATIONS'}
+                {allPublishedCount} {allPublishedCount === 1 ? 'POST' : 'POSTS'}
               </span>
             </div>
 
@@ -137,17 +118,15 @@ export default function BlogCatalogPage() {
                 lineHeight: 1.5
               }}
             >
-              Technical research papers covering adversary tradecraft, telemetry blind spots, and multi-platform detection engineering mechanics.
+              Security write-ups, threat research, and detection engineering notes.
             </p>
           </div>
 
-          {/* Filter & Search Toolbar */}
+          {/* Search Toolbar */}
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
               gap: '12px',
               marginBottom: '24px',
               padding: '12px 16px',
@@ -156,70 +135,39 @@ export default function BlogCatalogPage() {
               borderRadius: '8px'
             }}
           >
-            {/* Search Input */}
-            <div style={{ flex: '1 1 260px' }}>
-              <input
-                type="search"
-                placeholder="Filter publications by keyword, tag, author, or MITRE ID (e.g. T1558)..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+            <input
+              type="search"
+              placeholder="Search posts by title, summary, author, or ID..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                flex: 1,
+                fontSize: '0.8rem',
+                padding: '7px 12px',
+                background: 'var(--surface-raised)',
+                border: '1px solid var(--border)',
+                borderRadius: '4px',
+                color: 'var(--text-bright)'
+              }}
+            />
+            {hasActiveSearch && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
                 style={{
-                  width: '100%',
-                  fontSize: '0.78rem',
-                  padding: '6px 10px',
-                  background: 'var(--surface-raised)',
-                  border: '1px solid var(--border)',
+                  padding: '6px 12px',
                   borderRadius: '4px',
-                  color: 'var(--text-bright)'
+                  fontSize: '0.72rem',
+                  fontWeight: 600,
+                  background: 'transparent',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer'
                 }}
-              />
-            </div>
-
-            {/* Category Filter Pills */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-              {CATEGORIES.map((cat) => {
-                const isActive = category === cat;
-                return (
-                  <button
-                    key={cat}
-                    type="button"
-                    onClick={() => setCategory(cat)}
-                    className="font-mono"
-                    style={{
-                      padding: '5px 10px',
-                      borderRadius: '4px',
-                      fontSize: '0.7rem',
-                      fontWeight: isActive ? 700 : 600,
-                      background: isActive ? 'var(--primary)' : 'var(--surface-raised)',
-                      color: isActive ? '#060a0f' : 'var(--text-muted)',
-                      border: `1px solid ${isActive ? 'var(--primary)' : 'var(--border)'}`,
-                      cursor: 'pointer'
-                    }}
-                  >
-                    {cat === 'all' ? 'ALL TOPICS' : cat.toUpperCase()}
-                  </button>
-                );
-              })}
-
-              {hasActiveFilters && (
-                <button
-                  type="button"
-                  onClick={handleReset}
-                  style={{
-                    padding: '5px 10px',
-                    borderRadius: '4px',
-                    fontSize: '0.72rem',
-                    fontWeight: 600,
-                    background: 'transparent',
-                    border: '1px solid var(--border)',
-                    color: 'var(--text-muted)',
-                    cursor: 'pointer'
-                  }}
-                >
-                  Reset
-                </button>
-              )}
-            </div>
+              >
+                Clear
+              </button>
+            )}
           </div>
 
           {/* Content Area */}
@@ -233,10 +181,10 @@ export default function BlogCatalogPage() {
                 fontSize: '0.78rem'
               }}
             >
-              LOADING MUNINN PUBLICATIONS...
+              LOADING MUNINN BLOG...
             </div>
           ) : posts.length === 0 ? (
-            hasActiveFilters ? (
+            hasActiveSearch ? (
               <div
                 className="card"
                 style={{
@@ -246,12 +194,12 @@ export default function BlogCatalogPage() {
                   fontSize: '0.85rem'
                 }}
               >
-                No publications matched your current filter criteria.
+                No posts matched your search query.
               </div>
             ) : null
           ) : (
             <>
-              {featuredPost && <FeaturedArticleCard post={featuredPost} />}
+              {latestPost && <FeaturedArticleCard post={latestPost} />}
 
               {gridPosts.length > 0 && (
                 <div

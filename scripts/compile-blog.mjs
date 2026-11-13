@@ -15,6 +15,34 @@ if (!fs.existsSync(CONTENT_DIR)) {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
 }
 
+function normalizeDate(raw) {
+  if (!raw) return new Date().toISOString().split('T')[0];
+  if (raw instanceof Date) return raw.toISOString().split('T')[0];
+  return String(raw).trim();
+}
+
+function normalizeSources(raw) {
+  if (!raw) return [];
+  const items = Array.isArray(raw) ? raw : [raw];
+  const result = [];
+
+  for (const item of items) {
+    if (!item) continue;
+    if (typeof item === 'string') {
+      const url = item.trim();
+      if (url) result.push({ url });
+    } else if (typeof item === 'object') {
+      const url = String(item.url || item.href || item.link || '').trim();
+      const title = String(item.title || item.label || item.name || '').trim();
+      if (url) {
+        result.push(title ? { title, url } : { url });
+      }
+    }
+  }
+
+  return result;
+}
+
 const files = fs
   .readdirSync(CONTENT_DIR)
   .filter(f => f.endsWith('.md') && f.toLowerCase() !== 'readme.md');
@@ -39,9 +67,6 @@ for (const file of files) {
 
   try {
     const data = yaml.load(frontmatterStr) || {};
-
-    const wordCount = bodyContent.split(/\s+/).filter(Boolean).length;
-    const autoReadingTime = `${Math.max(1, Math.ceil(wordCount / 200))} min read`;
     const defaultSlug = isTemplateFile
       ? file.replace(/^_+/, '').replace(/\.md$/, '')
       : file.replace(/\.md$/, '');
@@ -53,29 +78,22 @@ for (const file of files) {
       status = 'draft';
     }
 
+    const authorStr =
+      typeof data.author === 'object' && data.author !== null
+        ? String(data.author.name || 'Twin Raven')
+        : String(data.author || 'Twin Raven');
+
+    const rawSources = data._link_to_sources ?? data.link_to_sources ?? data.sources;
+
     const post = {
-      id: data.id || `post-${defaultSlug}`,
-      slug: data.slug || defaultSlug,
-      title: data.title || 'Untitled Post',
-      summary: data.summary || '',
-      author: typeof data.author === 'object' && data.author !== null ? {
-        name: data.author.name || 'Staff Researcher',
-        role: data.author.role || 'Detection Engineer',
-        handle: data.author.handle || '@twinraven'
-      } : {
-        name: data.author || 'Staff Researcher',
-        role: 'Detection Engineer',
-        handle: '@twinraven'
-      },
-      published_at: data.published_at ? String(data.published_at) : new Date().toISOString().split('T')[0],
-      reading_time: data.reading_time || autoReadingTime,
-      category: data.category || 'Detection Engineering',
-      tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
-      mitre_techniques: Array.isArray(data.mitre_techniques) ? data.mitre_techniques.map(String) : [],
-      ...(Array.isArray(data.platforms) ? { platforms: data.platforms.map(String) } : {}),
-      ...(data.tlp ? { tlp: String(data.tlp) } : {}),
+      id: String(data.id || `blog-${defaultSlug}`),
+      slug: String(data.slug || defaultSlug),
+      title: String(data.title || 'Untitled Post'),
+      author: authorStr,
+      date: normalizeDate(data.date ?? data.published_at),
+      summary: String(data.summary || ''),
+      link_to_sources: normalizeSources(rawSources),
       content_markdown: bodyContent,
-      is_featured: Boolean(data.is_featured),
       status
     };
 
@@ -86,8 +104,8 @@ for (const file of files) {
   }
 }
 
-// Sort by published_at descending
-posts.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
+// Sort by date descending
+posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(posts, null, 2), 'utf-8');
 const publishedCount = posts.filter(p => p.status === 'published').length;
