@@ -2,12 +2,38 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "3464a02f90cb81c281a6707ea03b401b",
+    "title": "Attackers use Crypto Exchange Names to Disguise Unauthorized Sessions on 100+ ScreenConnect Servers",
+    "source": "Huntress Blog",
+    "url": "https://www.huntress.com/blog/fake-crypto-exchange-sessions-screenconnect",
+    "published_at": "2026-11-14T01:50:00.000Z",
+    "relative_time": "3h ago",
+    "summary": "Fake crypto exchange sessions are showing up on ScreenConnect servers and could be bait for technicians. See what Huntress found and what to do.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "574ffced25ec7d871bbe647054189b19",
+    "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+    "source": "Microsoft Threat Intelligence",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+    "published_at": "2026-11-13T21:31:44.000Z",
+    "relative_time": "7h ago",
+    "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "b18b7197a903ab0a4d58a45bfe904792",
     "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
     "published_at": "2026-11-13T19:38:36.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "9h ago",
     "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -20,7 +46,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
     "published_at": "2026-11-13T19:08:57.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "9h ago",
     "summary": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
     "cves": [],
     "mitre_tags": [],
@@ -33,7 +59,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
     "published_at": "2026-11-13T17:46:55.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "11h ago",
     "summary": "Authorities dismantle crypto scams and seize malware ops, Turla deploys Cereal to spy on governments, and attackers breach Railway to steal AI secrets.",
     "cves": [],
     "mitre_tags": [],
@@ -46,7 +72,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
     "published_at": "2026-11-13T17:31:56.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "11h ago",
     "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
     "cves": [],
     "mitre_tags": [],
@@ -59,7 +85,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/the-microsoft-outage-is-a-warning-for-the-world/",
     "published_at": "2026-11-13T17:15:54.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "11h ago",
     "summary": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse.",
     "cves": [],
     "mitre_tags": [],
@@ -72,7 +98,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
     "published_at": "2026-11-13T16:53:08.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "12h ago",
     "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460,...",
     "cves": [
       "CVE-2026-6460"
@@ -89,7 +115,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
     "published_at": "2026-11-13T16:26:32.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "12h ago",
     "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
     "cves": [],
     "mitre_tags": [
@@ -104,7 +130,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
     "published_at": "2026-11-13T16:21:43.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "12h ago",
     "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -117,7 +143,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
     "published_at": "2026-11-13T15:27:05.000Z",
-    "relative_time": "6h ago",
+    "relative_time": "13h ago",
     "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server'...",
     "cves": [],
     "mitre_tags": [
@@ -132,7 +158,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
     "published_at": "2026-11-13T14:28:58.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordi...",
     "cves": [],
     "mitre_tags": [],
@@ -145,7 +171,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
     "published_at": "2026-11-13T14:00:00.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, tried to disable Defender, and deployed XMRig. Get the IoCs and next steps.",
     "cves": [],
     "mitre_tags": [
@@ -160,7 +186,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "published_at": "2026-11-13T13:54:20.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attac...",
     "cves": [],
     "mitre_tags": [
@@ -175,7 +201,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
     "published_at": "2026-11-13T12:27:40.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "16h ago",
     "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -188,7 +214,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "published_at": "2026-11-13T12:00:00.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "16h ago",
     "summary": "<div class=\"OutlineElement Ltr SCXW1462417 BCX8\"> <p>CISA has added two new vulnerabilities to its <a class=\"Hyperlink SCXW1462417 BCX8\" href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\" rel=\"noreferrer noopener\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active ...",
     "cves": [],
     "mitre_tags": [],
@@ -201,7 +227,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
     "published_at": "2026-11-13T11:10:40.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir thi...",
     "cves": [],
     "mitre_tags": [],
@@ -214,7 +240,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
     "published_at": "2026-11-13T10:55:03.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, accordin...",
     "cves": [],
     "mitre_tags": [
@@ -229,7 +255,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
     "published_at": "2026-11-13T10:44:22.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "18h ago",
     "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
     "cves": [],
     "mitre_tags": [
@@ -245,7 +271,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
     "published_at": "2026-11-13T09:36:18.000Z",
-    "relative_time": "12h ago",
+    "relative_time": "19h ago",
     "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -258,7 +284,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
     "published_at": "2026-11-13T08:34:20.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "20h ago",
     "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -271,7 +297,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
     "published_at": "2026-11-13T08:05:49.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "20h ago",
     "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October ...",
     "cves": [],
     "mitre_tags": [
@@ -288,7 +314,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
     "published_at": "2026-11-13T05:43:28.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "23h ago",
     "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we ...",
     "cves": [],
     "mitre_tags": [
@@ -303,7 +329,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33518",
     "published_at": "2026-11-13T03:41:41.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "Introduction &#xd;",
     "cves": [],
     "mitre_tags": [],
@@ -316,7 +342,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33516",
     "published_at": "2026-11-13T02:00:03.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -329,7 +355,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
     "published_at": "2026-11-12T22:53:10.000Z",
-    "relative_time": "22h ago",
+    "relative_time": "1d ago",
     "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
     "cves": [],
     "mitre_tags": [
@@ -344,7 +370,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
     "published_at": "2026-11-12T22:25:30.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
     "cves": [],
     "mitre_tags": [
@@ -830,37 +856,5 @@ export const NEWS_FEED: NewsItem[] = [
     "mitre_tags": [],
     "category": "Threat Intel",
     "is_breaking": false
-  },
-  {
-    "id": "968c2e5da9a495997af171c89553db37",
-    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-    "published_at": "2026-11-12T05:12:26.000Z",
-    "relative_time": "1d ago",
-    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ship...",
-    "cves": [
-      "CVE-2026-119618"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "359238dcdbcfcbee3f9b77bbe28f9e28",
-    "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-    "published_at": "2026-11-12T04:39:48.000Z",
-    "relative_time": "1d ago",
-    "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the Scre...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
   }
 ];
