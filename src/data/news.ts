@@ -2,12 +2,25 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "fb43e89fb20d8cbb7138fb0348a8f6be",
+    "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+    "published_at": "2026-11-15T11:27:31.000Z",
+    "relative_time": "3h ago",
+    "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and r...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "f828612ff6ba10492a2c1d8114964c3f",
     "title": "US disrupts North Korean campaign behind $400 million crypto theft",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
     "published_at": "2026-11-14T15:15:49.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -20,7 +33,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
     "published_at": "2026-11-14T12:38:35.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-...",
     "cves": [],
     "mitre_tags": [
@@ -186,7 +199,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
     "published_at": "2026-11-13T14:28:58.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordi...",
     "cves": [],
     "mitre_tags": [],
@@ -199,7 +212,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
     "published_at": "2026-11-13T14:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, tried to disable Defender, and deployed XMRig. Get the IoCs and next steps.",
     "cves": [],
     "mitre_tags": [
@@ -214,7 +227,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "published_at": "2026-11-13T13:54:20.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attac...",
     "cves": [],
     "mitre_tags": [
@@ -229,7 +242,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
     "published_at": "2026-11-13T12:27:40.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -242,7 +255,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "published_at": "2026-11-13T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<div class=\"OutlineElement Ltr SCXW1462417 BCX8\"> <p>CISA has added two new vulnerabilities to its <a class=\"Hyperlink SCXW1462417 BCX8\" href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\" rel=\"noreferrer noopener\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active ...",
     "cves": [],
     "mitre_tags": [],
@@ -255,7 +268,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
     "published_at": "2026-11-13T11:10:40.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir thi...",
     "cves": [],
     "mitre_tags": [],
@@ -268,7 +281,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
     "published_at": "2026-11-13T10:55:03.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, accordin...",
     "cves": [],
     "mitre_tags": [
@@ -283,7 +296,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
     "published_at": "2026-11-13T10:44:22.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
     "cves": [],
     "mitre_tags": [
@@ -299,7 +312,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
     "published_at": "2026-11-13T09:36:18.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -312,7 +325,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
     "published_at": "2026-11-13T08:34:20.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -325,7 +338,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
     "published_at": "2026-11-13T08:05:49.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October ...",
     "cves": [],
     "mitre_tags": [
@@ -342,7 +355,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
     "published_at": "2026-11-13T05:43:28.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we ...",
     "cves": [],
     "mitre_tags": [
@@ -571,7 +584,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
     "published_at": "2026-11-12T15:07:20.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -584,7 +597,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
     "published_at": "2026-11-12T15:00:10.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -597,7 +610,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
     "published_at": "2026-11-12T14:36:47.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -610,7 +623,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
     "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Threat actors used a convincing Microsoft Teams meeting-booking lure to conceal device code phishing and trick victims into authorizing attacker access.",
     "cves": [],
     "mitre_tags": [],
@@ -623,7 +636,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/apples-homeview-tries-face-authentication-without-faceid/",
     "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology that has yet to be challenged in the wild.",
     "cves": [],
     "mitre_tags": [],
@@ -636,7 +649,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
     "published_at": "2026-11-12T13:08:28.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the ...",
     "cves": [],
     "mitre_tags": [
@@ -651,7 +664,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-sql-server-performance-issues/",
     "published_at": "2026-11-12T12:11:11.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -664,7 +677,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
     "published_at": "2026-11-12T12:09:14.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the sam...",
     "cves": [],
     "mitre_tags": [
@@ -679,7 +692,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
     "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-02.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
     "cves": [],
     "mitre_tags": [
@@ -694,7 +707,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
     "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-05.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Palo Alto Networks has published </strong><a href=\"https://security.paloaltonetworks.com/cve-2026-109618\"><strong>information</strong></a><strong> on v...",
     "cves": [
       "CVE-2026-109618"
@@ -709,7 +722,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
     "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-04.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Palo Alto Networks has published </strong><a href=\"https://security.paloaltonetworks.com/CVE-2026-111497\"><strong>information </strong></a><strong>on a...",
     "cves": [
       "CVE-2026-111497"
@@ -724,7 +737,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
     "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-01.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core...",
     "cves": [],
     "mitre_tags": [
@@ -739,7 +752,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
     "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-03.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup:...",
     "cves": [
       "CVE-2026-111497"
@@ -754,7 +767,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33514",
     "published_at": "2026-11-12T11:56:24.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages clusters of GPUs, which are typically used to run AI workloads. All versions of GPUStack prior to 2.2.0, which was released at the end of June. This vulnerability was not m...",
     "cves": [
       "CVE-2026-102895"
@@ -772,7 +785,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
     "published_at": "2026-11-12T11:51:43.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and...",
     "cves": [],
     "mitre_tags": [
@@ -787,7 +800,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
     "published_at": "2026-11-12T11:51:31.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken dow...",
     "cves": [],
     "mitre_tags": [],
@@ -800,7 +813,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
     "published_at": "2026-11-12T11:33:15.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of imprope...",
     "cves": [
       "CVE-2026-126325"
@@ -817,7 +830,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
     "published_at": "2026-11-12T10:24:07.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -830,7 +843,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
     "published_at": "2026-11-12T09:25:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released ...",
     "cves": [
       "CVE-2026-118383"
@@ -840,20 +853,5 @@ export const NEWS_FEED: NewsItem[] = [
     ],
     "category": "Vulnerability",
     "is_breaking": true
-  },
-  {
-    "id": "b7438992801e2a23f17ae8c96d3b51b7",
-    "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-    "published_at": "2026-11-12T08:20:37.000Z",
-    "relative_time": "2d ago",
-    "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were releas...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": false
   }
 ];
