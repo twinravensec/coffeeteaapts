@@ -2,12 +2,40 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "7106c67c54477721916d1dec8644ce06",
+    "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33496",
+    "published_at": "2026-11-15T18:17:27.000Z",
+    "relative_time": "2h ago",
+    "summary": "YARA-X&&#x23;x26;&#x23;39&&#x23;x26;&#x23;x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes. &#xd;",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "5a4f53d8f5e13b220a1abbdaf6150b1c",
+    "title": "TSMC employee data breach linked to cloud provider",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "published_at": "2026-11-15T15:23:48.000Z",
+    "relative_time": "5h ago",
+    "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+    "cves": [],
+    "mitre_tags": [
+      "T1078.004"
+    ],
+    "category": "APT",
+    "is_breaking": false
+  },
+  {
     "id": "fb43e89fb20d8cbb7138fb0348a8f6be",
     "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
     "published_at": "2026-11-15T11:27:31.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "9h ago",
     "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and r...",
     "cves": [],
     "mitre_tags": [],
@@ -74,7 +102,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
     "published_at": "2026-11-13T19:38:36.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -87,7 +115,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
     "published_at": "2026-11-13T19:08:57.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
     "cves": [],
     "mitre_tags": [],
@@ -100,7 +128,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
     "published_at": "2026-11-13T17:46:55.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Authorities dismantle crypto scams and seize malware ops, Turla deploys Cereal to spy on governments, and attackers breach Railway to steal AI secrets.",
     "cves": [],
     "mitre_tags": [],
@@ -113,7 +141,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
     "published_at": "2026-11-13T17:31:56.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
     "cves": [],
     "mitre_tags": [],
@@ -126,7 +154,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/the-microsoft-outage-is-a-warning-for-the-world/",
     "published_at": "2026-11-13T17:15:54.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse.",
     "cves": [],
     "mitre_tags": [],
@@ -139,7 +167,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
     "published_at": "2026-11-13T16:53:08.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460,...",
     "cves": [
       "CVE-2026-6460"
@@ -156,7 +184,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
     "published_at": "2026-11-13T16:26:32.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
     "cves": [],
     "mitre_tags": [
@@ -171,7 +199,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
     "published_at": "2026-11-13T16:21:43.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -184,7 +212,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
     "published_at": "2026-11-13T15:27:05.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server'...",
     "cves": [],
     "mitre_tags": [
@@ -426,7 +454,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/major-microsoft-outlook-outage-hits-365-customers-north-america/",
     "published_at": "2026-11-12T20:01:33.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft says its systems are experiencing “elevated loads” as the company races to end an outage impacting its business and enterprise customers.",
     "cves": [],
     "mitre_tags": [],
@@ -439,7 +467,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
     "published_at": "2026-11-12T19:51:16.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
     "cves": [],
     "mitre_tags": [
@@ -454,7 +482,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
     "published_at": "2026-11-12T19:12:55.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]",
     "cves": [],
     "mitre_tags": [
@@ -469,7 +497,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
     "published_at": "2026-11-12T19:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Amy reflects on a formative college anthropology course that taught her the power of asking questions to bridge cultural gaps.",
     "cves": [],
     "mitre_tags": [],
@@ -482,7 +510,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
     "published_at": "2026-11-12T18:07:15.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine accoun...",
     "cves": [],
     "mitre_tags": [],
@@ -495,7 +523,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
     "published_at": "2026-11-12T18:02:51.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to ge...",
     "cves": [],
     "mitre_tags": [],
@@ -508,7 +536,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
     "published_at": "2026-11-12T17:50:27.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privil...",
     "cves": [],
     "mitre_tags": [
@@ -523,7 +551,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "published_at": "2026-11-12T17:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [
@@ -538,7 +566,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
     "published_at": "2026-11-12T16:27:01.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the fla...",
     "cves": [],
     "mitre_tags": [
@@ -553,7 +581,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
     "published_at": "2026-11-12T16:04:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]",
     "cves": [],
     "mitre_tags": [
@@ -568,7 +596,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
     "published_at": "2026-11-12T15:38:49.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-12...",
     "cves": [],
     "mitre_tags": [
@@ -817,36 +845,6 @@ export const NEWS_FEED: NewsItem[] = [
     "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of imprope...",
     "cves": [
       "CVE-2026-126325"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "3d98d2f7df5f232f4e820f9124001d9c",
-    "title": "Microsoft confirms Windows security updates installation issues",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-    "published_at": "2026-11-12T10:24:07.000Z",
-    "relative_time": "3d ago",
-    "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "93bdb63a34b532805dfdf69e2d44d12d",
-    "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-    "published_at": "2026-11-12T09:25:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released ...",
-    "cves": [
-      "CVE-2026-118383"
     ],
     "mitre_tags": [
       "T1190"
