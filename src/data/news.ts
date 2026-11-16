@@ -2,12 +2,218 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "81ef74f31b59f65765c5d8c00ca6a2e3",
+    "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "published_at": "2026-11-16T16:43:24.000Z",
+    "relative_time": "1h ago",
+    "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "827737e4a56e45009b758728725b3544",
+    "title": "Fandango says hackers stole payment card details from checkout pages",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+    "published_at": "2026-11-16T15:44:21.000Z",
+    "relative_time": "2h ago",
+    "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "09921bd51601afc1200139e2e96ce11c",
+    "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+    "published_at": "2026-11-16T15:01:11.000Z",
+    "relative_time": "2h ago",
+    "summary": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance. [...]",
+    "cves": [],
+    "mitre_tags": [
+      "T1558"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "64438e967040ea059bb8487a9b604042",
+    "title": "New Huntress Security Insights Report & Reporting Center",
+    "source": "Huntress Blog",
+    "url": "https://www.huntress.com/blog/security-insights-report",
+    "published_at": "2026-11-16T15:00:00.000Z",
+    "relative_time": "2h ago",
+    "summary": "Meet the redesigned Huntress Security Insights Report (formerly known as Threat Report), a one-page summary in an updated reporting center.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "ef045dd0f58580008b0ddf3adf79e6c5",
+    "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "published_at": "2026-11-16T13:27:20.000Z",
+    "relative_time": "4h ago",
+    "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and at...",
+    "cves": [],
+    "mitre_tags": [
+      "T1558"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "66074be992d92fb0a3981a899ccfa82f",
+    "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33522",
+    "published_at": "2026-11-16T13:11:04.000Z",
+    "relative_time": "4h ago",
+    "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication &#...",
+    "cves": [
+      "CVE-2026-42271",
+      "CVE-2026-48710"
+    ],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "1327a31f80fc1b990883f7ca360ee49e",
+    "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+    "published_at": "2026-11-16T12:53:18.000Z",
+    "relative_time": "5h ago",
+    "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "d915d3970c878bf9f50ed6cb79557d08",
+    "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "published_at": "2026-11-16T12:34:21.000Z",
+    "relative_time": "5h ago",
+    "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybers...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "be5d8dc6dee5167a592a07ac3c4925d2",
+    "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+    "published_at": "2026-11-16T12:33:18.000Z",
+    "relative_time": "5h ago",
+    "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an an...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "b3bf9607d4fc0e5ebc03cb6f3f2183d9",
+    "title": "Australian retail giant Coles investigates cybersecurity incident",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+    "published_at": "2026-11-16T11:18:09.000Z",
+    "relative_time": "6h ago",
+    "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "83c4ecf04b85f1c7601c7a942d124fc8",
+    "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+    "published_at": "2026-11-16T09:32:57.000Z",
+    "relative_time": "8h ago",
+    "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TO...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "a776e1366df5f1d88386bfa1c76a9e50",
+    "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+    "published_at": "2026-11-16T09:30:04.000Z",
+    "relative_time": "8h ago",
+    "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
+    "cves": [],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "9f01bf7a9094500c53615ae2af7e0669",
+    "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+    "published_at": "2026-11-16T08:26:52.000Z",
+    "relative_time": "9h ago",
+    "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "fdb8ff73358b89c4ea6dccd693e03551",
+    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+    "published_at": "2026-11-16T06:53:34.000Z",
+    "relative_time": "11h ago",
+    "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "f70aec758943d4c5a98aa4a1d4e9c58e",
+    "title": "Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+    "published_at": "2026-11-16T06:00:00.000Z",
+    "relative_time": "11h ago",
+    "summary": "",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "ac6db506b4c9468b808d1efcb4de1724",
     "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33520",
     "published_at": "2026-11-16T02:00:05.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "15h ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -20,7 +226,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33496",
     "published_at": "2026-11-15T18:17:27.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "23h ago",
     "summary": "YARA-X&&#x23;x26;&#x23;39&&#x23;x26;&#x23;x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes. &#xd;",
     "cves": [],
     "mitre_tags": [],
@@ -33,7 +239,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
     "published_at": "2026-11-15T15:23:48.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
     "cves": [],
     "mitre_tags": [
@@ -48,7 +254,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
     "published_at": "2026-11-15T11:27:31.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and r...",
     "cves": [],
     "mitre_tags": [],
@@ -61,7 +267,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
     "published_at": "2026-11-14T15:15:49.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -74,7 +280,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
     "published_at": "2026-11-14T12:38:35.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-...",
     "cves": [],
     "mitre_tags": [
@@ -141,7 +347,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
     "published_at": "2026-11-13T17:46:55.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Authorities dismantle crypto scams and seize malware ops, Turla deploys Cereal to spy on governments, and attackers breach Railway to steal AI secrets.",
     "cves": [],
     "mitre_tags": [],
@@ -154,7 +360,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
     "published_at": "2026-11-13T17:31:56.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
     "cves": [],
     "mitre_tags": [],
@@ -167,7 +373,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/the-microsoft-outage-is-a-warning-for-the-world/",
     "published_at": "2026-11-13T17:15:54.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse.",
     "cves": [],
     "mitre_tags": [],
@@ -180,7 +386,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
     "published_at": "2026-11-13T16:53:08.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460,...",
     "cves": [
       "CVE-2026-6460"
@@ -197,7 +403,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
     "published_at": "2026-11-13T16:26:32.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
     "cves": [],
     "mitre_tags": [
@@ -212,7 +418,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
     "published_at": "2026-11-13T16:21:43.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -225,7 +431,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
     "published_at": "2026-11-13T15:27:05.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server'...",
     "cves": [],
     "mitre_tags": [
@@ -240,7 +446,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
     "published_at": "2026-11-13T14:28:58.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordi...",
     "cves": [],
     "mitre_tags": [],
@@ -253,7 +459,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/geovision-camera-software-xmrig-cryptominer",
     "published_at": "2026-11-13T14:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Attackers abused publicly exposed GeoVision camera software at 13 organizations, tried to disable Defender, and deployed XMRig. Get the IoCs and next steps.",
     "cves": [],
     "mitre_tags": [
@@ -268,7 +474,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "published_at": "2026-11-13T13:54:20.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attac...",
     "cves": [],
     "mitre_tags": [
@@ -283,7 +489,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
     "published_at": "2026-11-13T12:27:40.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -296,7 +502,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "published_at": "2026-11-13T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "<div class=\"OutlineElement Ltr SCXW1462417 BCX8\"> <p>CISA has added two new vulnerabilities to its <a class=\"Hyperlink SCXW1462417 BCX8\" href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\" rel=\"noreferrer noopener\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active ...",
     "cves": [],
     "mitre_tags": [],
@@ -309,7 +515,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
     "published_at": "2026-11-13T11:10:40.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir thi...",
     "cves": [],
     "mitre_tags": [],
@@ -322,7 +528,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
     "published_at": "2026-11-13T10:55:03.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, accordin...",
     "cves": [],
     "mitre_tags": [
@@ -337,7 +543,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
     "published_at": "2026-11-13T10:44:22.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
     "cves": [],
     "mitre_tags": [
@@ -353,7 +559,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
     "published_at": "2026-11-13T09:36:18.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -366,7 +572,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
     "published_at": "2026-11-13T08:34:20.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -379,7 +585,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
     "published_at": "2026-11-13T08:05:49.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October ...",
     "cves": [],
     "mitre_tags": [
@@ -396,7 +602,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
     "published_at": "2026-11-13T05:43:28.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we ...",
     "cves": [],
     "mitre_tags": [
@@ -549,7 +755,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
     "published_at": "2026-11-12T17:50:27.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privil...",
     "cves": [],
     "mitre_tags": [
@@ -564,7 +770,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "published_at": "2026-11-12T17:00:00.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [
@@ -579,7 +785,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
     "published_at": "2026-11-12T16:27:01.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the fla...",
     "cves": [],
     "mitre_tags": [
@@ -594,7 +800,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
     "published_at": "2026-11-12T16:04:00.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]",
     "cves": [],
     "mitre_tags": [
@@ -609,7 +815,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
     "published_at": "2026-11-12T15:38:49.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-12...",
     "cves": [],
     "mitre_tags": [
@@ -625,227 +831,11 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
     "published_at": "2026-11-12T15:07:20.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
     "cves": [],
     "mitre_tags": [],
     "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "1b4477b2575713101f633df29da5c630",
-    "title": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
-    "published_at": "2026-11-12T15:00:10.000Z",
-    "relative_time": "3d ago",
-    "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "17beba49cefbb726a1f4925303a584b5",
-    "title": "Apify rotates API tokens, prompts 2FA resets after breach",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
-    "published_at": "2026-11-12T14:36:47.000Z",
-    "relative_time": "3d ago",
-    "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "c7b6b818b386eaa6f5f16fdf7b3eb58b",
-    "title": "Crafty Microsoft Teams Booking Flow Disguises Device Code Phishing",
-    "source": "Huntress Blog",
-    "url": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
-    "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "Threat actors used a convincing Microsoft Teams meeting-booking lure to conceal device code phishing and trick victims into authorizing attacker access.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "APT",
-    "is_breaking": false
-  },
-  {
-    "id": "b7b82fa185a628ecfe95a411378a2f6f",
-    "title": "Apple’s HomeView Tries Face Authentication Without FaceID",
-    "source": "Wired Security",
-    "url": "https://www.wired.com/story/apples-homeview-tries-face-authentication-without-faceid/",
-    "published_at": "2026-11-12T14:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology that has yet to be challenged in the wild.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "3d39e23c92ea0dd6e29a316e058ae074",
-    "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-    "published_at": "2026-11-12T13:08:28.000Z",
-    "relative_time": "3d ago",
-    "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the ...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "d89bbe072045ae7ef98ea617f0b8400d",
-    "title": "Microsoft: Recent Windows updates cause SQL Server performance issues",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-sql-server-performance-issues/",
-    "published_at": "2026-11-12T12:11:11.000Z",
-    "relative_time": "3d ago",
-    "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "ef2da881786316c7ae89fb3b3cb6137d",
-    "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
-    "published_at": "2026-11-12T12:09:14.000Z",
-    "relative_time": "3d ago",
-    "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the sam...",
-    "cves": [],
-    "mitre_tags": [
-      "T1078.004"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "5e08f11eb7ef65e6813898e86d9bd70f",
-    "title": "Siemens Desigo, Gridscale",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-    "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-02.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "6ef8a5a8cc4d8edc8152384710fc3f95",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
-    "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-05.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Palo Alto Networks has published </strong><a href=\"https://security.paloaltonetworks.com/cve-2026-109618\"><strong>information</strong></a><strong> on v...",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "mitre_tags": [],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "771f70e03d73faddf7bca007e74fd249",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
-    "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-04.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Palo Alto Networks has published </strong><a href=\"https://security.paloaltonetworks.com/CVE-2026-111497\"><strong>information </strong></a><strong>on a...",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "mitre_tags": [],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "66c3680666133df7280eae45c9935968",
-    "title": "Siemens Building Automation and Energy Products",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
-    "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-01.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "df39a43d6ec6d5dc67f27905bf539399",
-    "title": "Siemens Industrial Edge Management",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
-    "published_at": "2026-11-12T12:00:00.000Z",
-    "relative_time": "3d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-03.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup:...",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "mitre_tags": [],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "ab3b0afdc50e9bbc59d1f13823ab5eaa",
-    "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33514",
-    "published_at": "2026-11-12T11:56:24.000Z",
-    "relative_time": "3d ago",
-    "summary": "CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages clusters of GPUs, which are typically used to run AI workloads. All versions of GPUStack prior to 2.2.0, which was released at the end of June. This vulnerability was not m...",
-    "cves": [
-      "CVE-2026-102895"
-    ],
-    "mitre_tags": [
-      "T1190",
-      "T1548"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "3669995331f52a88c005bbdd16869089",
-    "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
-    "published_at": "2026-11-12T11:51:43.000Z",
-    "relative_time": "3d ago",
-    "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "06af2d743ce962234305171f3cfbf27e",
-    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
-    "published_at": "2026-11-12T11:51:31.000Z",
-    "relative_time": "3d ago",
-    "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken dow...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
     "is_breaking": false
   }
 ];
