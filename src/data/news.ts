@@ -2,12 +2,25 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "ac6db506b4c9468b808d1efcb4de1724",
+    "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33520",
+    "published_at": "2026-11-16T02:00:05.000Z",
+    "relative_time": "2h ago",
+    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "7106c67c54477721916d1dec8644ce06",
     "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33496",
     "published_at": "2026-11-15T18:17:27.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "10h ago",
     "summary": "YARA-X&&#x23;x26;&#x23;39&&#x23;x26;&#x23;x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes. &#xd;",
     "cves": [],
     "mitre_tags": [],
@@ -20,7 +33,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
     "published_at": "2026-11-15T15:23:48.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "13h ago",
     "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
     "cves": [],
     "mitre_tags": [
@@ -35,7 +48,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
     "published_at": "2026-11-15T11:27:31.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "17h ago",
     "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and r...",
     "cves": [],
     "mitre_tags": [],
@@ -76,7 +89,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/fake-crypto-exchange-sessions-screenconnect",
     "published_at": "2026-11-14T01:50:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Fake crypto exchange sessions are showing up on ScreenConnect servers and could be bait for technicians. See what Huntress found and what to do.",
     "cves": [],
     "mitre_tags": [],
@@ -89,7 +102,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
     "published_at": "2026-11-13T21:31:44.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [],
@@ -398,7 +411,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33518",
     "published_at": "2026-11-13T03:41:41.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "Introduction &#xd;",
     "cves": [],
     "mitre_tags": [],
@@ -411,7 +424,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33516",
     "published_at": "2026-11-13T02:00:03.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -424,7 +437,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
     "published_at": "2026-11-12T22:53:10.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
     "cves": [],
     "mitre_tags": [
@@ -439,7 +452,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
     "published_at": "2026-11-12T22:25:30.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
     "cves": [],
     "mitre_tags": [
@@ -834,22 +847,5 @@ export const NEWS_FEED: NewsItem[] = [
     "mitre_tags": [],
     "category": "Threat Intel",
     "is_breaking": false
-  },
-  {
-    "id": "1ff2997abbcb83756c3877b4699bf779",
-    "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
-    "published_at": "2026-11-12T11:33:15.000Z",
-    "relative_time": "3d ago",
-    "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of imprope...",
-    "cves": [
-      "CVE-2026-126325"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
   }
 ];
