@@ -2,12 +2,59 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "deec20c9952c514f6a788f5a1317c540",
+    "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+    "published_at": "2026-11-18T04:27:41.000Z",
+    "relative_time": "1h ago",
+    "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Int...",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "c0b8e4421746b778f57bdffd950d9a48",
+    "title": "ISC Stormcast For Wednesday, November 18th, 2026 https://isc.sans.edu/podcastdetail/10184, (Wed, Nov 18th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33528",
+    "published_at": "2026-11-18T02:00:03.000Z",
+    "relative_time": "3h ago",
+    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "2f016224906bbe048d346e76718560dc",
+    "title": "CVE-2026-114938: Critical vulnerability in OpenJDK JAVA",
+    "source": "Cisco Talos Intelligence",
+    "url": "https://blog.talosintelligence.com/java4shell/",
+    "published_at": "2026-11-18T01:53:03.000Z",
+    "relative_time": "3h ago",
+    "summary": "Cisco Talos is tracking the disclosure of a critical vulnerability in OpenJDK Java (CVE-2026-114938), dubbed “Java4Shell,” with a CVSS 4.0 score of 9.2 that may lead to unauthenticated remote code execution (RCE).",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": true
+  },
+  {
     "id": "8cb38fbbbb099f0dc452b2b55b78320b",
     "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
     "published_at": "2026-11-17T23:04:21.000Z",
-    "relative_time": "15m ago",
+    "relative_time": "6h ago",
     "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
     "cves": [],
     "mitre_tags": [
@@ -22,7 +69,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/",
     "published_at": "2026-11-17T22:32:16.000Z",
-    "relative_time": "47m ago",
+    "relative_time": "7h ago",
     "summary": "Malware cocktail delivers cryptocurrency theft payloads and iOS exploits, among other things.",
     "cves": [],
     "mitre_tags": [],
@@ -35,7 +82,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/",
     "published_at": "2026-11-17T22:19:19.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "7h ago",
     "summary": "On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).",
     "cves": [
       "CVE-2026-114938"
@@ -52,7 +99,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
     "published_at": "2026-11-17T21:27:17.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "8h ago",
     "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
     "cves": [],
     "mitre_tags": [
@@ -67,7 +114,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
     "published_at": "2026-11-17T20:51:21.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "9h ago",
     "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -80,7 +127,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Wired Security",
     "url": "https://www.wired.com/story/how-to-tell-if-its-a-cyberattack-or-just-an-outage/",
     "published_at": "2026-11-17T19:40:57.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "10h ago",
     "summary": "Email, flights, banks; network failures are piling up. Here’s how WIRED investigates if they’re the result of hacker mayhem. (Hint: usually not.)",
     "cves": [],
     "mitre_tags": [],
@@ -93,7 +140,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
     "published_at": "2026-11-17T19:34:20.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "10h ago",
     "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demo...",
     "cves": [],
     "mitre_tags": [
@@ -109,7 +156,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
     "published_at": "2026-11-17T19:24:07.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "10h ago",
     "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]",
     "cves": [],
     "mitre_tags": [
@@ -124,7 +171,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
     "published_at": "2026-11-17T18:14:00.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "11h ago",
     "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate. The post Security for the agentic era, powered by Microsoft Perception appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [],
@@ -137,7 +184,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
     "published_at": "2026-11-17T18:04:15.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "11h ago",
     "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators. [...]",
     "cves": [],
     "mitre_tags": [
@@ -152,7 +199,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
     "published_at": "2026-11-17T16:00:00.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "13h ago",
     "summary": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -165,7 +212,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
     "published_at": "2026-11-17T15:17:36.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "14h ago",
     "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum...",
     "cves": [
       "CVE-2026-114938"
@@ -182,7 +229,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
     "published_at": "2026-11-17T15:01:11.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "14h ago",
     "summary": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -195,7 +242,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/",
     "published_at": "2026-11-17T14:00:29.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "15h ago",
     "summary": "AI agent takes unapproved actions even when laptop lid is closed and told not to.",
     "cves": [],
     "mitre_tags": [],
@@ -208,7 +255,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
     "published_at": "2026-11-17T12:25:06.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that look...",
     "cves": [],
     "mitre_tags": [],
@@ -221,7 +268,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
     "published_at": "2026-11-17T12:14:36.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks. Nik Tsy...",
     "cves": [],
     "mitre_tags": [
@@ -237,7 +284,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-06.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file t...",
     "cves": [],
     "mitre_tags": [
@@ -252,7 +299,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-01.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without auth...",
     "cves": [],
     "mitre_tags": [],
@@ -265,7 +312,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-05.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server rem...",
     "cves": [],
     "mitre_tags": [],
@@ -278,7 +325,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-02.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or writ...",
     "cves": [],
     "mitre_tags": [],
@@ -291,7 +338,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<h2><strong>Purpose</strong></h2> <p>CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability <a href=\"https://www.cve.org/CVERecord?id=CVE-2026-114938\" target=\"_blank\">CVE-2026-114938</a>. This critical memory-corruption vulnerability, known as “Java4Shell,” affects th...",
     "cves": [
       "CVE-2026-114938"
@@ -308,7 +355,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-04.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
     "cves": [],
     "mitre_tags": [
@@ -323,7 +370,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-10.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could a...",
     "cves": [],
     "mitre_tags": [
@@ -338,7 +385,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-08.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate ...",
     "cves": [],
     "mitre_tags": [
@@ -354,7 +401,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-03.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
     "cves": [],
     "mitre_tags": [
@@ -369,7 +416,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens reco...",
     "cves": [],
     "mitre_tags": [
@@ -384,7 +431,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-09.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an att...",
     "cves": [],
     "mitre_tags": [
@@ -399,7 +446,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p>CISA has added one new vulnerability to its <a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\">Known Exploited Vulnerabilities (KEV) Catalog</a>, based on evidence of active exploitation.</p> <ul type=\"disc\"> <li><a href=\"https://www.cve.org/CVERecord?id=CVE-2026-115731\" target=\"_blank\">CVE-20...",
     "cves": [
       "CVE-2026-115731"
@@ -416,7 +463,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could...",
     "cves": [],
     "mitre_tags": [
@@ -431,7 +478,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
     "published_at": "2026-11-17T11:20:18.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "18h ago",
     "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. Th...",
     "cves": [],
     "mitre_tags": [
@@ -446,7 +493,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
     "published_at": "2026-11-17T11:19:51.000Z",
-    "relative_time": "12h ago",
+    "relative_time": "18h ago",
     "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -459,7 +506,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33526",
     "published_at": "2026-11-17T10:56:38.000Z",
-    "relative_time": "12h ago",
+    "relative_time": "18h ago",
     "summary": "I&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xe2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x80&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x99&#x3b;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &&#x23&#x3b;x26&#x3b;&#x23&#x3b;xe2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x80&#x3b;&&#x23&#x3b;x...",
     "cves": [],
     "mitre_tags": [],
@@ -472,7 +519,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
     "published_at": "2026-11-17T09:44:22.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "20h ago",
     "summary": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -485,7 +532,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
     "published_at": "2026-11-17T08:35:42.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "21h ago",
     "summary": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -498,7 +545,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
     "published_at": "2026-11-17T07:25:44.000Z",
-    "relative_time": "15h ago",
+    "relative_time": "22h ago",
     "summary": "A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks. [...]",
     "cves": [],
     "mitre_tags": [
@@ -513,7 +560,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
     "published_at": "2026-11-17T07:12:13.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "22h ago",
     "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Re...",
     "cves": [],
     "mitre_tags": [
@@ -529,7 +576,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
     "published_at": "2026-11-17T06:29:27.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "23h ago",
     "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be r...",
     "cves": [],
     "mitre_tags": [],
@@ -542,7 +589,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
     "published_at": "2026-11-17T05:00:34.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) ...",
     "cves": [],
     "mitre_tags": [
@@ -557,7 +604,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
     "published_at": "2026-11-17T02:12:17.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices....",
     "cves": [],
     "mitre_tags": [
@@ -572,7 +619,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
     "published_at": "2026-11-17T02:12:17.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices....",
     "cves": [],
     "mitre_tags": [
@@ -587,7 +634,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33524",
     "published_at": "2026-11-17T02:05:15.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -600,7 +647,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Microsoft Threat Intelligence",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
     "published_at": "2026-11-17T00:08:41.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on Microsoft Security Blog .",
     "cves": [],
     "mitre_tags": [],
@@ -813,45 +860,6 @@ export const NEWS_FEED: NewsItem[] = [
     "cves": [],
     "mitre_tags": [],
     "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "fdb8ff73358b89c4ea6dccd693e03551",
-    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-    "published_at": "2026-11-16T06:53:34.000Z",
-    "relative_time": "1d ago",
-    "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "f70aec758943d4c5a98aa4a1d4e9c58e",
-    "title": "Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models",
-    "source": "CrowdStrike Blog",
-    "url": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
-    "published_at": "2026-11-16T06:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "ac6db506b4c9468b808d1efcb4de1724",
-    "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33520",
-    "published_at": "2026-11-16T02:00:05.000Z",
-    "relative_time": "1d ago",
-    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
     "is_breaking": false
   }
 ];
