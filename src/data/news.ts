@@ -2,12 +2,153 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "51d1fbddbc097023cf134677d3f97fd3",
+    "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+    "published_at": "2026-11-19T11:46:00.000Z",
+    "relative_time": "43m ago",
+    "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "04c51645127581f8f157bd881cf68a84",
+    "title": "How to tell a cyberattack from a plain old outage",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+    "published_at": "2026-11-19T11:13:01.000Z",
+    "relative_time": "1h ago",
+    "summary": "When everything goes down, don’t assume it’s a cyberattack.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "05e9363c65cd5013f17d6b4359e10472",
+    "title": "Microsoft confirms app installation, launch issues after hotpatch",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
+    "published_at": "2026-11-19T10:35:05.000Z",
+    "relative_time": "1h ago",
+    "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "5f3922dcf6b9214cea5aa77c733309f3",
+    "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+    "published_at": "2026-11-19T09:31:26.000Z",
+    "relative_time": "2h ago",
+    "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of...",
+    "cves": [],
+    "mitre_tags": [
+      "T1562.001",
+      "T1078.004"
+    ],
+    "category": "APT",
+    "is_breaking": false
+  },
+  {
+    "id": "4c94531686ddb718676129a0615af064",
+    "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "published_at": "2026-11-19T09:23:21.000Z",
+    "relative_time": "3h ago",
+    "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]",
+    "cves": [],
+    "mitre_tags": [
+      "T1486"
+    ],
+    "category": "Ransomware",
+    "is_breaking": false
+  },
+  {
+    "id": "1226c4f144b6e5cfe93a415dd0100a20",
+    "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "published_at": "2026-11-19T08:42:11.000Z",
+    "relative_time": "3h ago",
+    "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be used to trigger remo...",
+    "cves": [],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "1fbf5b9ef3a8773ee9171f436fe4e45f",
+    "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+    "published_at": "2026-11-19T08:14:00.000Z",
+    "relative_time": "4h ago",
+    "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits, published yesterday, are the researcher's proofs of concept against...",
+    "cves": [],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "13f87e68195d2299a23b67ecc193d912",
+    "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "published_at": "2026-11-19T08:00:00.000Z",
+    "relative_time": "4h ago",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidenc...",
+    "cves": [],
+    "mitre_tags": [
+      "T1486"
+    ],
+    "category": "Ransomware",
+    "is_breaking": false
+  },
+  {
+    "id": "3117898b6ee8e227e75c015727217bb0",
+    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+    "published_at": "2026-11-19T04:33:46.000Z",
+    "relative_time": "7h ago",
+    "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address securi...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Advisory",
+    "is_breaking": true
+  },
+  {
+    "id": "ecd5e429ce198f77331514ddd927361e",
+    "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33536",
+    "published_at": "2026-11-19T02:00:03.000Z",
+    "relative_time": "10h ago",
+    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "7e9f725d8a7b9b67489d0657c97cdf87",
     "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
     "published_at": "2026-11-18T23:08:33.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "13h ago",
     "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
     "cves": [],
     "mitre_tags": [
@@ -22,7 +163,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
     "published_at": "2026-11-18T20:49:32.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "15h ago",
     "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -35,7 +176,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33532",
     "published_at": "2026-11-18T19:54:50.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "16h ago",
     "summary": "About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our readers to its significant impact. Following php2shell, we had a number of vulnerabilities and events that may also have scored high enough to trigger an Infocon \"Yellow\" &#...",
     "cves": [],
     "mitre_tags": [
@@ -50,7 +191,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
     "published_at": "2026-11-18T19:39:33.000Z",
-    "relative_time": "6h ago",
+    "relative_time": "16h ago",
     "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -63,7 +204,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
     "published_at": "2026-11-18T18:31:17.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "17h ago",
     "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 c...",
     "cves": [
       "CVE-2026-123007"
@@ -80,7 +221,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
     "published_at": "2026-11-18T18:15:39.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "18h ago",
     "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kin...",
     "cves": [],
     "mitre_tags": [
@@ -95,7 +236,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
     "published_at": "2026-11-18T17:10:45.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpo...",
     "cves": [
       "CVE-2026-129448"
@@ -112,7 +253,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
     "published_at": "2026-11-18T16:58:42.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
     "cves": [],
     "mitre_tags": [
@@ -127,7 +268,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
     "published_at": "2026-11-18T15:00:10.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -140,7 +281,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
     "published_at": "2026-11-18T14:11:28.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "22h ago",
     "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The ...",
     "cves": [],
     "mitre_tags": [],
@@ -153,7 +294,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
     "published_at": "2026-11-18T12:28:30.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-dig...",
     "cves": [],
     "mitre_tags": [],
@@ -166,7 +307,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
     "published_at": "2026-11-18T12:00:00.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "<div class=\"OutlineElement Ltr SCXW266414493 BCX8\"> <p>CISA has added four new vulnerabilities to its <a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active exploitation. </p> <ul> <li><a href=\"https://www.cve.org/C...",
     "cves": [],
     "mitre_tags": [],
@@ -179,7 +320,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
     "published_at": "2026-11-18T11:55:49.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Int...",
     "cves": [
       "CVE-2026-114938"
@@ -196,7 +337,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
     "published_at": "2026-11-18T11:50:25.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]",
     "cves": [],
     "mitre_tags": [
@@ -211,7 +352,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
     "published_at": "2026-11-18T11:00:00.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "1d ago",
     "summary": "The evolution of malware command-and-control (C2) infrastructure has shifted away from fragile, centralized servers and hardcoded domains toward resilient, decentralized blockchain networks that eliminate single points of failure.",
     "cves": [],
     "mitre_tags": [
@@ -226,7 +367,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
     "published_at": "2026-11-18T11:00:00.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "1d ago",
     "summary": "Cisco Talos discovered malicious infrastructure associated with a financially motivated threat group we are tracking as UAT-12643.",
     "cves": [],
     "mitre_tags": [],
@@ -239,7 +380,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
     "published_at": "2026-11-18T10:35:05.000Z",
-    "relative_time": "15h ago",
+    "relative_time": "1d ago",
     "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
     "cves": [],
     "mitre_tags": [
@@ -254,7 +395,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
     "published_at": "2026-11-18T09:24:31.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "summary": "Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -267,7 +408,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
     "published_at": "2026-11-18T08:24:31.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vuln...",
     "cves": [],
     "mitre_tags": [
@@ -282,7 +423,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
     "published_at": "2026-11-18T08:24:23.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or rem...",
     "cves": [
       "CVE-2026-114938"
@@ -300,11 +441,24 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
     "published_at": "2026-11-18T08:24:18.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]",
     "cves": [],
     "mitre_tags": [],
     "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "f23863370ca3c539b7e08259bb3991fd",
+    "title": "What Business Email Compromise (BEC) Looks Like & How to Catch It",
+    "source": "Huntress Blog",
+    "url": "https://www.huntress.com/blog/what-bec-looks-like",
+    "published_at": "2026-11-18T08:00:00.000Z",
+    "relative_time": "1d ago",
+    "summary": "BEC hides in the vendor and billing threads you already trust. See how a Huntress team caught one, and the inbox rules and signs to watch for.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
     "is_breaking": false
   },
   {
@@ -313,7 +467,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
     "published_at": "2026-11-18T06:45:26.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026,...",
     "cves": [],
     "mitre_tags": [
@@ -329,7 +483,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
     "published_at": "2026-11-18T06:00:00.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "",
     "cves": [],
     "mitre_tags": [],
@@ -342,7 +496,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
     "published_at": "2026-11-18T05:58:04.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 20...",
     "cves": [],
     "mitre_tags": [
@@ -357,7 +511,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33528",
     "published_at": "2026-11-18T02:00:03.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -370,7 +524,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/java4shell/",
     "published_at": "2026-11-18T01:53:03.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "Cisco Talos is tracking the disclosure of a critical vulnerability in OpenJDK Java (CVE-2026-114938), dubbed “Java4Shell,” with a CVSS 4.0 score of 9.2 that may lead to unauthenticated remote code execution (RCE).",
     "cves": [
       "CVE-2026-114938"
@@ -603,7 +757,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
     "published_at": "2026-11-17T12:25:06.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that look...",
     "cves": [],
     "mitre_tags": [],
@@ -616,7 +770,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
     "published_at": "2026-11-17T12:14:36.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks. Nik Tsy...",
     "cves": [],
     "mitre_tags": [
@@ -632,7 +786,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-06.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file t...",
     "cves": [],
     "mitre_tags": [
@@ -647,7 +801,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-01.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without auth...",
     "cves": [],
     "mitre_tags": [],
@@ -660,7 +814,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-05.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server rem...",
     "cves": [],
     "mitre_tags": [],
@@ -673,7 +827,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-02.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or writ...",
     "cves": [],
     "mitre_tags": [],
@@ -686,7 +840,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<h2><strong>Purpose</strong></h2> <p>CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability <a href=\"https://www.cve.org/CVERecord?id=CVE-2026-114938\" target=\"_blank\">CVE-2026-114938</a>. This critical memory-corruption vulnerability, known as “Java4Shell,” affects th...",
     "cves": [
       "CVE-2026-114938"
@@ -703,7 +857,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-04.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
     "cves": [],
     "mitre_tags": [
@@ -711,167 +865,5 @@ export const NEWS_FEED: NewsItem[] = [
     ],
     "category": "Advisory",
     "is_breaking": true
-  },
-  {
-    "id": "672a22d8805785879911aab9cd74239b",
-    "title": "Siemens Simcenter Femap",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-10.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could a...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "17f22a40fed8c6878fe361366d4322a6",
-    "title": "Siemens SIMATIC",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-08.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate ...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190",
-      "T1548"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "db036009ad8093f062de5c674a468bec",
-    "title": "Siemens Industrial Automation Software Products",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-03.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, comm...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "1b4a08019e00d423e0fd463dfa164527",
-    "title": "Siemens RUGGEDCOM APE1808",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens reco...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "b894fd519352818f58a1f4231d4b6ee5",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p>CISA has added one new vulnerability to its <a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\">Known Exploited Vulnerabilities (KEV) Catalog</a>, based on evidence of active exploitation.</p> <ul type=\"disc\"> <li><a href=\"https://www.cve.org/CVERecord?id=CVE-2026-115731\" target=\"_blank\">CVE-20...",
-    "cves": [
-      "CVE-2026-115731"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "900047d979d1488d967fa461b2b0f789",
-    "title": "Siemens SIMATIC WinCC",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-09.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an att...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "721d649941b4ad36ecb962a81b957a0c",
-    "title": "Siemens meta-iot2050",
-    "source": "CISA Cybersecurity Advisories",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
-    "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "1d ago",
-    "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could...",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Advisory",
-    "is_breaking": true
-  },
-  {
-    "id": "36ff9887a88dfae504a031177b4338f8",
-    "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
-    "published_at": "2026-11-17T11:20:18.000Z",
-    "relative_time": "1d ago",
-    "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. Th...",
-    "cves": [],
-    "mitre_tags": [
-      "T1071"
-    ],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "f94992ccf52663a812283f308352ebaf",
-    "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
-    "published_at": "2026-11-17T11:19:51.000Z",
-    "relative_time": "1d ago",
-    "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "1f39573ab110bef56f2fd85f7e1b08a6",
-    "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33526",
-    "published_at": "2026-11-17T10:56:38.000Z",
-    "relative_time": "1d ago",
-    "summary": "I&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xe2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x80&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x99&#x3b;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &&#x23&#x3b;x26&#x3b;&#x23&#x3b;xe2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x80&#x3b;&&#x23&#x3b;x...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "5182fa3cf61d54d9700b21dfe3ea3272",
-    "title": "Court clears brothers of $25 million Ethereum crypto heist charges",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
-    "published_at": "2026-11-17T09:44:22.000Z",
-    "relative_time": "1d ago",
-    "summary": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
   }
 ];
