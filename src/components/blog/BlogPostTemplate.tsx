@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { BlogPost } from '../../types/blog';
-import { Header } from '../shell/Header';
 import { Footer } from '../shell/Footer';
 import { Badge } from '../ui/Badge';
 import { BlogMarkdown } from './BlogMarkdown';
@@ -45,7 +45,6 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   if (!post) {
     return (
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <Header />
         <main style={{ flex: 1, padding: '48px 0 60px 0' }}>
           <div className="container">
             <div
@@ -78,8 +77,8 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
               <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
                 The requested post could not be found.
               </p>
-              <a
-                href="/blog"
+              <Link
+                href="/blog/"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -95,7 +94,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                 }}
               >
                 &larr; Return to Muninn Blog
-              </a>
+              </Link>
             </div>
           </div>
         </main>
@@ -106,8 +105,6 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header />
-
       <main style={{ flex: 1, padding: '32px 0 64px 0' }}>
         <div className="container">
           <article style={{ maxWidth: '960px', margin: '0 auto' }}>
@@ -132,23 +129,23 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                   flexWrap: 'wrap'
                 }}
               >
-                <a
+                <Link
                   href="/"
                   style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
                   onMouseOver={(e) => (e.currentTarget.style.color = 'var(--text-bright)')}
                   onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
                 >
                   Home
-                </a>
+                </Link>
                 <span>/</span>
-                <a
-                  href="/blog"
+                <Link
+                  href="/blog/"
                   style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
                   onMouseOver={(e) => (e.currentTarget.style.color = 'var(--text-bright)')}
                   onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
                 >
                   Muninn Blog
-                </a>
+                </Link>
                 <span>/</span>
                 <span
                   style={{
@@ -164,8 +161,8 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                 </span>
               </nav>
 
-              <a
-                href="/blog"
+              <Link
+                href="/blog/"
                 className="font-mono"
                 style={{
                   fontSize: '0.72rem',
@@ -179,7 +176,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
               >
                 <span>&larr;</span>
                 <span>ALL POSTS</span>
-              </a>
+              </Link>
             </div>
 
             {/* Template / Draft Status Banner */}
@@ -407,8 +404,8 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                     {copiedLink ? 'LINK COPIED!' : 'COPY LINK'}
                   </button>
 
-                  <a
-                    href="/blog"
+                  <Link
+                    href="/blog/"
                     style={{
                       padding: '6px 14px',
                       borderRadius: '6px',
@@ -421,7 +418,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                     }}
                   >
                     &larr; Back to Muninn Blog
-                  </a>
+                  </Link>
                 </div>
               </footer>
             </div>

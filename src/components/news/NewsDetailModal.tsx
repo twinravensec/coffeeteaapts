@@ -14,6 +14,15 @@ interface NewsDetailModalProps {
 export const NewsDetailModal: React.FC<NewsDetailModalProps> = ({ item, onClose, onMarkAsRead }) => {
   if (!item) return null;
 
+  const safeUrl = (() => {
+    try {
+      const parsed = new URL(item.url);
+      return parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.toString() : null;
+    } catch {
+      return null;
+    }
+  })();
+
   return (
     <Modal
       isOpen={!!item}
@@ -99,32 +108,34 @@ export const NewsDetailModal: React.FC<NewsDetailModalProps> = ({ item, onClose,
           >
             Dismiss
           </button>
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => {
-              if (onMarkAsRead) {
-                onMarkAsRead(item.id);
-              }
-              onClose();
-            }}
-            style={{
-              padding: '10px 18px',
-              borderRadius: '6px',
-              backgroundColor: 'var(--primary)',
-              color: '#080b12',
-              fontSize: '13px',
-              fontWeight: 700,
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              cursor: 'pointer',
-              textDecoration: 'none'
-            }}
-          >
-            View Official Advisory &rarr;
-          </a>
+          {safeUrl && (
+            <a
+              href={safeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                if (onMarkAsRead) {
+                  onMarkAsRead(item.id);
+                }
+                onClose();
+              }}
+              style={{
+                padding: '10px 18px',
+                borderRadius: '6px',
+                backgroundColor: 'var(--primary)',
+                color: '#080b12',
+                fontSize: '13px',
+                fontWeight: 700,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                cursor: 'pointer',
+                textDecoration: 'none'
+              }}
+            >
+              View Official Advisory &rarr;
+            </a>
+          )}
         </div>
       </div>
     </Modal>

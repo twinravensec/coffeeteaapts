@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { MuninnStats } from '../../types/stats';
 
 interface HeroProps {
@@ -22,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
   return (
     <section
       style={{
-        padding: '28px 0 20px 0',
+        padding: '28px 0 24px 0',
         borderBottom: '1px solid var(--border)',
         background: 'var(--surface-deep)'
       }}
@@ -51,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 marginBottom: '6px'
               }}
             >
-              TWIN RAVEN DAC • PUBLIC GATEWAY
+              TWIN RAVEN DAC &bull; PUBLIC GATEWAY
             </div>
             <h1
               style={{
@@ -87,10 +88,10 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
             </p>
           </div>
 
-          {/* Quick Action Jump Buttons */}
+          {/* Quick Action Navigation Buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-            <a
-              href="#news"
+            <Link
+              href="/news/"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -105,11 +106,30 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 textDecoration: 'none'
               }}
             >
-              <span>Feed</span>
-              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&darr;</span>
-            </a>
-            <a
-              href="#detections"
+              <span>News</span>
+              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&rarr;</span>
+            </Link>
+            <Link
+              href="/vulnerabilities/"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '7px 14px',
+                borderRadius: '6px',
+                background: 'var(--surface)',
+                border: '1px solid var(--border)',
+                color: 'var(--text-bright)',
+                fontSize: '0.78rem',
+                fontWeight: 600,
+                textDecoration: 'none'
+              }}
+            >
+              <span>Vulnerabilities</span>
+              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&rarr;</span>
+            </Link>
+            <Link
+              href="/detections/"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -118,17 +138,17 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 borderRadius: '6px',
                 background: 'var(--primary)',
                 border: 'none',
-                color: '#ffffff',
+                color: '#060a0f',
                 fontSize: '0.78rem',
                 fontWeight: 700,
                 textDecoration: 'none'
               }}
             >
               <span>Detection Library</span>
-              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&darr;</span>
-            </a>
-            <a
-              href="#blog"
+              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&rarr;</span>
+            </Link>
+            <Link
+              href="/blog/"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -137,15 +157,15 @@ export const Hero: React.FC<HeroProps> = ({ stats }) => {
                 borderRadius: '6px',
                 background: 'var(--surface-raised)',
                 border: '1px solid var(--border)',
-                color: 'var(--text-muted)',
+                color: 'var(--text-bright)',
                 fontSize: '0.78rem',
                 fontWeight: 600,
                 textDecoration: 'none'
               }}
             >
               <span>Muninn Blog</span>
-              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&darr;</span>
-            </a>
+              <span style={{ fontSize: '0.9rem', lineHeight: 1 }}>&rarr;</span>
+            </Link>
           </div>
         </div>
 

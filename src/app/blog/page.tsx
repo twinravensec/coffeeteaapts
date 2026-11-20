@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Header } from '../../components/shell/Header';
+import Link from 'next/link';
 import { Footer } from '../../components/shell/Footer';
 import { BlogPost } from '../../types/blog';
 import { getBlogPosts } from '../../services/api';
@@ -40,8 +40,6 @@ export default function BlogCatalogPage() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header />
-
       <main style={{ flex: 1, padding: '32px 0 60px 0' }}>
         <div className="container">
           {/* Breadcrumbs */}
@@ -55,14 +53,14 @@ export default function BlogCatalogPage() {
               marginBottom: '16px'
             }}
           >
-            <a
+            <Link
               href="/"
               style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
               onMouseOver={(e) => (e.currentTarget.style.color = 'var(--text-bright)')}
               onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
             >
               Home
-            </a>
+            </Link>
             <span>/</span>
             <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
               Muninn Blog
@@ -184,19 +182,19 @@ export default function BlogCatalogPage() {
               LOADING MUNINN BLOG...
             </div>
           ) : posts.length === 0 ? (
-            hasActiveSearch ? (
-              <div
-                className="card"
-                style={{
-                  padding: '36px 20px',
-                  textAlign: 'center',
-                  color: 'var(--text-muted)',
-                  fontSize: '0.85rem'
-                }}
-              >
-                No posts matched your search query.
-              </div>
-            ) : null
+            <div
+              className="card"
+              style={{
+                padding: '36px 20px',
+                textAlign: 'center',
+                color: 'var(--text-muted)',
+                fontSize: '0.85rem'
+              }}
+            >
+              {hasActiveSearch
+                ? 'No posts matched your search query.'
+                : 'No published blog posts yet.'}
+            </div>
           ) : (
             <>
               {latestPost && <FeaturedArticleCard post={latestPost} />}

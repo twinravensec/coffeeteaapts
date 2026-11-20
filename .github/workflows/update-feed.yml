@@ -31,12 +31,15 @@ jobs:
       - name: Ingest Threat Feeds
         run: node scripts/update-feed.mjs
 
+      - name: Ingest Authoritative Vulnerabilities
+        run: node scripts/update-vulns.mjs
+
       - name: Commit and Push Updates
         run: |
-          if [ -n "$(git status --porcelain src/data/news.ts src/data/stats.ts)" ]; then
+          if [ -n "$(git status --porcelain src/data/news.ts src/data/stats.ts src/data/vulnerabilities.ts)" ]; then
             git config --global user.name "Twin Raven Security"
             git config --global user.email "info@twinravensec.com"
-            git add src/data/news.ts src/data/stats.ts
+            git add src/data/news.ts src/data/stats.ts src/data/vulnerabilities.ts
             git commit -m "Muninn update"
             git push origin main
           else

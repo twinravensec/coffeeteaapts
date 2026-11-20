@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export const Footer: React.FC = () => {
   return (
@@ -88,19 +89,24 @@ export const Footer: React.FC = () => {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <li>
-                <a href="/detections" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <Link href="/news/" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link href="/vulnerabilities/" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                  Vulnerabilities
+                </Link>
+              </li>
+              <li>
+                <Link href="/detections/" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Detection Library
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/feed" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-                  Feed
-                </a>
-              </li>
-              <li>
-                <a href="/blog" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <Link href="/blog/" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                   Muninn Blog
-                </a>
+                </Link>
               </li>
               <li>
                 <button

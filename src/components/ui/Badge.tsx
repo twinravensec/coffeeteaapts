@@ -83,6 +83,12 @@ export const Badge: React.FC<BadgeProps> = ({
       if (s.includes('sentinel')) {
         return { bg: 'rgba(86, 180, 233, 0.14)', border: 'rgba(86, 180, 233, 0.40)', text: 'var(--primary)' };
       }
+      if (s.includes('nvd') || s.includes('nist')) {
+        return { bg: 'rgba(86, 180, 233, 0.14)', border: 'rgba(86, 180, 233, 0.42)', text: 'var(--primary)' };
+      }
+      if (s.includes('ghsa') || s.includes('github')) {
+        return { bg: 'rgba(0, 158, 115, 0.14)', border: 'rgba(0, 158, 115, 0.42)', text: 'var(--success)' };
+      }
     }
 
     switch (variant) {

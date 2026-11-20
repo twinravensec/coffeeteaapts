@@ -55,16 +55,25 @@ export const THEMES: ThemeOption[] = [
   }
 ]
 
+const VALID_THEME_IDS = new Set(THEMES.map((t) => t.id))
+
 export function applyTheme(themeId: string) {
   if (typeof window === 'undefined') return
-  localStorage.setItem('twinraven_theme', themeId)
-  document.documentElement.setAttribute('data-theme', themeId)
-  window.dispatchEvent(new CustomEvent('theme_change', { detail: themeId }))
+  const safeTheme = VALID_THEME_IDS.has(themeId) ? themeId : 'colorblind'
+  try {
+    localStorage.setItem('twinraven_theme', safeTheme)
+  } catch {}
+  document.documentElement.setAttribute('data-theme', safeTheme)
+  window.dispatchEvent(new CustomEvent('theme_change', { detail: safeTheme }))
 }
 
 export function getCurrentTheme(): string {
   if (typeof window === 'undefined') return 'colorblind'
-  const saved = localStorage.getItem('twinraven_theme')
-  if (!saved || saved === 'default') return 'colorblind'
-  return saved
+  try {
+    const saved = localStorage.getItem('twinraven_theme')
+    if (!saved || saved === 'default' || !VALID_THEME_IDS.has(saved)) return 'colorblind'
+    return saved
+  } catch {
+    return 'colorblind'
+  }
 }

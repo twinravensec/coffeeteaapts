@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { BlogPost } from '../../types/blog';
 import { formatPublicationDate } from './BlogPostTemplate';
 
@@ -20,7 +21,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
   };
 
   return (
-    <a
+    <Link
       href={href}
       onClick={handleClick}
       className="card"
@@ -115,6 +116,6 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, onRead }) => {
           READ &rarr;
         </span>
       </div>
-    </a>
+    </Link>
   );
 };

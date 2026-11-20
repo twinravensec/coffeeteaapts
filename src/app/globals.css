@@ -246,9 +246,151 @@ body > [style*="position: fixed"][style*="bottom"],
 /* ── Muninn Tactical Additions ── */
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+/* ── Persistent Collapsible Sidebar App Shell ── */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-sidebar {
+  width: 248px;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: var(--surface-deep);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 60;
+  transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-sidebar="collapsed"] .app-sidebar,
+.app-sidebar.is-collapsed {
+  width: 68px;
+}
+
+[data-sidebar="collapsed"] .sidebar-hide-collapsed,
+.app-sidebar.is-collapsed .sidebar-hide-collapsed {
+  display: none !important;
+}
+
+[data-sidebar="collapsed"] .sidebar-brand-row,
+.app-sidebar.is-collapsed .sidebar-brand-row {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+[data-sidebar="collapsed"] .sidebar-nav-link,
+.app-sidebar.is-collapsed .sidebar-nav-link {
+  justify-content: center;
+  padding: 10px 0 !important;
+}
+
+[data-sidebar="collapsed"] .sidebar-status-pill,
+.app-sidebar.is-collapsed .sidebar-status-pill {
+  justify-content: center;
+  padding: 8px 0 !important;
+}
+
+[data-sidebar="collapsed"] .sidebar-theme-btn,
+.app-sidebar.is-collapsed .sidebar-theme-btn {
+  justify-content: center !important;
+  padding: 8px 0 !important;
+}
+
+.app-mobile-bar {
+  display: none;
+}
+
+.app-main-column {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .app-sidebar,
+  [data-sidebar="collapsed"] .app-sidebar,
+  .app-sidebar.is-collapsed {
+    display: none;
+    width: 270px;
+  }
+
+  .app-sidebar.mobile-open,
+  [data-sidebar="collapsed"] .app-sidebar.mobile-open {
+    display: flex;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    bottom: 0;
+    height: calc(100vh - 52px);
+    width: 270px;
+    max-width: 85vw;
+    box-shadow: 12px 0 36px rgba(0, 0, 0, 0.65);
+    z-index: 100;
+  }
+
+  .app-sidebar.mobile-open .sidebar-hide-collapsed,
+  [data-sidebar="collapsed"] .app-sidebar.mobile-open .sidebar-hide-collapsed {
+    display: revert !important;
+  }
+
+  .app-sidebar.mobile-open .sidebar-collapse-toggle {
+    display: none !important;
+  }
+
+  .app-sidebar.mobile-open .sidebar-brand-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .app-sidebar.mobile-open .sidebar-nav-link {
+    justify-content: flex-start;
+    padding: 9px 12px !important;
+  }
+
+  .app-sidebar.mobile-open .sidebar-status-pill {
+    justify-content: flex-start;
+    padding: 7px 10px !important;
+  }
+
+  .app-sidebar.mobile-open .sidebar-theme-btn {
+    justify-content: space-between !important;
+    padding: 8px 10px !important;
+  }
+
+  .app-mobile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    padding: 0 16px;
+    background: var(--surface-deep);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
 }
 
 .card {

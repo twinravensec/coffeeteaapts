@@ -5,6 +5,8 @@
   "description": "Coffee, Tea & APTs \u2014 Brewing detections, spilling threat intel tea, and tracking APTs",
   "scripts": {
     "compile:blog": "node scripts/compile-blog.mjs",
+    "update:feeds": "node scripts/update-feed.mjs",
+    "update:vulns": "node scripts/update-vulns.mjs",
     "dev": "node scripts/compile-blog.mjs && next dev --webpack -p 3000",
     "build": "node scripts/compile-blog.mjs && next build --webpack",
     "start": "next start -p 3000",

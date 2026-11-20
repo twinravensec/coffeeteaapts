@@ -21,7 +21,7 @@ export default function Error({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'var(--bg)',
+        backgroundColor: 'var(--background)',
         color: 'var(--text-bright)',
         padding: '24px',
         textAlign: 'center'

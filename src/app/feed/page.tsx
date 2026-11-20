@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Header } from '../../components/shell/Header';
+import Link from 'next/link';
 import { Footer } from '../../components/shell/Footer';
 import { NewsItem } from '../../types/news';
-import { getNewsFeed } from '../../services/api';
+import { getNewsFeed, NewsDateFilter } from '../../services/api';
 import { NewsCard } from '../../components/news/NewsCard';
 import { NewsFilterBar } from '../../components/news/NewsFilterBar';
 import { NewsDetailModal } from '../../components/news/NewsDetailModal';
@@ -43,6 +43,7 @@ function getPageNumbers(current: number, total: number): (number | string)[] {
 export default function FeedCatalogPage() {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [activeSource, setActiveSource] = useState('All');
+  const [dateFilter, setDateFilter] = useState<NewsDateFilter>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
   const [loading, setLoading] = useState(true);
@@ -54,9 +55,13 @@ export default function FeedCatalogPage() {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const urlSource = params.get('source');
+      const urlDate = params.get('date');
       const urlQuery = params.get('q');
       const urlPage = params.get('page');
       if (urlSource && SOURCES.includes(urlSource)) setActiveSource(urlSource);
+      if (urlDate === 'today' || urlDate === 'yesterday' || urlDate === 'all') {
+        setDateFilter(urlDate);
+      }
       if (urlQuery) setSearchQuery(urlQuery);
       if (urlPage && !isNaN(Number(urlPage))) setCurrentPage(Math.max(1, parseInt(urlPage, 10)));
     }
@@ -99,7 +104,7 @@ export default function FeedCatalogPage() {
     let isMounted = true;
     setLoading(true);
     setCurrentPage(1);
-    getNewsFeed({ source: activeSource, searchQuery }).then((items) => {
+    getNewsFeed({ source: activeSource, searchQuery, dateFilter }).then((items) => {
       if (isMounted) {
         setNews(items);
         setLoading(false);
@@ -108,7 +113,7 @@ export default function FeedCatalogPage() {
     return () => {
       isMounted = false;
     };
-  }, [activeSource, searchQuery]);
+  }, [activeSource, searchQuery, dateFilter]);
 
   // Filter out articles the user has visited/read
   const visibleNews = news.filter((item) => !readIds.includes(item.id));
@@ -133,16 +138,40 @@ export default function FeedCatalogPage() {
 
   const handleResetFilters = () => {
     setActiveSource('All');
+    setDateFilter('all');
     setSearchQuery('');
     setCurrentPage(1);
   };
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header />
-
-      <main style={{ flex: 1, padding: '36px 0' }}>
+      <main style={{ flex: 1, padding: '32px 0' }}>
         <div className="container">
+          {/* Breadcrumbs */}
+          <nav
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              fontSize: '0.75rem',
+              color: 'var(--text-muted)',
+              marginBottom: '16px'
+            }}
+          >
+            <Link
+              href="/"
+              style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
+              onMouseOver={(e) => (e.currentTarget.style.color = 'var(--text-bright)')}
+              onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
+            >
+              Home
+            </Link>
+            <span>/</span>
+            <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
+              News
+            </span>
+          </nav>
+
           {/* Page Header */}
           <div
             style={{
@@ -157,12 +186,12 @@ export default function FeedCatalogPage() {
                 style={{
                   fontSize: '0.72rem',
                   fontWeight: 700,
-                  color: 'var(--text-muted)',
+                  color: 'var(--primary)',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase'
                 }}
               >
-                OSINT THREAT STREAM &bull; REAL-TIME FEED
+                OSINT THREAT STREAM &bull; REAL-TIME NEWS
               </span>
               <span className="pulse-indicator" />
             </div>
@@ -186,7 +215,7 @@ export default function FeedCatalogPage() {
                     margin: 0
                   }}
                 >
-                  Threat Intelligence Feeds
+                  Threat Intelligence News
                 </h1>
                 <p
                   style={{
@@ -214,7 +243,7 @@ export default function FeedCatalogPage() {
                     color: 'var(--text-bright)'
                   }}
                 >
-                  11 MONITORED FEEDS
+                  11 MONITORED SOURCES
                 </span>
                 <span
                   className="font-mono"
@@ -253,6 +282,8 @@ export default function FeedCatalogPage() {
             sources={SOURCES}
             activeSource={activeSource}
             onSelectSource={setActiveSource}
+            dateFilter={dateFilter}
+            onDateFilterChange={setDateFilter}
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
             totalCount={visibleNews.length}

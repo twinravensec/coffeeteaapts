@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { BlogPost } from '../../types/blog';
 import { formatPublicationDate } from './BlogPostTemplate';
 
@@ -20,7 +21,7 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
   };
 
   return (
-    <a
+    <Link
       href={href}
       onClick={handleClick}
       className="card"
@@ -135,6 +136,6 @@ export const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({ post, 
           <span style={{ fontSize: '0.85rem', lineHeight: 1 }}>&rarr;</span>
         </span>
       </div>
-    </a>
+    </Link>
   );
 };

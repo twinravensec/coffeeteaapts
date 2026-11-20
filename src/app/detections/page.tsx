@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Header } from '../../components/shell/Header';
+import Link from 'next/link';
 import { Footer } from '../../components/shell/Footer';
 import { PublicDetector } from '../../types/detector';
 import { getDetectors } from '../../services/api';
@@ -105,8 +105,6 @@ export default function DetectionsCatalogPage() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header />
-
       <main style={{ flex: 1, padding: '32px 0 60px 0' }}>
         <div className="container">
           {/* Breadcrumbs */}
@@ -120,7 +118,7 @@ export default function DetectionsCatalogPage() {
               marginBottom: '16px'
             }}
           >
-            <a
+            <Link
               href="/"
               style={{
                 color: 'var(--text-muted)',
@@ -130,7 +128,7 @@ export default function DetectionsCatalogPage() {
               onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
             >
               Home
-            </a>
+            </Link>
             <span>/</span>
             <span style={{ color: 'var(--text-bright)', fontWeight: 600 }}>
               Detection Catalog

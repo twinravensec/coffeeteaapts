@@ -10,7 +10,7 @@ export default function NotFound() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'var(--bg)',
+        backgroundColor: 'var(--background)',
         color: 'var(--text-bright)',
         padding: '24px',
         textAlign: 'center'
