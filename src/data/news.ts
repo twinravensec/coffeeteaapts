@@ -2,12 +2,56 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "4f259a98db3ff2adc498a93eb3b2405a",
+    "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+    "published_at": "2026-11-20T05:30:01.000Z",
+    "relative_time": "11m ago",
+    "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handle...",
+    "cves": [],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": true
+  },
+  {
+    "id": "588e92f2f2a334aa7ed260efd0fbd5b8",
+    "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33538",
+    "published_at": "2026-11-20T02:00:02.000Z",
+    "relative_time": "3h ago",
+    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "21f62923abce367fd8cf0e23441c6f20",
+    "title": "VMware patches vCenter zero-day exploited in attacks since September",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "published_at": "2026-11-20T00:26:25.000Z",
+    "relative_time": "5h ago",
+    "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+    "cves": [],
+    "mitre_tags": [
+      "T1190",
+      "T1548"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": true
+  },
+  {
     "id": "d34a04be557c8e39794255864a37ff1d",
     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
     "published_at": "2026-11-19T22:25:42.000Z",
-    "relative_time": "28m ago",
+    "relative_time": "7h ago",
     "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -20,7 +64,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
     "published_at": "2026-11-19T21:15:59.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "8h ago",
     "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
     "cves": [],
     "mitre_tags": [
@@ -35,7 +79,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
     "published_at": "2026-11-19T20:29:46.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "9h ago",
     "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
     "cves": [],
     "mitre_tags": [],
@@ -48,7 +92,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
     "published_at": "2026-11-19T19:00:00.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "10h ago",
     "summary": "Bill takes a break from the non-stop breaking news to promote prioritizing environmental awareness and team stability over reactive patching.",
     "cves": [],
     "mitre_tags": [],
@@ -61,7 +105,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
     "published_at": "2026-11-19T18:47:58.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "10h ago",
     "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over ...",
     "cves": [],
     "mitre_tags": [
@@ -77,7 +121,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
     "published_at": "2026-11-19T18:20:01.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "11h ago",
     "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -90,7 +134,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
     "published_at": "2026-11-19T16:59:56.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "12h ago",
     "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the ...",
     "cves": [],
     "mitre_tags": [
@@ -105,7 +149,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
     "published_at": "2026-11-19T16:28:23.000Z",
-    "relative_time": "6h ago",
+    "relative_time": "13h ago",
     "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]",
     "cves": [],
     "mitre_tags": [
@@ -120,7 +164,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
     "published_at": "2026-11-19T15:18:07.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple criti...",
     "cves": [
       "CVE-2026-115560"
@@ -133,11 +177,11 @@ export const NEWS_FEED: NewsItem[] = [
   },
   {
     "id": "18306cc167b8fd22b7d9c1bd7151dc0d",
-    "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+    "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
     "published_at": "2026-11-19T15:11:06.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central con...",
     "cves": [],
     "mitre_tags": [
@@ -153,7 +197,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
     "published_at": "2026-11-19T15:00:10.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups. [...]",
     "cves": [],
     "mitre_tags": [
@@ -171,7 +215,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
     "published_at": "2026-11-19T14:57:24.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "14h ago",
     "summary": "Two critical NGINX vulnerabilities dubbed \"nginx2root\" allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -184,7 +228,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
     "published_at": "2026-11-19T14:33:06.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "15h ago",
     "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases f...",
     "cves": [],
     "mitre_tags": [
@@ -199,7 +243,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/detecting-timeroasting",
     "published_at": "2026-11-19T14:00:00.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "15h ago",
     "summary": "Timeroasting leaves no authentication log, but it is not invisible. I reverse MS-SNTP&#39;s two authenticator forms to build detection that packet size cannot fool.",
     "cves": [],
     "mitre_tags": [],
@@ -212,7 +256,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
     "published_at": "2026-11-19T13:08:08.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "16h ago",
     "summary": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]",
     "cves": [],
     "mitre_tags": [
@@ -227,7 +271,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
     "published_at": "2026-11-19T12:00:00.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-02.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the b...",
     "cves": [],
     "mitre_tags": [
@@ -242,7 +286,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
     "published_at": "2026-11-19T12:00:00.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-03.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure....",
     "cves": [],
     "mitre_tags": [
@@ -258,7 +302,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CISA Cybersecurity Advisories",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
     "published_at": "2026-11-19T12:00:00.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "17h ago",
     "summary": "<p><a href=\"https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-01.json\"><strong>View CSAF</strong></a></p> <h2>Summary</h2> <p><strong>Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.</strong></p> <p>The following versions ...",
     "cves": [],
     "mitre_tags": [
@@ -273,7 +317,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
     "published_at": "2026-11-19T11:52:23.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web...",
     "cves": [
       "CVE-2026-109618",
@@ -289,7 +333,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
     "published_at": "2026-11-19T11:46:00.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "17h ago",
     "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -302,7 +346,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
     "published_at": "2026-11-19T11:13:01.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "18h ago",
     "summary": "When everything goes down, don’t assume it’s a cyberattack.",
     "cves": [],
     "mitre_tags": [],
@@ -315,7 +359,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
     "published_at": "2026-11-19T10:35:05.000Z",
-    "relative_time": "12h ago",
+    "relative_time": "19h ago",
     "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -328,7 +372,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
     "published_at": "2026-11-19T09:31:26.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "20h ago",
     "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of...",
     "cves": [],
     "mitre_tags": [
@@ -344,7 +388,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
     "published_at": "2026-11-19T09:23:21.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "20h ago",
     "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]",
     "cves": [],
     "mitre_tags": [
@@ -359,7 +403,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
     "published_at": "2026-11-19T08:42:11.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "20h ago",
     "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be used to trigger remo...",
     "cves": [],
     "mitre_tags": [
@@ -374,7 +418,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
     "published_at": "2026-11-19T08:14:00.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "21h ago",
     "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits, published yesterday, are the researcher's proofs of concept against...",
     "cves": [],
     "mitre_tags": [
@@ -389,7 +433,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
     "published_at": "2026-11-19T08:00:00.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "21h ago",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidenc...",
     "cves": [],
     "mitre_tags": [
@@ -404,7 +448,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/rmm-alerts-msp-soc-incident-response",
     "published_at": "2026-11-19T08:00:00.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "21h ago",
     "summary": "One compromised account, two rogue ScreenConnect deployments, and $3M in downtime. See how TruePath IT and the Huntress SOC handled RMM alerts at 2am.",
     "cves": [],
     "mitre_tags": [],
@@ -417,7 +461,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
     "published_at": "2026-11-19T06:00:00.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "23h ago",
     "summary": "",
     "cves": [
       "CVE-2026-114938"
@@ -432,7 +476,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
     "published_at": "2026-11-19T06:00:00.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "23h ago",
     "summary": "",
     "cves": [],
     "mitre_tags": [],
@@ -445,7 +489,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
     "published_at": "2026-11-19T04:33:46.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address securi...",
     "cves": [],
     "mitre_tags": [],
@@ -458,7 +502,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33536",
     "published_at": "2026-11-19T02:00:03.000Z",
-    "relative_time": "20h ago",
+    "relative_time": "1d ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -471,7 +515,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
     "published_at": "2026-11-18T23:08:33.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
     "cves": [],
     "mitre_tags": [
@@ -827,50 +871,5 @@ export const NEWS_FEED: NewsItem[] = [
     ],
     "category": "APT",
     "is_breaking": false
-  },
-  {
-    "id": "c0b8e4421746b778f57bdffd950d9a48",
-    "title": "ISC Stormcast For Wednesday, November 18th, 2026 https://isc.sans.edu/podcastdetail/10184, (Wed, Nov 18th)",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/33528",
-    "published_at": "2026-11-18T02:00:03.000Z",
-    "relative_time": "1d ago",
-    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Threat Intel",
-    "is_breaking": false
-  },
-  {
-    "id": "2f016224906bbe048d346e76718560dc",
-    "title": "CVE-2026-114938: Critical vulnerability in OpenJDK Java",
-    "source": "Cisco Talos Intelligence",
-    "url": "https://blog.talosintelligence.com/java4shell/",
-    "published_at": "2026-11-18T01:53:03.000Z",
-    "relative_time": "1d ago",
-    "summary": "Cisco Talos is tracking the disclosure of a critical vulnerability in OpenJDK Java (CVE-2026-114938), dubbed “Java4Shell,” with a CVSS 4.0 score of 9.2 that may lead to unauthenticated remote code execution (RCE).",
-    "cves": [
-      "CVE-2026-114938"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "8cb38fbbbb099f0dc452b2b55b78320b",
-    "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
-    "published_at": "2026-11-17T23:04:21.000Z",
-    "relative_time": "1d ago",
-    "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
-    "cves": [],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
   }
 ];
