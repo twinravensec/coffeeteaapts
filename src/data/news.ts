@@ -2,12 +2,70 @@ import { NewsItem } from "../types/news";
 
 export const NEWS_FEED: NewsItem[] = [
   {
+    "id": "247a71d624897d715c8145b40bad3c29",
+    "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+    "published_at": "2026-11-20T18:51:43.000Z",
+    "relative_time": "6h ago",
+    "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "APT",
+    "is_breaking": false
+  },
+  {
+    "id": "58eefaa33e7ec3d8c02b1e141d28b90d",
+    "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+    "published_at": "2026-11-20T17:57:20.000Z",
+    "relative_time": "7h ago",
+    "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for ...",
+    "cves": [
+      "CVE-2026-23871"
+    ],
+    "mitre_tags": [
+      "T1190"
+    ],
+    "category": "Vulnerability",
+    "is_breaking": false
+  },
+  {
+    "id": "3fb0b4d6ab004b4b06421341cb53176b",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+    "source": "Microsoft Threat Intelligence",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
+    "published_at": "2026-11-20T17:00:00.000Z",
+    "relative_time": "8h ago",
+    "summary": "We're honored that Microsoft has once again been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM appeared first on Microsoft Security Blog .",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
+    "id": "9ab8a41daf1f07ec54253f75f40480ae",
+    "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "published_at": "2026-11-20T16:58:16.000Z",
+    "relative_time": "8h ago",
+    "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an inves...",
+    "cves": [],
+    "mitre_tags": [
+      "T1558"
+    ],
+    "category": "Threat Intel",
+    "is_breaking": false
+  },
+  {
     "id": "4abb174171e4298b776f164574ed42d9",
     "title": "The Good, the Bad and the Ugly in Cybersecurity - Week 47 (2026)",
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8",
     "published_at": "2026-11-20T16:14:03.000Z",
-    "relative_time": "27m ago",
+    "relative_time": "8h ago",
     "summary": "Alleged 8-Digits Team affiliate faces 27 years, FBI warns of AI-driven ARTEX intrusions, and Java4Shell flaw opens Java apps to pre-auth RCE.",
     "cves": [],
     "mitre_tags": [
@@ -22,7 +80,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
     "published_at": "2026-11-20T15:58:06.000Z",
-    "relative_time": "43m ago",
+    "relative_time": "9h ago",
     "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
     "cves": [],
     "mitre_tags": [
@@ -37,7 +95,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
     "published_at": "2026-11-20T15:00:10.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing...",
     "cves": [],
     "mitre_tags": [
@@ -52,7 +110,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SentinelOne Blog",
     "url": "https://www.sentinelone.com/blog/the-new-analyst-learning-curve-training-and-retaining-talent-in-the-autonomous-soc/",
     "published_at": "2026-11-20T14:00:03.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "11h ago",
     "summary": "Explore how SOC leaders can rebuild the analyst learning curve as agentic AI automates triage, preserving critical investigative judgment and bench talent.",
     "cves": [],
     "mitre_tags": [],
@@ -65,7 +123,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Huntress Blog",
     "url": "https://www.huntress.com/blog/handling-the-nist-800-171-rev-3-transition",
     "published_at": "2026-11-20T14:00:00.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "11h ago",
     "summary": "Learn how defense contractors can navigate the transition from NIST SP 800-171 Revision 2 to Revision 3 with a practical four-step approach for CMMC compliance.",
     "cves": [],
     "mitre_tags": [],
@@ -78,7 +136,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
     "published_at": "2026-11-20T13:18:36.000Z",
-    "relative_time": "3h ago",
+    "relative_time": "11h ago",
     "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide. [...]",
     "cves": [],
     "mitre_tags": [
@@ -94,7 +152,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
     "published_at": "2026-11-20T12:20:00.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "12h ago",
     "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts wi...",
     "cves": [
       "CVE-2026-99312"
@@ -112,7 +170,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
     "published_at": "2026-11-20T12:14:28.000Z",
-    "relative_time": "4h ago",
+    "relative_time": "12h ago",
     "summary": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -120,12 +178,25 @@ export const NEWS_FEED: NewsItem[] = [
     "is_breaking": false
   },
   {
+    "id": "1f06a863f5fbbf644acff84e0a038946",
+    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+    "source": "CISA Cybersecurity Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "published_at": "2026-11-20T12:00:00.000Z",
+    "relative_time": "13h ago",
+    "summary": "<div class=\"OutlineElement Ltr SCXW266414493 BCX8\"> <p>CISA has added four new vulnerabilities to its <a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\"><u>Known Exploited Vulnerabilities (KEV) Catalog</u></a>, based on evidence of active exploitation.</p> <ul> <li><a class=\"Hyperlink SCXW1110299...",
+    "cves": [],
+    "mitre_tags": [],
+    "category": "Advisory",
+    "is_breaking": true
+  },
+  {
     "id": "020cc916168672222488212597574187",
     "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
     "published_at": "2026-11-20T10:57:43.000Z",
-    "relative_time": "5h ago",
+    "relative_time": "14h ago",
     "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]",
     "cves": [],
     "mitre_tags": [
@@ -141,7 +212,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
     "published_at": "2026-11-20T10:38:22.000Z",
-    "relative_time": "6h ago",
+    "relative_time": "14h ago",
     "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" S...",
     "cves": [],
     "mitre_tags": [
@@ -156,7 +227,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
     "published_at": "2026-11-20T10:32:50.000Z",
-    "relative_time": "6h ago",
+    "relative_time": "14h ago",
     "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could all...",
     "cves": [
       "CVE-2026-76466"
@@ -173,7 +244,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
     "published_at": "2026-11-20T09:38:15.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "15h ago",
     "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass ...",
     "cves": [
       "CVE-2026-123890"
@@ -191,7 +262,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
     "published_at": "2026-11-20T09:25:35.000Z",
-    "relative_time": "7h ago",
+    "relative_time": "15h ago",
     "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -204,7 +275,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
     "published_at": "2026-11-20T07:11:39.000Z",
-    "relative_time": "9h ago",
+    "relative_time": "17h ago",
     "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while...",
     "cves": [],
     "mitre_tags": [
@@ -220,7 +291,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
     "published_at": "2026-11-20T05:30:01.000Z",
-    "relative_time": "11h ago",
+    "relative_time": "19h ago",
     "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handle...",
     "cves": [],
     "mitre_tags": [
@@ -235,7 +306,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33538",
     "published_at": "2026-11-20T02:00:02.000Z",
-    "relative_time": "14h ago",
+    "relative_time": "23h ago",
     "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
     "cves": [],
     "mitre_tags": [],
@@ -248,7 +319,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
     "published_at": "2026-11-20T00:26:25.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
     "cves": [],
     "mitre_tags": [
@@ -264,7 +335,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
     "published_at": "2026-11-19T22:25:42.000Z",
-    "relative_time": "18h ago",
+    "relative_time": "1d ago",
     "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -277,7 +348,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
     "published_at": "2026-11-19T21:15:59.000Z",
-    "relative_time": "19h ago",
+    "relative_time": "1d ago",
     "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
     "cves": [],
     "mitre_tags": [
@@ -292,7 +363,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
     "published_at": "2026-11-19T20:29:46.000Z",
-    "relative_time": "20h ago",
+    "relative_time": "1d ago",
     "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
     "cves": [],
     "mitre_tags": [],
@@ -305,7 +376,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "Cisco Talos Intelligence",
     "url": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
     "published_at": "2026-11-19T19:00:00.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "Bill takes a break from the non-stop breaking news to promote prioritizing environmental awareness and team stability over reactive patching.",
     "cves": [],
     "mitre_tags": [],
@@ -318,7 +389,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
     "published_at": "2026-11-19T18:47:58.000Z",
-    "relative_time": "21h ago",
+    "relative_time": "1d ago",
     "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over ...",
     "cves": [],
     "mitre_tags": [
@@ -334,7 +405,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
     "published_at": "2026-11-19T18:20:01.000Z",
-    "relative_time": "22h ago",
+    "relative_time": "1d ago",
     "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -347,7 +418,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
     "published_at": "2026-11-19T16:59:56.000Z",
-    "relative_time": "23h ago",
+    "relative_time": "1d ago",
     "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the ...",
     "cves": [],
     "mitre_tags": [
@@ -726,7 +797,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
     "published_at": "2026-11-18T23:08:33.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
     "cves": [],
     "mitre_tags": [
@@ -741,7 +812,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
     "published_at": "2026-11-18T20:49:32.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -754,7 +825,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33532",
     "published_at": "2026-11-18T19:54:50.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our readers to its significant impact. Following php2shell, we had a number of vulnerabilities and events that may also have scored high enough to trigger an Infocon \"Yellow\" &#...",
     "cves": [],
     "mitre_tags": [
@@ -769,7 +840,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
     "published_at": "2026-11-18T19:39:33.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
     "cves": [],
     "mitre_tags": [],
@@ -782,7 +853,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
     "published_at": "2026-11-18T18:31:17.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 c...",
     "cves": [
       "CVE-2026-123007"
@@ -799,7 +870,7 @@ export const NEWS_FEED: NewsItem[] = [
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
     "published_at": "2026-11-18T18:15:39.000Z",
-    "relative_time": "1d ago",
+    "relative_time": "2d ago",
     "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kin...",
     "cves": [],
     "mitre_tags": [
@@ -807,76 +878,5 @@ export const NEWS_FEED: NewsItem[] = [
     ],
     "category": "Vulnerability",
     "is_breaking": true
-  },
-  {
-    "id": "80c8ce0e2c3e9574dcce3976750d341c",
-    "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-    "published_at": "2026-11-18T17:10:45.000Z",
-    "relative_time": "1d ago",
-    "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpo...",
-    "cves": [
-      "CVE-2026-129448"
-    ],
-    "mitre_tags": [
-      "T1190"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": true
-  },
-  {
-    "id": "ac8640926a0fb03c35edfddc2dbbfd39",
-    "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-    "published_at": "2026-11-18T16:58:42.000Z",
-    "relative_time": "1d ago",
-    "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
-    "cves": [],
-    "mitre_tags": [
-      "T1078.004"
-    ],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "75612c531d79e01c0b24f23ad4bc697a",
-    "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
-    "published_at": "2026-11-18T15:00:10.000Z",
-    "relative_time": "2d ago",
-    "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats. [...]",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "Vulnerability",
-    "is_breaking": false
-  },
-  {
-    "id": "ec675127a0303a93ab60118c300911d0",
-    "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-    "published_at": "2026-11-18T14:11:28.000Z",
-    "relative_time": "2d ago",
-    "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The ...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "APT",
-    "is_breaking": false
-  },
-  {
-    "id": "186a434790fa0e69703fec01b36a96cc",
-    "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-    "published_at": "2026-11-18T12:28:30.000Z",
-    "relative_time": "2d ago",
-    "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-dig...",
-    "cves": [],
-    "mitre_tags": [],
-    "category": "APT",
-    "is_breaking": false
   }
 ];

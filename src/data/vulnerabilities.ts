@@ -2,6 +2,558 @@ import { VulnerabilityItem } from "../types/vulnerability";
 
 export const VULNERABILITIES: VulnerabilityItem[] = [
   {
+    "id": "CVE-2026-122247",
+    "cve_id": "CVE-2026-122247",
+    "ghsa_id": "GHSA-25qc-m4pw-2w8r",
+    "title": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+    "description": "On a self-hosted, single-tenant Budibase instance (`multiTenancy:false`), the public bootstrap endpoint `POST /api/global/users/init` remains fully exploitable **after** the instance has been provisioned. Its \"already initialised\" guard (`checkAnyUserExists()`) is evaluated inside a **tenant-scoped** database context derived from an **attacker-controlled `tenantId`** in the request body. Because the tenancy layer ...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "npm",
+    "vendor_product": "npm: @budibase/server",
+    "affected_versions": "<= 3.38.1",
+    "patched_versions": null,
+    "cwes": [
+      "CWE-284",
+      "CWE-306",
+      "CWE-770",
+      "CWE-863"
+    ],
+    "published_at": "2026-11-20T23:50:01.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r",
+    "references": [
+      "https://github.com/Budibase/budibase/security/advisories/GHSA-25qc-m4pw-2w8r",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-122247",
+      "https://github.com/Budibase/budibase/commit/362a7fe9aea594531ece1cf15be76cc00bfb88b9",
+      "https://github.com/Budibase/budibase/releases/tag/v3.50.0",
+      "https://github.com/Budibase/budibase/releases/tag/v4.0.0"
+    ]
+  },
+  {
+    "id": "CVE-2026-122244",
+    "cve_id": "CVE-2026-122244",
+    "ghsa_id": "GHSA-r2q3-7m4h-63qg",
+    "title": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+    "description": "A **low-privileged application end-user** (role `BASIC` - **not** a builder or admin, and on a public data-collection form, an unauthenticated visitor) can store an HTML/JavaScript payload in ordinary row data. When a **builder or admin** later opens that table in the Budibase Builder and evaluates any Handlebars binding whose Preview surfaces the value (the Data-section **Formula** column editor, or any binding d...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "npm",
+    "vendor_product": "npm: @budibase/server",
+    "affected_versions": "<= 3.38.1",
+    "patched_versions": null,
+    "cwes": [
+      "CWE-79",
+      "CWE-116",
+      "CWE-1021"
+    ],
+    "published_at": "2026-11-20T23:49:47.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg",
+    "references": [
+      "https://github.com/Budibase/budibase/security/advisories/GHSA-r2q3-7m4h-63qg",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-122244",
+      "https://github.com/Budibase/budibase/commit/5f37fb43728639c540cc7233283f1100e9315424",
+      "https://github.com/Budibase/budibase/releases/tag/v3.50.0",
+      "https://github.com/Budibase/budibase/releases/tag/v4.0.0"
+    ]
+  },
+  {
+    "id": "CVE-2026-132276",
+    "cve_id": "CVE-2026-132276",
+    "ghsa_id": "GHSA-53pm-wgxf-c6qf",
+    "title": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+    "description": "With default flags, a pattern that contains several `*` wildcards takes polynomial time, O(n^k) for k stars, to reject a crafted file name. The pattern is an ordinary developer constant such as `*_*_*_*_*.csv`; only the string being matched comes from the attacker. A 255-byte file name (the maximum on common filesystems) takes 73 s with `fnmatch.fnmatch()` and 86 s with `glob.globmatch()`. The standard library's `...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: wcmatch",
+    "affected_versions": "<= 11.1",
+    "patched_versions": "11.2",
+    "cwes": [
+      "CWE-1333"
+    ],
+    "published_at": "2026-11-20T23:49:18.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf",
+    "references": [
+      "https://github.com/facelessuser/wcmatch/security/advisories/GHSA-53pm-wgxf-c6qf",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-132276",
+      "https://github.com/facelessuser/wcmatch/commit/83491aadde57780330f993620083e979f645c80c",
+      "https://github.com/facelessuser/wcmatch/releases/tag/11.2",
+      "https://github.com/advisories/GHSA-53pm-wgxf-c6qf"
+    ]
+  },
+  {
+    "id": "CVE-2026-132277",
+    "cve_id": "CVE-2026-132277",
+    "ghsa_id": "GHSA-q87h-c5m7-659j",
+    "title": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+    "description": "Every sibling `<table>` adds another level of the parent's indentation, so the size of `get_text()` output grows quadratically with the number of tables. In the measurements below, a 240 KB HTML document produces about 1 billion characters and uses about 1 GB of memory. `table_end_handler()` (`model/tag/table_tag.py`) writes the rendered table into the parent element with `HtmlElement.write_verbatim_text()` (`mode...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: inscriptis",
+    "affected_versions": ">= 2.0.0, <= 2.7.5",
+    "patched_versions": "2.7.6",
+    "cwes": [
+      "CWE-400",
+      "CWE-407"
+    ],
+    "published_at": "2026-11-20T23:48:51.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-q87h-c5m7-659j",
+    "references": [
+      "https://github.com/weblyzard/inscriptis/security/advisories/GHSA-q87h-c5m7-659j",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-132277",
+      "https://github.com/weblyzard/inscriptis/commit/dc122894cd671a0227f8fdad60464acddaf40fc8",
+      "https://github.com/weblyzard/inscriptis/releases/tag/2.7.6",
+      "https://github.com/advisories/GHSA-q87h-c5m7-659j"
+    ]
+  },
+  {
+    "id": "CVE-2026-132275",
+    "cve_id": "CVE-2026-132275",
+    "ghsa_id": "GHSA-555j-qj3j-c8jv",
+    "title": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+    "description": "`svg2rlg()` expands `<use>` references without any limit on the total number of expansions. Only direct cycles are rejected (`CircularRefError`). A group containing N `<use>` elements that point to another such group multiplies the work by N per nesting level, so an SVG of about 1.4 KB makes svglib clone and render over 100,000 nodes, taking tens of seconds of CPU time and hundreds of MiB of memory. Each additiona...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: svglib",
+    "affected_versions": "<= 2.3.0",
+    "patched_versions": "2.3.1",
+    "cwes": [
+      "CWE-400",
+      "CWE-776"
+    ],
+    "published_at": "2026-11-20T23:47:58.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-555j-qj3j-c8jv",
+    "references": [
+      "https://github.com/deeplook/svglib/security/advisories/GHSA-555j-qj3j-c8jv",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-132275",
+      "https://github.com/deeplook/svglib/commit/7380d3c3836940fd75f8e203fff80077b7d5a425",
+      "https://github.com/deeplook/svglib/releases/tag/v2.3.1",
+      "https://github.com/advisories/GHSA-555j-qj3j-c8jv"
+    ]
+  },
+  {
+    "id": "CVE-2026-104884",
+    "cve_id": "CVE-2026-104884",
+    "ghsa_id": "GHSA-h57j-5f5m-789v",
+    "title": "contao/core-bundle: Cross-site scripting in the frontend search results",
+    "description": "Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `link` variable, which is assigned without escaping. Affected configuration (important): on 5.7.9 the default search template is the Twig `...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Packagist (PHP)",
+    "vendor_product": "Packagist (PHP): contao/core-bundle",
+    "affected_versions": ">= 4.9.0, < 5.3.50",
+    "patched_versions": "5.3.50",
+    "cwes": [
+      "CWE-79"
+    ],
+    "published_at": "2026-11-20T23:46:56.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
+    "references": [
+      "https://github.com/contao/contao/security/advisories/GHSA-h57j-5f5m-789v",
+      "https://github.com/contao/contao/pull/10153",
+      "https://github.com/contao/contao/commit/9519c1049462da35054c114d07efdeecaef32d06",
+      "https://github.com/contao/contao/commit/a58eb71ef5a7a87da9d90980579dbeb6688448b4",
+      "https://github.com/FriendsOfPHP/security-advisories/blob/master/contao/contao/CVE-2026-104884.yaml"
+    ]
+  },
+  {
+    "id": "CVE-2026-104883",
+    "cve_id": "CVE-2026-104883",
+    "ghsa_id": "GHSA-r9qp-pqx5-8369",
+    "title": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+    "description": "Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the `modules` field and the literal value `tpl_editor`. The equally RCE-capable `theme_import` capability lives in a different...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Packagist (PHP)",
+    "vendor_product": "Packagist (PHP): contao/core-bundle",
+    "affected_versions": ">= 5.0.0, < 5.3.50",
+    "patched_versions": "5.3.50",
+    "cwes": [
+      "CWE-94",
+      "CWE-266"
+    ],
+    "published_at": "2026-11-20T23:45:41.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
+    "references": [
+      "https://github.com/contao/contao/security/advisories/GHSA-r9qp-pqx5-8369",
+      "https://github.com/contao/contao/pull/10153",
+      "https://github.com/contao/contao/commit/211498f28d4c86484b96eb0612c1193105b79e51",
+      "https://github.com/contao/contao/commit/a58eb71ef5a7a87da9d90980579dbeb6688448b4",
+      "https://github.com/FriendsOfPHP/security-advisories/blob/master/contao/contao/CVE-2026-104883.yaml"
+    ]
+  },
+  {
+    "id": "CVE-2026-104882",
+    "cve_id": "CVE-2026-104882",
+    "ghsa_id": "GHSA-23w9-4pg3-xwm3",
+    "title": "contao/core-bundle: Improper access control in the CSV import wizard",
+    "description": "Custom backend module \"key\" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs. A non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options of arbitrary tl_content / tl_form_field records outside their scope, defeating the per-record access control. Integrity IDOR (bl...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Packagist (PHP)",
+    "vendor_product": "Packagist (PHP): contao/core-bundle",
+    "affected_versions": ">= 5.0.0, < 5.3.50",
+    "patched_versions": "5.3.50",
+    "cwes": [
+      "CWE-639",
+      "CWE-862"
+    ],
+    "published_at": "2026-11-20T23:44:33.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
+    "references": [
+      "https://github.com/contao/contao/security/advisories/GHSA-23w9-4pg3-xwm3",
+      "https://github.com/contao/contao/pull/10153",
+      "https://github.com/contao/contao/commit/a58eb71ef5a7a87da9d90980579dbeb6688448b4",
+      "https://github.com/contao/contao/commit/eb8088bcd547964657a1411a34842b441393a81c",
+      "https://github.com/FriendsOfPHP/security-advisories/blob/master/contao/contao/CVE-2026-104882.yaml"
+    ]
+  },
+  {
+    "id": "CVE-2026-104881",
+    "cve_id": "CVE-2026-104881",
+    "ghsa_id": "GHSA-3r9g-pfhv-3228",
+    "title": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+    "description": "Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete methods. The newsletter custom key-actions are dispatched directly by `Backend::getBackendModule()` (Backend.php:324-327...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Packagist (PHP)",
+    "vendor_product": "Packagist (PHP): contao/newsletter-bundle",
+    "affected_versions": ">= 5.0.0, < 5.3.50",
+    "patched_versions": "5.3.50",
+    "cwes": [
+      "CWE-639",
+      "CWE-862"
+    ],
+    "published_at": "2026-11-20T23:43:26.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
+    "references": [
+      "https://github.com/contao/contao/security/advisories/GHSA-3r9g-pfhv-3228",
+      "https://github.com/contao/contao/pull/10153",
+      "https://github.com/contao/contao/commit/1471dcaf4fe3d07a415e756dc54ce1f46d2ee879",
+      "https://github.com/contao/contao/commit/17fe7a52fc5df47209603708c6136a060f8eea43",
+      "https://github.com/contao/contao/commit/a58eb71ef5a7a87da9d90980579dbeb6688448b4"
+    ]
+  },
+  {
+    "id": "CVE-2026-77331",
+    "cve_id": "CVE-2026-77331",
+    "ghsa_id": "GHSA-72jh-722p-rqr3",
+    "title": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+    "description": "Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange. The private fix introduces monotonic session generations, one shielded shared reconnect flight per dirty generation, and generation-aware cancellation handling across search, access-count...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "LOW",
+    "cvss_score": 2,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:L",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: memtomem-stm",
+    "affected_versions": ">= 0.1.2, <= 0.1.33",
+    "patched_versions": "0.1.34",
+    "cwes": [
+      "CWE-362"
+    ],
+    "published_at": "2026-11-20T23:38:15.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
+    "references": [
+      "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-72jh-722p-rqr3",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-77331",
+      "https://github.com/memtomem/memtomem-stm/commit/761db1802df7ce4881ff4c3acee6d674925da498",
+      "https://github.com/memtomem/memtomem-stm/releases/tag/v0.1.34",
+      "https://github.com/advisories/GHSA-72jh-722p-rqr3"
+    ]
+  },
+  {
+    "id": "CVE-2026-77332",
+    "cve_id": "CVE-2026-77332",
+    "ghsa_id": "GHSA-43hx-xm7w-3mhj",
+    "title": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+    "description": "Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert single-line data, validates copyable memory identifiers, and pins an explicit untrusted-data preamble. Ordinary natural-language persuas...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "LOW",
+    "cvss_score": 2.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: memtomem-stm",
+    "affected_versions": ">= 0.1.0, <= 0.1.33",
+    "patched_versions": "0.1.34",
+    "cwes": [
+      "CWE-116"
+    ],
+    "published_at": "2026-11-20T23:37:39.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
+    "references": [
+      "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-43hx-xm7w-3mhj",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-77332",
+      "https://github.com/memtomem/memtomem-stm/commit/3d50ba61cbfafba6db261e35c18eed0c3805b390",
+      "https://github.com/memtomem/memtomem-stm/releases/tag/v0.1.34",
+      "https://github.com/advisories/GHSA-43hx-xm7w-3mhj"
+    ]
+  },
+  {
+    "id": "CVE-2026-77309",
+    "cve_id": "CVE-2026-77309",
+    "ghsa_id": "GHSA-jrjx-9jjw-747m",
+    "title": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+    "description": "A security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path that bypasses the configured script directory restrictions. * 2.5.1 This vulnerability allows unauthenticated remote code execution on the AIT-...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "epss_score": null,
+    "epss_percentile": null,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "PyPI",
+    "vendor_product": "PyPI: ait-gui",
+    "affected_versions": ">= 1.0.0, <= 2.5.0",
+    "patched_versions": "2.5.1",
+    "cwes": [
+      "CWE-22",
+      "CWE-459"
+    ],
+    "published_at": "2026-11-20T23:36:41.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
+    "references": [
+      "https://github.com/NASA-AMMOS/AIT-GUI/security/advisories/GHSA-jrjx-9jjw-747m",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-77309",
+      "https://github.com/NASA-AMMOS/AIT-GUI/commit/beb8fc0813eded89f985d3eb9a73535dd327726d",
+      "https://github.com/NASA-AMMOS/AIT-GUI/blob/2.5.1/CHANGELOG.md",
+      "https://github.com/NASA-AMMOS/AIT-GUI/releases/tag/2.5.1"
+    ]
+  },
+  {
+    "id": "CVE-2026-61725",
+    "cve_id": "CVE-2026-61725",
+    "ghsa_id": "GHSA-qh76-45cr-8xrc",
+    "title": "sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+    "description": "Extracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes to the result without normalizing it or checking that it stays under the destination root, so an entry named `../../etc/cron.d/x` or an absolute pa...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L",
+    "epss_score": 0.00138,
+    "epss_percentile": 0.03148,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Cargo (Rust)",
+    "vendor_product": "Cargo (Rust): sevenz-rust2",
+    "affected_versions": "< 0.21.1",
+    "patched_versions": "0.21.1",
+    "cwes": [
+      "CWE-22",
+      "CWE-23"
+    ],
+    "published_at": "2026-11-20T23:33:14.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
+    "references": [
+      "https://github.com/hasenbanck/sevenz-rust2/security/advisories/GHSA-qh76-45cr-8xrc",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-61725",
+      "https://github.com/hasenbanck/sevenz-rust2/commit/ef760b61f3535ac8b93006212aef41bfebc237eb",
+      "https://github.com/advisories/GHSA-qh76-45cr-8xrc"
+    ]
+  },
+  {
+    "id": "CVE-2026-63341",
+    "cve_id": "CVE-2026-63341",
+    "ghsa_id": "GHSA-xxqp-5qx8-gj5q",
+    "title": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+    "description": "A remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, containing a highly recursive topic string (e.g., with thousands of '/' delimiters). The lack of input validation and error handling leads to an un...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": 0.00365,
+    "epss_percentile": 0.30509,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "npm",
+    "vendor_product": "npm: aedes",
+    "affected_versions": "< 1.1.1",
+    "patched_versions": "1.1.1",
+    "cwes": [
+      "CWE-248",
+      "CWE-400"
+    ],
+    "published_at": "2026-11-20T23:32:35.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
+    "references": [
+      "https://github.com/moscajs/aedes/security/advisories/GHSA-xxqp-5qx8-gj5q",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-63341",
+      "https://github.com/moscajs/aedes/commit/b9024faa4cb416c4c6980760b4d7f55336315f2d",
+      "https://github.com/moscajs/aedes/releases/tag/v1.1.1",
+      "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q"
+    ]
+  },
+  {
+    "id": "CVE-2026-58254",
+    "cve_id": "CVE-2026-58254",
+    "ghsa_id": "GHSA-p3j5-5hrq-p75h",
+    "title": "nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+    "description": "Background NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing. The NATS Server supports leafnode connections between servers and message tracing through NATS headers. Problem Description Message trace destination checks were applied to ordinary client connections but not consistently to messages arriving through leafnode c...",
+    "source": "GitHub Advisory (GHSA)",
+    "sources": [
+      "GitHub Advisory (GHSA)"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "epss_score": 0.00308,
+    "epss_percentile": 0.23567,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": "Go",
+    "vendor_product": "Go: github.com/nats-io/nats-server/v2",
+    "affected_versions": "< 2.12.8",
+    "patched_versions": "2.12.8",
+    "cwes": [
+      "CWE-863"
+    ],
+    "published_at": "2026-11-20T23:31:59.000Z",
+    "relative_time": "1h ago",
+    "url": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h",
+    "references": [
+      "https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-58254",
+      "https://github.com/nats-io/nats-server/commit/cbe845932980b71563efac5cfa4cc751c88936cd",
+      "https://github.com/nats-io/nats-server/releases/tag/v2.12.8",
+      "https://github.com/nats-io/nats-server/releases/tag/v2.14.3"
+    ]
+  },
+  {
     "id": "CVE-2026-35376",
     "cve_id": "CVE-2026-35376",
     "ghsa_id": "GHSA-9rv8-9hvg-92mq",
@@ -28,7 +580,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-367"
     ],
     "published_at": "2026-11-20T16:39:34.000Z",
-    "relative_time": "1m ago",
+    "relative_time": "8h ago",
     "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-9rv8-9hvg-92mq",
@@ -63,7 +615,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-20"
     ],
     "published_at": "2026-11-20T16:36:31.000Z",
-    "relative_time": "4m ago",
+    "relative_time": "8h ago",
     "url": "https://github.com/advisories/GHSA-xhrc-7f76-vh96",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-xhrc-7f76-vh96",
@@ -99,7 +651,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-367"
     ],
     "published_at": "2026-11-20T16:33:27.000Z",
-    "relative_time": "8m ago",
+    "relative_time": "8h ago",
     "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-fjjq-8hw5-cf9f",
@@ -135,7 +687,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-384"
     ],
     "published_at": "2026-11-20T16:25:26.000Z",
-    "relative_time": "16m ago",
+    "relative_time": "8h ago",
     "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
     "references": [
       "https://github.com/ckan/ckan/security/advisories/GHSA-6499-jgj4-2wpf",
@@ -171,7 +723,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-772"
     ],
     "published_at": "2026-11-20T16:22:09.000Z",
-    "relative_time": "19m ago",
+    "relative_time": "8h ago",
     "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
     "references": [
       "https://github.com/netty/netty-incubator-codec-ohttp/security/advisories/GHSA-cg26-4c6j-2x8h",
@@ -208,7 +760,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1286"
     ],
     "published_at": "2026-11-20T14:59:40.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-x72p-hmqp-46hw",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x72p-hmqp-46hw",
@@ -244,7 +796,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-144"
     ],
     "published_at": "2026-11-20T14:58:53.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-xrgv-7vx6-5vx6",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-xrgv-7vx6-5vx6",
@@ -280,7 +832,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T14:56:58.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
     "references": [
       "https://github.com/openremote/core/security/advisories/GHSA-3h6w-xcw3-9xjj",
@@ -318,7 +870,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-915"
     ],
     "published_at": "2026-11-20T14:56:03.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
     "references": [
       "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-prhx-9q2h-ph2x",
@@ -354,7 +906,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-22"
     ],
     "published_at": "2026-11-20T14:55:18.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
     "references": [
       "https://github.com/webflorist/storyblok-backup/security/advisories/GHSA-vcx7-pfrh-mcfg",
@@ -391,7 +943,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-772"
     ],
     "published_at": "2026-11-20T14:54:50.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
     "references": [
       "https://github.com/Yakifo/amqtt/security/advisories/GHSA-wcqj-wx85-c75p",
@@ -428,7 +980,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-338"
     ],
     "published_at": "2026-11-20T14:52:33.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
     "references": [
       "https://github.com/poweradmin/poweradmin/security/advisories/GHSA-9657-8vc2-7g2p",
@@ -466,7 +1018,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T14:51:25.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8",
     "references": [
       "https://github.com/fabiolb/fabio/security/advisories/GHSA-4hrh-34w3-5ww8",
@@ -502,7 +1054,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-522"
     ],
     "published_at": "2026-11-20T14:49:47.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-x7xj-4j4f-88xr",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x7xj-4j4f-88xr",
@@ -538,7 +1090,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-78"
     ],
     "published_at": "2026-11-20T14:47:01.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-w3f2-pr6x-wwjc",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-w3f2-pr6x-wwjc",
@@ -575,7 +1127,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T14:45:04.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
     "references": [
       "https://github.com/nilsteampassnet/TeamPass/security/advisories/GHSA-66q9-mxf2-xqw6",
@@ -613,7 +1165,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-20T14:43:41.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
     "references": [
       "https://github.com/Yakifo/amqtt/security/advisories/GHSA-2hjf-7455-w946",
@@ -651,7 +1203,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-248"
     ],
     "published_at": "2026-11-20T14:42:18.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-hghq-53p7-c582",
     "references": [
       "https://github.com/phires/go-guerrilla/security/advisories/GHSA-hghq-53p7-c582",
@@ -687,7 +1239,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-89"
     ],
     "published_at": "2026-11-20T14:41:42.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-v9v2-98xq-627c",
     "references": [
       "https://github.com/prest/prest/security/advisories/GHSA-v9v2-98xq-627c",
@@ -724,7 +1276,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-20T14:40:45.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5",
     "references": [
       "https://github.com/sunnyadn/js-toml/security/advisories/GHSA-3g82-77xr-68x5",
@@ -761,7 +1313,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T14:35:29.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-x6w4-f264-3vvr",
     "references": [
       "https://github.com/christianhelle/refitter/security/advisories/GHSA-x6w4-f264-3vvr",
@@ -798,7 +1350,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-73"
     ],
     "published_at": "2026-11-20T14:34:30.000Z",
-    "relative_time": "2h ago",
+    "relative_time": "10h ago",
     "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr",
     "references": [
       "https://github.com/appium/appium/security/advisories/GHSA-jwgx-mp9m-jwcr",
@@ -806,6 +1358,138 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "https://github.com/appium/appium/pull/22362",
       "https://github.com/appium/appium/commit/5fee01752f2782e96fbe64fd13520b433d4a7535",
       "https://github.com/appium/appium/releases/tag/%40appium/storage-plugin%401.1.6"
+    ]
+  },
+  {
+    "id": "CVE-2026-129448",
+    "cve_id": "CVE-2026-129448",
+    "ghsa_id": null,
+    "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+    "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+    "source": "CISA KEV",
+    "sources": [
+      "CISA KEV"
+    ],
+    "severity": "HIGH",
+    "cvss_score": null,
+    "cvss_vector": null,
+    "epss_score": 0.01191,
+    "epss_percentile": 0.68723,
+    "is_kev": true,
+    "ransomware_use": false,
+    "kev_due_date": "2026-11-23",
+    "ecosystem": "Apache",
+    "vendor_product": "Apache Roller",
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-502"
+    ],
+    "published_at": "2026-11-20T12:00:00.000Z",
+    "relative_time": "13h ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+    "references": [
+      "https://lists.apache.org/thread/cc0jck13nb9vvcmzxzwotr6n16mx28z9",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+    ]
+  },
+  {
+    "id": "CVE-2026-123890",
+    "cve_id": "CVE-2026-123890",
+    "ghsa_id": null,
+    "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+    "source": "CISA KEV",
+    "sources": [
+      "CISA KEV"
+    ],
+    "severity": "HIGH",
+    "cvss_score": null,
+    "cvss_vector": null,
+    "epss_score": 0.00843,
+    "epss_percentile": 0.58845,
+    "is_kev": true,
+    "ransomware_use": false,
+    "kev_due_date": "2026-11-23",
+    "ecosystem": "Broadcom",
+    "vendor_product": "Broadcom VMware vCenter",
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-288"
+    ],
+    "published_at": "2026-11-20T12:00:00.000Z",
+    "relative_time": "13h ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+    "references": [
+      "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+    ]
+  },
+  {
+    "id": "CVE-2025-42884",
+    "cve_id": "CVE-2025-42884",
+    "ghsa_id": null,
+    "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+    "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+    "source": "CISA KEV",
+    "sources": [
+      "CISA KEV"
+    ],
+    "severity": "HIGH",
+    "cvss_score": null,
+    "cvss_vector": null,
+    "epss_score": 0.00276,
+    "epss_percentile": 0.2048,
+    "is_kev": true,
+    "ransomware_use": false,
+    "kev_due_date": "2026-11-23",
+    "ecosystem": "SAP",
+    "vendor_product": "SAP NetWeaver",
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-943"
+    ],
+    "published_at": "2026-11-20T12:00:00.000Z",
+    "relative_time": "13h ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+    "references": [
+      "https://support.sap.com/en/my-support/knowledge-base/security-notes-news/bulletin-2025.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+    ]
+  },
+  {
+    "id": "CVE-2026-76466",
+    "cve_id": "CVE-2026-76466",
+    "ghsa_id": null,
+    "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+    "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+    "source": "CISA KEV",
+    "sources": [
+      "CISA KEV"
+    ],
+    "severity": "HIGH",
+    "cvss_score": null,
+    "cvss_vector": null,
+    "epss_score": 0.00417,
+    "epss_percentile": 0.36836,
+    "is_kev": true,
+    "ransomware_use": false,
+    "kev_due_date": "2026-11-23",
+    "ecosystem": "Cisco",
+    "vendor_product": "Cisco Expressway Series",
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-798"
+    ],
+    "published_at": "2026-11-20T12:00:00.000Z",
+    "relative_time": "13h ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+    "references": [
+      "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
     ]
   },
   {
@@ -836,7 +1520,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-306"
     ],
     "published_at": "2026-11-20T00:23:45.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5",
     "references": [
       "https://github.com/ether/etherpad/security/advisories/GHSA-mc8w-wjhw-45x5",
@@ -872,7 +1556,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-476"
     ],
     "published_at": "2026-11-20T00:21:19.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-gfwj-45pc-w6r5",
     "references": [
       "https://github.com/altcha-org/altcha-lib-go/security/advisories/GHSA-gfwj-45pc-w6r5",
@@ -909,7 +1593,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-789"
     ],
     "published_at": "2026-11-20T00:20:52.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-7hvw-3c2q-45qg",
     "references": [
       "https://github.com/bep/imagemeta/security/advisories/GHSA-7hvw-3c2q-45qg",
@@ -947,7 +1631,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1284"
     ],
     "published_at": "2026-11-20T00:20:38.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-v6w5-38cf-pcv8",
     "references": [
       "https://github.com/omec-project/amf/security/advisories/GHSA-v6w5-38cf-pcv8",
@@ -983,7 +1667,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-290"
     ],
     "published_at": "2026-11-20T00:18:35.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29",
     "references": [
       "https://github.com/baserproject/basercms/security/advisories/GHSA-wgvx-x5g3-9v29",
@@ -1019,7 +1703,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-22"
     ],
     "published_at": "2026-11-20T00:17:47.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx",
     "references": [
       "https://github.com/baserproject/basercms/security/advisories/GHSA-2pj4-v76f-wjvx",
@@ -1055,7 +1739,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1240"
     ],
     "published_at": "2026-11-20T00:17:04.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-25rm-9wvm-m38v",
     "references": [
       "https://github.com/aszepieniec/falcon-rust/security/advisories/GHSA-25rm-9wvm-m38v",
@@ -1091,7 +1775,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-89"
     ],
     "published_at": "2026-11-20T00:15:55.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5",
     "references": [
       "https://github.com/bolt/core/security/advisories/GHSA-r7h9-qx4h-77j5",
@@ -1127,7 +1811,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:15:44.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4",
     "references": [
       "https://github.com/bolt/core/security/advisories/GHSA-3xjf-9q55-vxw4",
@@ -1163,7 +1847,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-402"
     ],
     "published_at": "2026-11-20T00:15:23.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj",
     "references": [
       "https://github.com/bolt/core/security/advisories/GHSA-6358-jg5p-hmjj",
@@ -1199,7 +1883,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:14:42.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r",
     "references": [
       "https://github.com/bolt/core/security/advisories/GHSA-2535-j2pq-qq4r",
@@ -1235,7 +1919,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-601"
     ],
     "published_at": "2026-11-20T00:14:31.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865",
     "references": [
       "https://github.com/bolt/core/security/advisories/GHSA-xr6g-7g83-j865",
@@ -1273,7 +1957,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T00:14:14.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793",
     "references": [
       "https://github.com/daptin/daptin/security/advisories/GHSA-wj7x-58c2-5793",
@@ -1310,7 +1994,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-89"
     ],
     "published_at": "2026-11-20T00:13:19.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm",
     "references": [
       "https://github.com/daptin/daptin/security/advisories/GHSA-hq2p-f2vj-v3cm",
@@ -1346,7 +2030,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-350"
     ],
     "published_at": "2026-11-20T00:12:51.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
     "references": [
       "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-9x8x-crjq-g64h",
@@ -1382,7 +2066,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-306"
     ],
     "published_at": "2026-11-20T00:12:14.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7",
     "references": [
       "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-24pw-rf5p-mgp7",
@@ -1418,7 +2102,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:11:24.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g",
     "references": [
       "https://github.com/flytohub/flyto-core/security/advisories/GHSA-6pm8-6f34-9v3g",
@@ -1453,7 +2137,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:10:14.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c",
     "references": [
       "https://github.com/flytohub/flyto-core/security/advisories/GHSA-2mr3-rxrq-238c",
@@ -1489,7 +2173,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:09:23.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-pfg2-w999-497v",
     "references": [
       "https://github.com/flytohub/flyto-core/security/advisories/GHSA-pfg2-w999-497v",
@@ -1524,7 +2208,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-22"
     ],
     "published_at": "2026-11-20T00:09:02.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx",
     "references": [
       "https://github.com/flytohub/flyto-core/security/advisories/GHSA-p34x-fmph-9fjx",
@@ -1562,7 +2246,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:08:12.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp",
     "references": [
       "https://github.com/tony/django-docutils/security/advisories/GHSA-86mf-q4h5-69gp",
@@ -1601,7 +2285,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T00:07:32.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822",
     "references": [
       "https://github.com/janephp/janephp/security/advisories/GHSA-c3cj-3p6p-j822",
@@ -1638,7 +2322,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-116"
     ],
     "published_at": "2026-11-20T00:06:52.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534",
     "references": [
       "https://github.com/christianhelle/refitter/security/advisories/GHSA-p32v-8v8j-j534",
@@ -1675,7 +2359,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-116"
     ],
     "published_at": "2026-11-20T00:06:28.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8",
     "references": [
       "https://github.com/christianhelle/refitter/security/advisories/GHSA-58x9-vjvp-6mx8",
@@ -1712,7 +2396,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1116"
     ],
     "published_at": "2026-11-20T00:06:04.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3",
     "references": [
       "https://github.com/christianhelle/refitter/security/advisories/GHSA-3fhm-p725-h3g3",
@@ -1748,7 +2432,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-248"
     ],
     "published_at": "2026-11-20T00:05:17.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-p957-7v2w-g93g",
     "references": [
       "https://github.com/nats-io/nats-server/security/advisories/GHSA-p957-7v2w-g93g",
@@ -1784,7 +2468,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-400"
     ],
     "published_at": "2026-11-20T00:04:46.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-r72h-j7qq-v6qg",
     "references": [
       "https://github.com/nats-io/nats-server/security/advisories/GHSA-r72h-j7qq-v6qg",
@@ -1820,7 +2504,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T00:04:27.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-7qmq-8cc4-hxwg",
     "references": [
       "https://github.com/nats-io/nats-server/security/advisories/GHSA-7qmq-8cc4-hxwg",
@@ -1856,7 +2540,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-20"
     ],
     "published_at": "2026-11-20T00:01:59.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-x26x-7f4v-cqx7",
     "references": [
       "https://github.com/axiom-crypto/snark-verifier/security/advisories/GHSA-x26x-7f4v-cqx7",
@@ -1893,7 +2577,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-73"
     ],
     "published_at": "2026-11-19T23:59:15.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-wr3g-j6qj-xpgh",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-wr3g-j6qj-xpgh",
@@ -1929,7 +2613,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-502"
     ],
     "published_at": "2026-11-19T23:58:53.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-c59x-vh6j-3w8v",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-c59x-vh6j-3w8v",
@@ -1965,7 +2649,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-59"
     ],
     "published_at": "2026-11-19T23:56:30.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-g58v-j9g9-5gfg",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-g58v-j9g9-5gfg",
@@ -2002,7 +2686,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-88"
     ],
     "published_at": "2026-11-19T23:55:54.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-x8q7-6c7m-52gw",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-x8q7-6c7m-52gw",
@@ -2039,7 +2723,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-19T23:54:59.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-j8g8-j4j7-8j54",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-j8g8-j4j7-8j54",
@@ -2075,7 +2759,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-835"
     ],
     "published_at": "2026-11-19T23:54:33.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-pcm8-fqjx-rvx8",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-pcm8-fqjx-rvx8",
@@ -2111,7 +2795,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-74"
     ],
     "published_at": "2026-11-19T23:54:17.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-9ffx-rrgx-mhgx",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-9ffx-rrgx-mhgx",
@@ -2147,7 +2831,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:53:41.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-rh8m-wqhc-qmrf",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-rh8m-wqhc-qmrf",
@@ -2183,7 +2867,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:53:18.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-8846-p9w9-5frf",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-8846-p9w9-5frf",
@@ -2219,7 +2903,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:52:54.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-3h95-x772-4765",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-3h95-x772-4765",
@@ -2255,7 +2939,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:52:20.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-xfcv-m889-fmqg",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-xfcv-m889-fmqg",
@@ -2291,7 +2975,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:51:48.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-w3pv-xfw4-ghr7",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-w3pv-xfw4-ghr7",
@@ -2327,7 +3011,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:51:08.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-63wh-5r5m-wxr7",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-63wh-5r5m-wxr7",
@@ -2363,7 +3047,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:50:37.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-f2h2-f4fc-p978",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-f2h2-f4fc-p978",
@@ -2400,7 +3084,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-19T23:50:03.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-32p6-cwhc-8r78",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-32p6-cwhc-8r78",
@@ -2437,7 +3121,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-19T23:49:16.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-53pg-5qp8-mhvr",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-53pg-5qp8-mhvr",
@@ -2474,7 +3158,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-19T23:48:39.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-q4c8-9gwf-255x",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-q4c8-9gwf-255x",
@@ -2511,7 +3195,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-19T23:48:18.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-cj8f-5fp3-6m88",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-cj8f-5fp3-6m88",
@@ -2548,7 +3232,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-538"
     ],
     "published_at": "2026-11-19T23:47:58.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-w674-vqhw-g3pg",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-w674-vqhw-g3pg",
@@ -2585,7 +3269,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-427"
     ],
     "published_at": "2026-11-19T23:46:54.000Z",
-    "relative_time": "16h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-cc5r-64rf-75hg",
     "references": [
       "https://github.com/nltk/nltk/security/advisories/GHSA-cc5r-64rf-75hg",
@@ -2621,7 +3305,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-20"
     ],
     "published_at": "2026-11-19T22:50:33.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-gm9r-hvc9-96gv",
     "references": [
       "https://github.com/Guard-Core/guard-core/security/advisories/GHSA-gm9r-hvc9-96gv",
@@ -2657,7 +3341,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-693"
     ],
     "published_at": "2026-11-19T22:50:13.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-w7wg-6q7v-44f2",
     "references": [
       "https://github.com/Guard-Core/guard-core/security/advisories/GHSA-w7wg-6q7v-44f2",
@@ -2694,7 +3378,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-19T22:49:33.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-r7hm-rjvg-xx7j",
     "references": [
       "https://github.com/Guard-Core/guard-core/security/advisories/GHSA-r7hm-rjvg-xx7j",
@@ -2730,7 +3414,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-306"
     ],
     "published_at": "2026-11-19T22:48:33.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-m932-63jc-4jqq",
     "references": [
       "https://github.com/reza-gholizade/k8s-mcp-server/security/advisories/GHSA-m932-63jc-4jqq",
@@ -2767,7 +3451,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-19T22:48:14.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-3mgh-93r5-r7jf",
     "references": [
       "https://github.com/codewhale-hq/Codewhale/security/advisories/GHSA-3mgh-93r5-r7jf",
@@ -2804,7 +3488,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1188"
     ],
     "published_at": "2026-11-19T22:47:33.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-8hp3-xxrg-v9c8",
     "references": [
       "https://github.com/codewhale-hq/Codewhale/security/advisories/GHSA-8hp3-xxrg-v9c8",
@@ -2841,7 +3525,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-19T22:47:08.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-m4g8-47f9-h588",
     "references": [
       "https://github.com/GOVCERT-LU/eml_parser/security/advisories/GHSA-m4g8-47f9-h588",
@@ -2877,7 +3561,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-248"
     ],
     "published_at": "2026-11-19T22:46:24.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-vwhp-8p66-mq4f",
     "references": [
       "https://github.com/containerd/containerd/security/advisories/GHSA-vwhp-8p66-mq4f",
@@ -2914,7 +3598,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-522"
     ],
     "published_at": "2026-11-19T22:45:40.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-qx49-fqc8-xw99",
     "references": [
       "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
@@ -2951,7 +3635,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-19T22:44:42.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-phmp-hrw4-r36r",
     "references": [
       "https://github.com/lepture/mistune/security/advisories/GHSA-phmp-hrw4-r36r",
@@ -2988,7 +3672,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-19T22:44:00.000Z",
-    "relative_time": "17h ago",
+    "relative_time": "1d ago",
     "url": "https://github.com/advisories/GHSA-ww7q-mxrj-5ffg",
     "references": [
       "https://github.com/lepture/mistune/security/advisories/GHSA-ww7q-mxrj-5ffg",
@@ -3163,6 +3847,1025 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "references": [
       "https://portal.perforce.com/s/cve/a91Qi000003IaHpIAK/report-deserialization-code-execution",
       "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+    ]
+  },
+  {
+    "id": "CVE-2026-21158",
+    "cve_id": "CVE-2026-21158",
+    "ghsa_id": null,
+    "title": "Improper certificate validation in CP prior to SMR Nov-2026 Release 1 allows local privileged attackers to bypas...",
+    "description": "Improper certificate validation in CP prior to SMR Nov-2026 Release 1 allows local privileged attackers to bypass SIM lock.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.3,
+    "cvss_vector": "CVSS:4.0/AV:P/AC:L/AT:P/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00096,
+    "epss_percentile": 0.00693,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-295"
+    ],
+    "published_at": "2026-11-16T12:17:56.413Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21158",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21156",
+    "cve_id": "CVE-2026-21156",
+    "ghsa_id": null,
+    "title": "Out-of-bounds write in libsmkvextractor.so prior to SMR Nov-2026 Release 1 allows local attackers to write out-o...",
+    "description": "Out-of-bounds write in libsmkvextractor.so prior to SMR Nov-2026 Release 1 allows local attackers to write out-of-bounds memory.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00119,
+    "epss_percentile": 0.01834,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-787"
+    ],
+    "published_at": "2026-11-16T12:17:56.290Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21156",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21155",
+    "cve_id": "CVE-2026-21155",
+    "ghsa_id": null,
+    "title": "Out-of-bounds write in bootloader prior to SMR Nov-2026 Release 1 allows physical attackers to write out-of-boun...",
+    "description": "Out-of-bounds write in bootloader prior to SMR Nov-2026 Release 1 allows physical attackers to write out-of-bounds memory.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.7,
+    "cvss_vector": "CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00269,
+    "epss_percentile": 0.19477,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-787"
+    ],
+    "published_at": "2026-11-16T12:17:56.143Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21155",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21154",
+    "cve_id": "CVE-2026-21154",
+    "ghsa_id": null,
+    "title": "Improper authorization in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to access dump data.",
+    "description": "Improper authorization in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to access dump data.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00113,
+    "epss_percentile": 0.01479,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-285"
+    ],
+    "published_at": "2026-11-16T12:17:56.023Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21154",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21153",
+    "cve_id": "CVE-2026-21153",
+    "ghsa_id": null,
+    "title": "Stack-based buffer overflow in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to execute a...",
+    "description": "Stack-based buffer overflow in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to execute arbitrary code.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.4,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00139,
+    "epss_percentile": 0.03338,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-121"
+    ],
+    "published_at": "2026-11-16T12:17:55.883Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21153",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21152",
+    "cve_id": "CVE-2026-21152",
+    "ghsa_id": null,
+    "title": "Improper input validation in libMyFilterPlugin.camera.samsung.so prior to SMR Nov-2026 Release 1 allows local at...",
+    "description": "Improper input validation in libMyFilterPlugin.camera.samsung.so prior to SMR Nov-2026 Release 1 allows local attackers to potentially execute arbitrary code. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.0015,
+    "epss_percentile": 0.04235,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-20"
+    ],
+    "published_at": "2026-11-16T12:17:55.757Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21152",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21151",
+    "cve_id": "CVE-2026-21151",
+    "ghsa_id": null,
+    "title": "Improper privilege management in TransitionPlayer prior to SMR Nov-2026 Release 1 allows local privileged attack...",
+    "description": "Improper privilege management in TransitionPlayer prior to SMR Nov-2026 Release 1 allows local privileged attackers to execute arbitrary code with launcher privilege.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.3,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00145,
+    "epss_percentile": 0.038,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-269"
+    ],
+    "published_at": "2026-11-16T12:17:55.627Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21151",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21150",
+    "cve_id": "CVE-2026-21150",
+    "ghsa_id": null,
+    "title": "Improper access control in edmnativehelper prior to SMR Nov-2026 Release 1 allows local attackers to access sens...",
+    "description": "Improper access control in edmnativehelper prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00149,
+    "epss_percentile": 0.04133,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-284"
+    ],
+    "published_at": "2026-11-16T12:17:55.503Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21150",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21149",
+    "cve_id": "CVE-2026-21149",
+    "ghsa_id": null,
+    "title": "Improper access control in StatusBarManagerService prior to SMR Nov-2026 Release 1 allows local attackers to use...",
+    "description": "Improper access control in StatusBarManagerService prior to SMR Nov-2026 Release 1 allows local attackers to use the privileged APIs.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00149,
+    "epss_percentile": 0.04133,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-284"
+    ],
+    "published_at": "2026-11-16T12:17:55.387Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21149",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21148",
+    "cve_id": "CVE-2026-21148",
+    "ghsa_id": null,
+    "title": "Incorrect authorization in Samsung Messages prior to SMR Nov-2026 Release 1 allows local attackers to access sen...",
+    "description": "Incorrect authorization in Samsung Messages prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00113,
+    "epss_percentile": 0.0148,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-863"
+    ],
+    "published_at": "2026-11-16T12:17:55.260Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21148",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21147",
+    "cve_id": "CVE-2026-21147",
+    "ghsa_id": null,
+    "title": "Improper export of android application components in CoverScreenWidgetActionActivity in Samsung Contacts prior t...",
+    "description": "Improper export of android application components in CoverScreenWidgetActionActivity in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.8,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00098,
+    "epss_percentile": 0.00766,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-926"
+    ],
+    "published_at": "2026-11-16T12:17:55.137Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21147",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21146",
+    "cve_id": "CVE-2026-21146",
+    "ghsa_id": null,
+    "title": "Improper export of android application components in CoverScreenWidgetActionActivitySmall in Samsung Contacts pr...",
+    "description": "Improper export of android application components in CoverScreenWidgetActionActivitySmall in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.8,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00098,
+    "epss_percentile": 0.00767,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-926"
+    ],
+    "published_at": "2026-11-16T12:17:55.017Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21146",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21145",
+    "cve_id": "CVE-2026-21145",
+    "ghsa_id": null,
+    "title": "Improper export of android application components in CoverScreenWidgetActionActivityLarge in Samsung Contacts pr...",
+    "description": "Improper export of android application components in CoverScreenWidgetActionActivityLarge in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 4.8,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00098,
+    "epss_percentile": 0.00766,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-926"
+    ],
+    "published_at": "2026-11-16T12:17:54.893Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21145",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21144",
+    "cve_id": "CVE-2026-21144",
+    "ghsa_id": null,
+    "title": "Improper authorization in RecentsCallLogLargeWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 ...",
+    "description": "Improper authorization in RecentsCallLogLargeWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00113,
+    "epss_percentile": 0.0148,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-285"
+    ],
+    "published_at": "2026-11-16T12:17:54.350Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21144",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21143",
+    "cve_id": "CVE-2026-21143",
+    "ghsa_id": null,
+    "title": "Improper authorization in CoverScreenRecentsWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 a...",
+    "description": "Improper authorization in CoverScreenRecentsWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00113,
+    "epss_percentile": 0.01479,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-285"
+    ],
+    "published_at": "2026-11-16T12:17:54.133Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21143",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21142",
+    "cve_id": "CVE-2026-21142",
+    "ghsa_id": null,
+    "title": "Incorrect default permissions in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to acce...",
+    "description": "Incorrect default permissions in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to access profile configuration.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "LOW",
+    "cvss_score": 2.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00149,
+    "epss_percentile": 0.04132,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-276"
+    ],
+    "published_at": "2026-11-16T12:17:53.997Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21142",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21141",
+    "cve_id": "CVE-2026-21141",
+    "ghsa_id": null,
+    "title": "Improper access control in Samsung Dialer prior to SMR Nov-2026 Release 1 allows local attackers to access sensi...",
+    "description": "Improper access control in Samsung Dialer prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00149,
+    "epss_percentile": 0.04133,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-284"
+    ],
+    "published_at": "2026-11-16T12:17:53.860Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21141",
+    "references": [
+      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-15707",
+    "cve_id": "CVE-2026-15707",
+    "ghsa_id": null,
+    "title": "An uncontrolled search path vulnerability (CWE-427) in statically linked OpenSSL libraries within Netskope Clien...",
+    "description": "An uncontrolled search path vulnerability (CWE-427) in statically linked OpenSSL libraries within Netskope Client (stAgentSvc.exe) and Endpoint DLP (epdlp.exe) on Windows allows an authenticated local attacker to execute arbitrary code with elevated SYSTEM privileges. The services retain internal build-time paths referencing a secondary drive location. On Windows systems where default volume permissions allow stan...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.5,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00162,
+    "epss_percentile": 0.05551,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-427"
+    ],
+    "published_at": "2026-11-16T12:17:53.653Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15707",
+    "references": [
+      "https://www.netskope.com/resources/netskope-resources/netskope-security-advisory-nskpsa-2026-005"
+    ]
+  },
+  {
+    "id": "CVE-2026-129553",
+    "cve_id": "CVE-2026-129553",
+    "ghsa_id": null,
+    "title": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackContr...",
+    "description": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackController that allows unauthenticated attackers to redirect users by supplying an unvalidated clientCallback query parameter. Attackers can craft links to the /:provider/callback route that send victims to attacker-controlled sites for phishing and leak the issued temporary access token appended after login.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "epss_score": 0.00189,
+    "epss_percentile": 0.08758,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-601"
+    ],
+    "published_at": "2026-11-16T12:17:53.490Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129553",
+    "references": [
+      "https://github.com/tenseijs/tensei",
+      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/social-auth/src/index.js#L18-L28",
+      "https://github.com/tenseijs/tensei/issues/398",
+      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-open-redirect-via-tensei-social-auth-oauth-callback"
+    ]
+  },
+  {
+    "id": "CVE-2026-129552",
+    "cve_id": "CVE-2026-129552",
+    "ghsa_id": null,
+    "title": "Tensei through 0.11.5 contains an authentication bypass vulnerability in @tensei/auth that falls back to the har...",
+    "description": "Tensei through 0.11.5 contains an authentication bypass vulnerability in @tensei/auth that falls back to the hard-coded JWT signing key 'auth-secret-key' when JWT_SECRET is unset. Unauthenticated attackers can sign tokens with arbitrary user ids accepted by populateContextFromToken to impersonate any user, including administrators.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "CRITICAL",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "epss_score": 0.00535,
+    "epss_percentile": 0.46075,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-1394"
+    ],
+    "published_at": "2026-11-16T12:17:53.337Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129552",
+    "references": [
+      "https://github.com/tenseijs/tensei",
+      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/auth/src/index.ts#L94-L98",
+      "https://github.com/tenseijs/tensei/issues/398",
+      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-authentication-bypass-via-hard-coded-jwt-secret-in-tensei-auth"
+    ]
+  },
+  {
+    "id": "CVE-2026-129551",
+    "cve_id": "CVE-2026-129551",
+    "ghsa_id": null,
+    "title": "Tensei through 0.11.5 contains a prototype pollution vulnerability in parseSortFromStringToObject of @tensei/res...",
+    "description": "Tensei through 0.11.5 contains a prototype pollution vulnerability in parseSortFromStringToObject of @tensei/rest that allows unauthenticated attackers to set Object.prototype properties via the sort parameter. Attackers can send a sort value like __proto__.<name>:<value> to list, fetch-one, update or delete routes before authorization, altering application logic and causing denial of service.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+    "epss_score": 0.00378,
+    "epss_percentile": 0.32639,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-1321"
+    ],
+    "published_at": "2026-11-16T12:17:53.190Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129551",
+    "references": [
+      "https://github.com/tenseijs/tensei",
+      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/rest/src/populate-helpers.ts#L5-L20",
+      "https://github.com/tenseijs/tensei/issues/398",
+      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-unauthenticated-prototype-pollution-via-sort-parameter"
+    ]
+  },
+  {
+    "id": "CVE-2026-129550",
+    "cve_id": "CVE-2026-129550",
+    "ghsa_id": null,
+    "title": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated ...",
+    "description": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated or authenticated users to assign themselves arbitrary roles via the exposed User Roles field. Attackers can supply a roles array during registration, a POST to the users route, or a PATCH to their own record to gain administrator permissions.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "CRITICAL",
+    "cvss_score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "epss_score": 0.00395,
+    "epss_percentile": 0.34584,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-915"
+    ],
+    "published_at": "2026-11-16T12:17:53.033Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129550",
+    "references": [
+      "https://github.com/tenseijs/tensei",
+      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/auth/src/index.ts#L311-L333",
+      "https://github.com/tenseijs/tensei/issues/398",
+      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-privilege-escalation-via-self-assigned-roles-in-tensei-auth"
+    ]
+  },
+  {
+    "id": "CVE-2026-129549",
+    "cve_id": "CVE-2026-129549",
+    "ghsa_id": null,
+    "title": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows...",
+    "description": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows unauthenticated attackers to upload dangerous file types via the files/upload route. Attackers can set the multipart Content-Type to upload HTML or SVG files served from the application origin, causing stored cross-site scripting and storage consumption.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "epss_score": 0.00202,
+    "epss_percentile": 0.10381,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-434"
+    ],
+    "published_at": "2026-11-16T12:17:52.860Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129549",
+    "references": [
+      "https://github.com/tenseijs/tensei",
+      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/media/server/helpers/process-request.ts#L189-L216",
+      "https://github.com/tenseijs/tensei/issues/398",
+      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-unauthenticated-file-upload-via-tensei-media-files-upload"
+    ]
+  },
+  {
+    "id": "CVE-2026-129548",
+    "cve_id": "CVE-2026-129548",
+    "ghsa_id": null,
+    "title": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated us...",
+    "description": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated users to upload HTML or SVG files via the upload-file endpoint without type restrictions. Attackers can share links to files served unauthenticated through the file get route, executing JavaScript in the admin origin to steal administrator JWTs from localStorage.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+    "epss_score": 0.00214,
+    "epss_percentile": 0.11986,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-434"
+    ],
+    "published_at": "2026-11-16T12:17:52.707Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129548",
+    "references": [
+      "https://github.com/DifuseHQ/Kalmia",
+      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/handlers/file.go#L19-L61",
+      "https://github.com/DifuseHQ/Kalmia/issues/35",
+      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-stored-xss-via-unrestricted-file-upload"
+    ]
+  },
+  {
+    "id": "CVE-2026-129547",
+    "cve_id": "CVE-2026-129547",
+    "ghsa_id": null,
+    "title": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenti...",
+    "description": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenticated attackers to access private documentation by supplying any non-empty viewToken cookie. Attackers can send requests with a forged viewToken cookie, which is never validated as a JWT, to read all pages and assets of RequireAuth documentation sites.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "epss_score": 0.00463,
+    "epss_percentile": 0.41008,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-287"
+    ],
+    "published_at": "2026-11-16T12:17:52.550Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129547",
+    "references": [
+      "https://github.com/DifuseHQ/Kalmia",
+      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/middleware/rspress.go#L20-L70",
+      "https://github.com/DifuseHQ/Kalmia/issues/35",
+      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-authentication-bypass-via-viewtoken-cookie"
+    ]
+  },
+  {
+    "id": "CVE-2026-129546",
+    "cve_id": "CVE-2026-129546",
+    "ghsa_id": null,
+    "title": "Kalmia through 0.2.0 contains an information disclosure vulnerability that allows authenticated read-only users ...",
+    "description": "Kalmia through 0.2.0 contains an information disclosure vulnerability that allows authenticated read-only users to retrieve Git deployment credentials via documentation API responses. Attackers can query GET /kal-api/docs/documentations or POST /kal-api/docs/documentation to obtain plaintext gitUser and gitPassword values and authenticate to external Git repositories.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "epss_score": 0.00348,
+    "epss_percentile": 0.29139,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-200"
+    ],
+    "published_at": "2026-11-16T12:17:52.383Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129546",
+    "references": [
+      "https://github.com/DifuseHQ/Kalmia",
+      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/services/docs_docs.go#L52-L55",
+      "https://github.com/DifuseHQ/Kalmia/issues/35",
+      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-git-credential-disclosure-via-documentation-api"
+    ]
+  },
+  {
+    "id": "CVE-2026-129545",
+    "cve_id": "CVE-2026-129545",
+    "ghsa_id": null,
+    "title": "Kalmia through 0.2.0 contains a privilege escalation vulnerability that allows low-privileged authenticated user...",
+    "description": "Kalmia through 0.2.0 contains a privilege escalation vulnerability that allows low-privileged authenticated users to modify any account via the /kal-api/auth/user/edit endpoint. Attackers holding only read permission can set their admin flag and 'all' permission or reset an administrator's password to fully take over the instance.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "epss_score": 0.00283,
+    "epss_percentile": 0.21359,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-269"
+    ],
+    "published_at": "2026-11-16T12:17:52.203Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129545",
+    "references": [
+      "https://github.com/DifuseHQ/Kalmia",
+      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/services/auth.go#L183-L232",
+      "https://github.com/DifuseHQ/Kalmia/issues/35",
+      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-privilege-escalation-via-kal-api-auth-user-edit"
+    ]
+  },
+  {
+    "id": "CVE-2026-124631",
+    "cve_id": "CVE-2026-124631",
+    "ghsa_id": null,
+    "title": "In affected versions of Octopus Server, insufficient authorization checks allowed a low-privileged authenticated...",
+    "description": "In affected versions of Octopus Server, insufficient authorization checks allowed a low-privileged authenticated user to register an Argo CD gateway, which could result in unauthorized changes to Argo CD Application data for projects and environments outside their permissions within the same Space.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00269,
+    "epss_percentile": 0.19536,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-863"
+    ],
+    "published_at": "2026-11-16T12:17:46.773Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124631",
+    "references": [
+      "https://advisories.octopus.com/post/2026/sa2026-27"
+    ]
+  },
+  {
+    "id": "CVE-2026-124629",
+    "cve_id": "CVE-2026-124629",
+    "ghsa_id": null,
+    "title": "In affected versions of Octopus Server, insufficient authorization checks on scheduled project triggers allowed ...",
+    "description": "In affected versions of Octopus Server, insufficient authorization checks on scheduled project triggers allowed users who were permitted to deploy existing releases, but not to create new ones, to configure a trigger that could result in new releases being created and deployed without the required permission being assigned. The resulting audit events were attributed to the system rather than to the user who config...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00324,
+    "epss_percentile": 0.26115,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-863"
+    ],
+    "published_at": "2026-11-16T12:17:46.640Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124629",
+    "references": [
+      "https://advisories.octopus.com/post/2026/sa2026-25"
+    ]
+  },
+  {
+    "id": "CVE-2026-123745",
+    "cve_id": "CVE-2026-123745",
+    "ghsa_id": null,
+    "title": "In affected versions of Octopus Server, improper path validation allowed a user with scoped runbook permissions ...",
+    "description": "In affected versions of Octopus Server, improper path validation allowed a user with scoped runbook permissions to execute runbooks on offline package drop targets, this could result in exposure of Server working-directory files outside their permitted scope and deletion of those files.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00292,
+    "epss_percentile": 0.22309,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-22"
+    ],
+    "published_at": "2026-11-16T12:17:46.170Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123745",
+    "references": [
+      "https://advisories.octopus.com/post/2026/sa2026-26"
+    ]
+  },
+  {
+    "id": "CVE-2026-116288",
+    "cve_id": "CVE-2026-116288",
+    "ghsa_id": null,
+    "title": "In affected versions of Octopus Server, a user with permission to edit team scoped roles could escalate their pr...",
+    "description": "In affected versions of Octopus Server, a user with permission to edit team scoped roles could escalate their privileges to deploy to projects and environments that they were not authorised to so.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00298,
+    "epss_percentile": 0.23039,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-269"
+    ],
+    "published_at": "2026-11-16T12:17:43.347Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116288",
+    "references": [
+      "https://advisories.octopus.com/post/2026/sa2026-28"
     ]
   },
   {
@@ -3592,1702 +5295,6 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "https://git.kernel.org/stable/c/1a40cbb9d83ad8c669125554fcd73e626a00dc65",
       "https://git.kernel.org/stable/c/cb1b95b98b63f10f38fb96a2ba17a9919017f916",
       "https://git.kernel.org/stable/c/e1301ab8a8411fccc7effe0711fc09939a94953c"
-    ]
-  },
-  {
-    "id": "CVE-2026-99302",
-    "cve_id": "CVE-2026-99302",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvmet-rdma: reject short connection request...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: nvmet-rdma: reject short connection requests nvmet_rdma_parse_cm_connect_req() treats RDMA-CM private data as a struct nvme_rdma_cm_req but accepts any nonzero private_data_len. The iWARP path allocates exactly the peer-provided length, so a six-byte MPA request reaches the parser and the hsqsize load reads two bytes past the allocation. Require t...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.0496,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:04.250Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99302",
-    "references": [
-      "https://git.kernel.org/stable/c/22d0eb8d7aa4e45d22491d7cc1327010f19c86b9",
-      "https://git.kernel.org/stable/c/36c3af0e94b6c385c4934c028cbca27e138ae1ee",
-      "https://git.kernel.org/stable/c/635e760169a87abf03874cd4636cd91b580cb427",
-      "https://git.kernel.org/stable/c/c17d443d1e984a0c0840692c6435cdc455936160"
-    ]
-  },
-  {
-    "id": "CVE-2026-99301",
-    "cve_id": "CVE-2026-99301",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio_net: atomically disable rx mode work...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: virtio_net: atomically disable rx mode work virtio-net uses a boolean to gate rx_mode_work during device teardown. The flag is changed under RTNL, but ndo_set_rx_mode checks it under the address-list lock. A callback can therefore pass the check and enqueue work after teardown has flushed it. The work is also enabled before late probe operations t...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.04961,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:03.987Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99301",
-    "references": [
-      "https://git.kernel.org/stable/c/04d1e4fc965c8a4378093174e908800f400b7485",
-      "https://git.kernel.org/stable/c/1234707482053f1d1ac7c5756207d2c29057974c",
-      "https://git.kernel.org/stable/c/3f4c7168ee28e582314249d86833bd515b945196",
-      "https://git.kernel.org/stable/c/c05c367e7a99521cd654b56042757979968b5644"
-    ]
-  },
-  {
-    "id": "CVE-2026-99300",
-    "cve_id": "CVE-2026-99300",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: go7007: only set audio_enabled if go...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: media: go7007: only set audio_enabled if go7007_snd_init() succeeded go7007_register_encoder() sets go->audio_enabled before calling go7007_snd_init() and discards its return value. go7007_snd_init() assigns go->snd_context only on success, so a failed ALSA setup leaves audio_enabled set with snd_context still NULL. The disconnect path tests audio...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.04957,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:03.730Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99300",
-    "references": [
-      "https://git.kernel.org/stable/c/1db31d3ddc386a8094a34e186243e26ce8fd175d",
-      "https://git.kernel.org/stable/c/2eacf058d2dbb0ae3aaf576459da9e5f2b6bbfbd",
-      "https://git.kernel.org/stable/c/5d17cf3d380d56018a5ae8ef03af8df12ed910e9",
-      "https://git.kernel.org/stable/c/8e2fc3941b4005eaeef0a6b69b44a8a4941b57ab"
-    ]
-  },
-  {
-    "id": "CVE-2026-99299",
-    "cve_id": "CVE-2026-99299",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: em28xx: reject audio endpoint with z...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: media: em28xx: reject audio endpoint with zero packet size em28xx_audio_urb_init() divides by the audio endpoint's wMaxPacketSize without checking it, so a USB device that declares a zero-sized audio endpoint divides by zero at probe time. Reject a zero-sized audio endpoint like a missing one; the caller already unwinds on a negative return. Oops:...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.04931,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:03.477Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99299",
-    "references": [
-      "https://git.kernel.org/stable/c/aebfe430ba885d2f8fc882d7a6d60a7fdbe535d8",
-      "https://git.kernel.org/stable/c/dc0072c1b40fc376c6cbe821de947f3744ab254b",
-      "https://git.kernel.org/stable/c/e282da1201f16ff75b95f85cc0b0c1de7ff59731",
-      "https://git.kernel.org/stable/c/ffafe6ecce8794ed821689b874964da3ab9d0869"
-    ]
-  },
-  {
-    "id": "CVE-2026-99298",
-    "cve_id": "CVE-2026-99298",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ipv4: add zero check for snd_cwnd_clam...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: net: ipv4: add zero check for snd_cwnd_clamp When RTAX_CWND is locked, user is able to pass 0 into it. This could lead to writing 0 to tp->snd_cwnd, leading to a division by zero error. Oops: divide error: 0000 [#1] SMP KASAN NOPTI Call Trace: <IRQ> tcp_reno_cong_avoid (net/ipv4/tcp_cong.c:510 (discriminator 1)) tcp_ack (net/ipv4/tcp_input.c:3517 ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.04959,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:03.210Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99298",
-    "references": [
-      "https://git.kernel.org/stable/c/0a978359afe76aadfbc57acee88c08999543a7ae",
-      "https://git.kernel.org/stable/c/363c8c79220d0db4d65dcd570529ddda15067cb5",
-      "https://git.kernel.org/stable/c/b8111914eb7cb1d269c1dec4a4958468ac7e17a4",
-      "https://git.kernel.org/stable/c/f9af5772ff0ef32fa4ffb43fc10861823e6a06e3"
-    ]
-  },
-  {
-    "id": "CVE-2026-99297",
-    "cve_id": "CVE-2026-99297",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: em28xx: fix double free in em28xx_al...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: media: em28xx: fix double free in em28xx_alloc_urbs When allocation of usb_bufs->buf[i] fails, em28xx_alloc_urbs() explicitly frees all items within usb_bufs->buf before calling em28xx_uninit_usb_xfer(), which also frees these items, causing them to be freed twice. BUG: KASAN: double-free in usb_free_urb.part.0 (drivers/usb/core/urb.c:25 ./include...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.8,
-    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.0012,
-    "epss_percentile": 0.01901,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:02.930Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99297",
-    "references": [
-      "https://git.kernel.org/stable/c/660c91b3100c949a0c33faf9d659d1c786ccd1ee",
-      "https://git.kernel.org/stable/c/9bc203322dbc8c2fe608555e387d4b493c4da2ef",
-      "https://git.kernel.org/stable/c/ecf511b8157e0648080bdae37f4f2eb98328c4b2",
-      "https://git.kernel.org/stable/c/fd427b8adae437cac78a2332241a03cac56e95c2"
-    ]
-  },
-  {
-    "id": "CVE-2026-99296",
-    "cve_id": "CVE-2026-99296",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nlibceph: bound mon_command ack decode to fr...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: libceph: bound mon_command ack decode to front len handle_command_ack() bounds the decode with msg->front_alloc_len, the size of the reply buffer, instead of msg->front.iov_len, the number of bytes the monitor sent. mon_alloc_msg() routes every CEPH_MSG_MON_COMMAND_ACK to get_generic_reply(), which returns the preallocated ->reply of whichever gen...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
-    "epss_score": 0.00423,
-    "epss_percentile": 0.37446,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:02.660Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99296",
-    "references": [
-      "https://git.kernel.org/stable/c/04a04953b4828bfd8efd4ea3e7e9ad7dac5b083b",
-      "https://git.kernel.org/stable/c/62b41a16d8603d4d809fda212f15c3e9c783a82b",
-      "https://git.kernel.org/stable/c/be9fa57665efae4060d17ab21675c1c033d54a80",
-      "https://git.kernel.org/stable/c/c6696ac94c8c3ad79a9fa57fc334af2dc1a1f72e"
-    ]
-  },
-  {
-    "id": "CVE-2026-99295",
-    "cve_id": "CVE-2026-99295",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: stop processing a read respons...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: smb: client: stop processing a read response after a receive error cifs_read_iter_from_socket() may call cifs_reconnect() before returning an error. The reconnect path aborts pending mids and invokes their callbacks. The callback can then release the cifs_io_subrequest containing rdata. cifs_readv_receive() nevertheless continues after a negative ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-    "epss_score": 0.0034,
-    "epss_percentile": 0.28261,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:02.403Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99295",
-    "references": [
-      "https://git.kernel.org/stable/c/51efca72345acdbedc4af76782d464bd15ba50ff",
-      "https://git.kernel.org/stable/c/558cb79cb242ce7ca8b32c4b39412d125879e8f2",
-      "https://git.kernel.org/stable/c/af78baeacd731a98531eaa3103bfe03f147cffb7",
-      "https://git.kernel.org/stable/c/ecc327edd96a65ac177379664cc0972d8a23dfa4"
-    ]
-  },
-  {
-    "id": "CVE-2026-99294",
-    "cve_id": "CVE-2026-99294",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_fwd_netdev: use recursion co...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: netfilter: nft_fwd_netdev: use recursion counter in neigh egress path nft_fwd_neigh can be used in egress chains (NF_NETDEV_EGRESS). When the forwarding rule targets the same device or two devices forward to each other, neigh_xmit() triggers dev_queue_xmit() which re-enters nf_hook_egress(), causing infinite recursion and stack overflow. Move the ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.0016,
-    "epss_percentile": 0.05335,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:02.157Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99294",
-    "references": [
-      "https://git.kernel.org/stable/c/1d47b55b36d2ec73fe6901212c8b28a593c3b27c",
-      "https://git.kernel.org/stable/c/fcacd948b10a351aa128acd3c2c4cee62d1ea677"
-    ]
-  },
-  {
-    "id": "CVE-2026-99293",
-    "cve_id": "CVE-2026-99293",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: don't BUG when the copy buffer is exh...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: fuse: don't BUG when the copy buffer is exhausted fuse_copy_fill() hits BUG_ON(!err) once the iterator backing the copy runs out of pages. Over io-uring the amount copied is not bounded by the payload buffer the server registered, so an unprivileged user can drain the iterator and panic the host - mount a FUSE filesystem with small payload buffers...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00155,
-    "epss_percentile": 0.04735,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:01.900Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99293",
-    "references": [
-      "https://git.kernel.org/stable/c/10a58bf0107a02854584ed79281d05a84d62d900",
-      "https://git.kernel.org/stable/c/61adcab593ff6bb806ba09df8c2c3d7e19edc908",
-      "https://git.kernel.org/stable/c/c1338aae7b4054e26f322155423f6aba90aeea23"
-    ]
-  },
-  {
-    "id": "CVE-2026-99292",
-    "cve_id": "CVE-2026-99292",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix slab-out-of-bounds write i...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: smb: client: fix slab-out-of-bounds write in id_mode_to_cifs_acl() In id_mode_to_cifs_acl(), while the chown branch reserves sizeof(struct smb_ntsd) + 2 * sizeof(struct smb_sid) (plus sizeof(struct smb_acl) and the worst-case ACE space after commit 0ee150794c75 (\"smb: client: fix heap overflow in DACL owner/group rewrite\")), the chmod branch only ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00572,
-    "epss_percentile": 0.48214,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:01.647Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99292",
-    "references": [
-      "https://git.kernel.org/stable/c/a377a3645c7d0246af0bc4ef24db94bb2670bdde",
-      "https://git.kernel.org/stable/c/ba57bfe1a9fa1566757cd3f3310ccdf88f4b7673",
-      "https://git.kernel.org/stable/c/be1bcc9147facd85dc2ebe48688afde6d5590f10",
-      "https://git.kernel.org/stable/c/cde80904e285a7ac29ba2e06bc23a60b09b05f54"
-    ]
-  },
-  {
-    "id": "CVE-2026-99291",
-    "cve_id": "CVE-2026-99291",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix SMB2 CREATE response buffer over...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix SMB2 CREATE response buffer overflow smb2_allocate_rsp_buf() uses the MAX_CIFS_SMALL_BUFFER_SIZE (448-byte) buffer for a single SMB2_CREATE response. That buffer also holds a 4-byte length field, which only leaves 444 bytes for the SMB2 body. The AAPL response made this buffer too small. After 8f1b796ff113, a request with AAPL response ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00312,
-    "epss_percentile": 0.2472,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:01.393Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99291",
-    "references": [
-      "https://git.kernel.org/stable/c/713c31a3a225b6239a37ac7fbfb394567f8b3519",
-      "https://git.kernel.org/stable/c/824a572c0f909ca51fdb7e18e4eee33ca7896c7a"
-    ]
-  },
-  {
-    "id": "CVE-2026-99290",
-    "cve_id": "CVE-2026-99290",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix use-after-free after a failed du...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix use-after-free after a failed durable reconnect ksmbd_reopen_durable_fd() republishes a detached durable handle in the reconnecting session's file table and takes no reference for that entry. If smb2_open() then fails, cleanup relies on the final ksmbd_fd_put() to remove the volatile id. Two reconnects of the same handle can both take a...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00289,
-    "epss_percentile": 0.21954,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:01.130Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99290",
-    "references": [
-      "https://git.kernel.org/stable/c/248b5819591c577727930e4e255a455235fab50a",
-      "https://git.kernel.org/stable/c/5078a4e41b29acdf6be52e4a7cc8a59c2a72a471",
-      "https://git.kernel.org/stable/c/bd47ee501b6ac4a26ae41f780a43b7967302a269",
-      "https://git.kernel.org/stable/c/edacf65866a9f397438d5b9ff9f43312b29b4b3c"
-    ]
-  },
-  {
-    "id": "CVE-2026-99289",
-    "cve_id": "CVE-2026-99289",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix app-instance non-durable superse...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix app-instance non-durable supersede session UAF ksmbd_close_fd_app_instance_id() supersedes a prior open that has the same AppInstanceId. It reaches that open's session through opinfo->sess. This pointer is not refcounted. Session teardown detaches durable handles before it frees the session. It does not detach a non-durable open. That o...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00508,
-    "epss_percentile": 0.44287,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:00.870Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99289",
-    "references": [
-      "https://git.kernel.org/stable/c/a5b190b352b0ba85f4debe436f42950ced10fadb",
-      "https://git.kernel.org/stable/c/f728cfee6929057087c303d07d7a6a7c61196b48"
-    ]
-  },
-  {
-    "id": "CVE-2026-128841",
-    "cve_id": "CVE-2026-128841",
-    "ghsa_id": null,
-    "title": "** UNSUPPORTED WHEN ASSIGNED ** Missing authentication for critical function vulnerability in Apache Griffin Web...",
-    "description": "** UNSUPPORTED WHEN ASSIGNED ** Missing authentication for critical function vulnerability in Apache Griffin Web Service. The REST API does not have any authentication. This includes sensitive endpoints, such as job submission when a Livy/Spark backend is configured. The API must be properly secured on the network level, and this fact was arguably not documented as clearly as it could have. This issue affects Apac...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-    "epss_score": 0.00398,
-    "epss_percentile": 0.34935,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-306"
-    ],
-    "published_at": "2026-11-16T10:16:46.467Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128841",
-    "references": [
-      "https://lists.apache.org/thread.html/9fls3018wcgl0k0srsfofvlncgskb8jh",
-      "http://www.openwall.com/lists/oss-security/2026/11/16/3"
-    ]
-  },
-  {
-    "id": "CVE-2026-115690",
-    "cve_id": "CVE-2026-115690",
-    "ghsa_id": null,
-    "title": "Apache WSS4J remembers the UsernameToken Nonce, the Timestamp and signature of a signed message, and the ID of a...",
-    "description": "Apache WSS4J remembers the UsernameToken Nonce, the Timestamp and signature of a signed message, and the ID of a SAML 2.0 \"OneTimeUse\" assertion, so that a captured message cannot be accepted twice. It checked whether a value had already been seen, validated the message, and only then remembered the value, as two separate steps. If several copies of the same message were processed at the same time, they could all ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
-    "epss_score": 0.00271,
-    "epss_percentile": 0.19728,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-367"
-    ],
-    "published_at": "2026-11-16T10:16:45.497Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115690",
-    "references": [
-      "https://lists.apache.org/thread.html/y2gb5of7tbh08zqv8rlh8212720f6tcy",
-      "http://www.openwall.com/lists/oss-security/2026/11/16/4"
-    ]
-  },
-  {
-    "id": "CVE-2026-102448",
-    "cve_id": "CVE-2026-102448",
-    "ghsa_id": null,
-    "title": "A vulnerability has been identified in Rexroth IndraWorks.",
-    "description": "A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user’s system by parsing a manipulated file, because the file parser fails to properly sanitize the path name(s) or references embedded in the manipulated file. Exploitation requires user interaction, specifically opening a specially crafted file, which then causes the application to traverse ou...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.8,
-    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00247,
-    "epss_percentile": 0.16324,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-22"
-    ],
-    "published_at": "2026-11-16T10:16:45.307Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102448",
-    "references": [
-      "https://psirt.bosch.com/security-advisories/BOSCH-SA-591522.html"
-    ]
-  },
-  {
-    "id": "CVE-2026-129706",
-    "cve_id": "CVE-2026-129706",
-    "ghsa_id": null,
-    "title": "In the vulnerability-lookup web application, the Flask-Login session identifier was set to the bare numeric user...",
-    "description": "In the vulnerability-lookup web application, the Flask-Login session identifier was set to the bare numeric user ID (User.get_id() returned self.id). Because the session ID contained no component derived from the user's credential, it remained valid indefinitely regardless of any subsequent password change, account recovery, or administrator-initiated password reset. An attacker who had obtained a valid session fo...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.0027,
-    "epss_percentile": 0.19596,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-613"
-    ],
-    "published_at": "2026-11-16T09:17:13.487Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129706",
-    "references": [
-      "https://github.com/vulnerability-lookup/vulnerability-lookup/commit/d762810fb3b9d1ee34938a71cd8cbee544c1527d"
-    ]
-  },
-  {
-    "id": "CVE-2026-129703",
-    "cve_id": "CVE-2026-129703",
-    "ghsa_id": null,
-    "title": "In the vulnerability-lookup web application, the authentication decorators for feed-key requests (auth_feedkey_f...",
-    "description": "In the vulnerability-lookup web application, the authentication decorators for feed-key requests (auth_feedkey_func in website/decorators.py) and API-key requests (auth_func in website/web/api/v1/common.py) called Flask-Login's login_user() function. This caused the HTTP response to a request authenticated solely by a feed key (supplied as the X-FEED-KEY URL parameter) or an API key (supplied as the X-API-KEY head...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.8,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00312,
-    "epss_percentile": 0.24728,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-287",
-      "CWE-613"
-    ],
-    "published_at": "2026-11-16T09:17:13.293Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129703",
-    "references": [
-      "https://github.com/vulnerability-lookup/vulnerability-lookup/commit/3605d5b65d340343cc4b612d40d454afed84302b"
-    ]
-  },
-  {
-    "id": "CVE-2026-124672",
-    "cve_id": "CVE-2026-124672",
-    "ghsa_id": null,
-    "title": "The Burst Statistics WordPress plugin before 3.7.5 does not verify that a request is actually being routed to it...",
-    "description": "The Burst Statistics WordPress plugin before 3.7.5 does not verify that a request is actually being routed to its own REST API before unloading every other active plugin for that request, allowing unauthenticated attackers to have requests processed with other plugins' protections (such as REST access restrictions, hidden login pages and two-factor authentication) switched off, and to cause other plugins' schedule...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-    "epss_score": 0.00277,
-    "epss_percentile": 0.20642,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-20"
-    ],
-    "published_at": "2026-11-16T09:17:13.160Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124672",
-    "references": [
-      "https://wpscan.com/vulnerability/9ed32c00-5685-42a4-8eb9-4aef8c18eaba/"
-    ]
-  },
-  {
-    "id": "CVE-2026-114453",
-    "cve_id": "CVE-2026-114453",
-    "ghsa_id": null,
-    "title": "The Kadence Memberships WordPress plugin before 4.0.6 does not check that the membership level submitted when re...",
-    "description": "The Kadence Memberships WordPress plugin before 4.0.6 does not check that the membership level submitted when renewing a membership matches the level being renewed, pricing the renewal from the submitted level while activating the membership at its own level, allowing unauthenticated users to activate a paid membership without paying on sites that also offer a free level.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "LOW",
-    "cvss_score": 3.7,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
-    "epss_score": 0.00234,
-    "epss_percentile": 0.14646,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-20"
-    ],
-    "published_at": "2026-11-16T09:17:12.997Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114453",
-    "references": [
-      "https://wpscan.com/vulnerability/c14f6590-0a01-43c1-8c33-99e8c610cec8/"
-    ]
-  },
-  {
-    "id": "CVE-2026-105925",
-    "cve_id": "CVE-2026-105925",
-    "ghsa_id": null,
-    "title": "A denial of service vulnerability in the Qt QXmlSimpleReader class of the Qt 5 Core Compatibility APIs module (Q...",
-    "description": "A denial of service vulnerability in the Qt QXmlSimpleReader class of the Qt 5 Core Compatibility APIs module (Qt 6) and the Qt XML module (Qt 5).",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.2,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:U/V:X/RE:X/U:Green",
-    "epss_score": 0.00129,
-    "epss_percentile": 0.02569,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-776"
-    ],
-    "published_at": "2026-11-16T08:16:48.180Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105925",
-    "references": [
-      "https://codereview.qt-project.org/c/qt/qt5compat/+/761591",
-      "https://codereview.qt-project.org/c/qt/qt5compat/+/768372",
-      "https://codereview.qt-project.org/c/qt/qt5compat/+/768810",
-      "https://codereview.qt-project.org/c/qt/qt5compat/+/777950",
-      "https://www.qt.io/security-advisories?search=CVE-2026-105925"
-    ]
-  },
-  {
-    "id": "CVE-2026-129606",
-    "cve_id": "CVE-2026-129606",
-    "ghsa_id": null,
-    "title": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Samsung Open Source mTow...",
-    "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Samsung Open Source mTower allows Overflow Buffers.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.1,
-    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
-    "epss_score": 0.00135,
-    "epss_percentile": 0.03016,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-120"
-    ],
-    "published_at": "2026-11-16T06:16:49.183Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129606",
-    "references": [
-      "https://github.com/Samsung/mTower/pull/254"
-    ]
-  },
-  {
-    "id": "CVE-2026-121787",
-    "cve_id": "CVE-2026-121787",
-    "ghsa_id": null,
-    "title": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log ...",
-    "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log deletion action available to unauthenticated users, which could allow them to delete the Social Viral Downloader WordPress plugin through 2.0.3's entire download log.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
-    "epss_score": 0.00182,
-    "epss_percentile": 0.0792,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published_at": "2026-11-16T06:16:49.073Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121787",
-    "references": [
-      "https://wpscan.com/vulnerability/992a2040-f44f-42a2-a6f4-cc978828d717/"
-    ]
-  },
-  {
-    "id": "CVE-2026-121786",
-    "cve_id": "CVE-2026-121786",
-    "ghsa_id": null,
-    "title": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log ...",
-    "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log export action available to unauthenticated users, which could allow them to export the download log, including registered users' email addresses and IP addresses, to a publicly accessible file.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00206,
-    "epss_percentile": 0.10861,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-200"
-    ],
-    "published_at": "2026-11-16T06:16:48.253Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121786",
-    "references": [
-      "https://wpscan.com/vulnerability/e4fa58bd-9f97-40b0-b56b-ee8ffcaa5392/"
-    ]
-  },
-  {
-    "id": "CVE-2026-82156",
-    "cve_id": "CVE-2026-82156",
-    "ghsa_id": null,
-    "title": "Dell PowerStore contains an authorization-bypass vulnerability.",
-    "description": "Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00443,
-    "epss_percentile": 0.39374,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T04:16:44.230Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82156",
-    "references": [
-      "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "id": "CVE-2026-107520",
-    "cve_id": "CVE-2026-107520",
-    "ghsa_id": null,
-    "title": "Dell PowerStore contains a stored cross-site scripting (XSS) vulnerability.",
-    "description": "Dell PowerStore contains a stored cross-site scripting (XSS) vulnerability. A low-privileged authenticated attacker could exploit this vulnerability, potentially leading to execution of malicious script in a higher-privileged user's session.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.00271,
-    "epss_percentile": 0.19766,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-79"
-    ],
-    "published_at": "2026-11-16T04:16:44.033Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107520",
-    "references": [
-      "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "id": "CVE-2026-129525",
-    "cve_id": "CVE-2026-129525",
-    "ghsa_id": null,
-    "title": "Several endpoints that work on both issues and pull requests did not check which of the two the addressed item is.",
-    "description": "Several endpoints that work on both issues and pull requests did not check which of the two the addressed item is. A user who can read a repository's issues but not its pull requests could read pull request data through the issue sub-resources of the API (timeline, attachments, labels, subscriptions, tracked times and reactions), and list pull requests through the repository's issue search and milestone pages; the...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
-    "epss_score": 0.00215,
-    "epss_percentile": 0.12082,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published_at": "2026-11-16T03:17:19.700Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129525",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/39839",
-      "https://github.com/go-gitea/gitea/pull/39847",
-      "https://github.com/go-gitea/gitea/pull/39885",
-      "https://github.com/go-gitea/gitea/pull/39938"
-    ]
-  },
-  {
-    "id": "CVE-2026-129341",
-    "cve_id": "CVE-2026-129341",
-    "ghsa_id": null,
-    "title": "The web endpoint that removes an attachment skipped the permission check when the request came from the user who...",
-    "description": "The web endpoint that removes an attachment skipped the permission check when the request came from the user who had uploaded the attachment, and it was reachable with read access to issues or pull requests. A user who had uploaded a release asset could still delete it after losing write access to the repository. The endpoint now only deletes attachments that the user uploaded and that are not yet linked to an iss...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
-    "epss_score": 0.00238,
-    "epss_percentile": 0.15002,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T03:17:19.570Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129341",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40120",
-      "https://github.com/go-gitea/gitea/pull/40268",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-jr33-w6w7-86vj"
-    ]
-  },
-  {
-    "id": "CVE-2026-129337",
-    "cve_id": "CVE-2026-129337",
-    "ghsa_id": null,
-    "title": "Git over HTTP lowers the required permission for pushes to read access, so that the AGit flow works, and relies ...",
-    "description": "Git over HTTP lowers the required permission for pushes to read access, so that the AGit flow works, and relies on the repository's server-side hooks to enforce write access. A repository that is still being created by a migration, fork or template generation has no hooks yet, so a user with read access to it could push branches and tags during that window, or after a failed migration that left the repository in t...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
-    "epss_score": 0.00208,
-    "epss_percentile": 0.11015,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published_at": "2026-11-16T03:17:19.433Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129337",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40120",
-      "https://github.com/go-gitea/gitea/pull/40268",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-8cjj-9p56-j54f"
-    ]
-  },
-  {
-    "id": "CVE-2026-128365",
-    "cve_id": "CVE-2026-128365",
-    "ghsa_id": null,
-    "title": "Removing a team's review request looked up a review by the negated team ID, which for the team with ID 2 is the ...",
-    "description": "Removing a team's review request looked up a review by the negated team ID, which for the team with ID 2 is the ID of the built-in Actions user, and marked the review it found as official. In the organization that owns that team, a user who can change the review requests of a pull request could make an approval left by the Actions user count toward the approvals required by branch protection. Merging still require...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "LOW",
-    "cvss_score": 3.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
-    "epss_score": 0.00185,
-    "epss_percentile": 0.08191,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T03:17:19.293Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128365",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40120",
-      "https://github.com/go-gitea/gitea/pull/40268",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-74jf-6hjp-549c"
-    ]
-  },
-  {
-    "id": "CVE-2026-128359",
-    "cve_id": "CVE-2026-128359",
-    "ghsa_id": null,
-    "title": "When Gitea acts as an OAuth2 or OpenID Connect provider, the token endpoint did not check the state of the user.",
-    "description": "When Gitea acts as an OAuth2 or OpenID Connect provider, the token endpoint did not check the state of the user. After an administrator deactivated an account or prohibited its sign-in, existing refresh tokens and unused authorization codes of that user could still be exchanged for new tokens, so applications that sign users in through Gitea kept them signed in. The token endpoint now refuses users who may not sig...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
-    "epss_score": 0.00177,
-    "epss_percentile": 0.0741,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-613"
-    ],
-    "published_at": "2026-11-16T03:17:19.150Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128359",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-jrjr-q3rq-f899"
-    ]
-  },
-  {
-    "id": "CVE-2026-127958",
-    "cve_id": "CVE-2026-127958",
-    "ghsa_id": null,
-    "title": "A pull request review created through the API as a draft (`event` set to `PENDING` or left empty) was added to t...",
-    "description": "A pull request review created through the API as a draft (`event` set to `PENDING` or left empty) was added to the pull request timeline and announced through notifications and activity feeds like a submitted review. Its body and line comments were therefore visible to everyone who can read the pull request, including anonymous visitors of a public repository, before the reviewer submitted it. Pending reviews no l...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00244,
-    "epss_percentile": 0.1582,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-200"
-    ],
-    "published_at": "2026-11-16T03:17:19.010Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127958",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40260",
-      "https://github.com/go-gitea/gitea/pull/40272",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-859w-9wv7-c5x9"
-    ]
-  },
-  {
-    "id": "CVE-2026-126338",
-    "cve_id": "CVE-2026-126338",
-    "ghsa_id": null,
-    "title": "Replying to a code review comment accepted a review ID that belongs to a different pull request, through the web...",
-    "description": "Replying to a code review comment accepted a review ID that belongs to a different pull request, through the web form, the API and incoming mail replies. A signed-in user could reply on a pull request they can access with the ID of a review in a repository they cannot read, and the new comment was attached to that review and received the diff context of the commented lines. Replies are now only accepted for a revi...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "LOW",
-    "cvss_score": 3.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00257,
-    "epss_percentile": 0.17586,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-639"
-    ],
-    "published_at": "2026-11-16T03:17:18.863Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126338",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-wgx7-537g-xfrg"
-    ]
-  },
-  {
-    "id": "CVE-2026-125617",
-    "cve_id": "CVE-2026-125617",
-    "ghsa_id": null,
-    "title": "`GET /api/v1/users/{username}/orgs/{org}/permissions` only checked that the organization is visible to the calle...",
-    "description": "`GET /api/v1/users/{username}/orgs/{org}/permissions` only checked that the organization is visible to the caller and then returned the named user's role in it. Any signed-in user could learn whether another user is an owner, admin or member of a public or limited organization, including for members who conceal their membership. The roles are now only returned to the user themselves, to members of the organization...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00217,
-    "epss_percentile": 0.12349,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-200"
-    ],
-    "published_at": "2026-11-16T03:17:18.720Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125617",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40042",
-      "https://github.com/go-gitea/gitea/pull/40365",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-7mr2-v9gc-4467"
-    ]
-  },
-  {
-    "id": "CVE-2026-123642",
-    "cve_id": "CVE-2026-123642",
-    "ghsa_id": null,
-    "title": "The AGit flow (pushing to `refs/for/...`) did not check the pusher's access to pull requests again when it creat...",
-    "description": "The AGit flow (pushing to `refs/for/...`) did not check the pusher's access to pull requests again when it created the pull request. A user or deploy key with read access to the code only, or with write access to the wiki over SSH, could open pull requests in a repository where they have no access to pull requests. Creating a pull request through AGit now requires read access to the pull requests of the repository...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
-    "epss_score": 0.00196,
-    "epss_percentile": 0.0941,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-862"
-    ],
-    "published_at": "2026-11-16T03:17:18.587Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123642",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-9827-6wh6-634q"
-    ]
-  },
-  {
-    "id": "CVE-2026-123638",
-    "cve_id": "CVE-2026-123638",
-    "ghsa_id": null,
-    "title": "The \"Protected file patterns\" setting of a branch protection rule was checked against file names as git prints t...",
-    "description": "The \"Protected file patterns\" setting of a branch protection rule was checked against file names as git prints them, and git quotes names that contain a double quote, a backslash or a control character. Such names never matched a pattern, so a user with write access could add or change files under a protected pattern by direct push or through a pull request merge, and could move a protected file out of the pattern...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H",
-    "epss_score": 0.00364,
-    "epss_percentile": 0.30865,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-693"
-    ],
-    "published_at": "2026-11-16T03:17:18.453Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123638",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40362",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-w87g-xmrp-86v2"
-    ]
-  },
-  {
-    "id": "CVE-2026-123065",
-    "cve_id": "CVE-2026-123065",
-    "ghsa_id": null,
-    "title": "When a release was edited, the files of the attachments to remove were deleted by the identifiers submitted in t...",
-    "description": "When a release was edited, the files of the attachments to remove were deleted by the identifiers submitted in the form rather than by the attachments verified to belong to the release. A user with write access to the releases of any repository, including their own, could submit a crafted identifier that resolves to the stored file of another attachment and delete it, provided they know that attachment's UUID. The...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.7,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
-    "epss_score": 0.00278,
-    "epss_percentile": 0.2062,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-22",
-      "CWE-639"
-    ],
-    "published_at": "2026-11-16T03:17:18.323Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123065",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40120",
-      "https://github.com/go-gitea/gitea/pull/40268",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-4p89-xcq8-xfhm"
-    ]
-  },
-  {
-    "id": "CVE-2026-123009",
-    "cve_id": "CVE-2026-123009",
-    "ghsa_id": null,
-    "title": "When a file is edited in a fork through the web editor, Gitea can first copy a branch from the base repository i...",
-    "description": "When a file is edited in a fork through the web editor, Gitea can first copy a branch from the base repository into the fork. That copy did not check whether the user may read the base repository's code. A user who had forked a repository and later lost access to it, for example after it was made private or they were removed as a collaborator, could keep copying its current branches into their fork and read them. ...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.3,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00273,
-    "epss_percentile": 0.19976,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-284",
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T03:17:18.190Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123009",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-9vh6-6hgj-j5m5"
-    ]
-  },
-  {
-    "id": "CVE-2026-123002",
-    "cve_id": "CVE-2026-123002",
-    "ghsa_id": null,
-    "title": "Gitea accepted an unlimited number of wrong TOTP passcodes during sign-in, in the password reset flow and for Ba...",
-    "description": "Gitea accepted an unlimited number of wrong TOTP passcodes during sign-in, in the password reset flow and for Basic authentication with the `X-Gitea-OTP` header. An attacker who already knows an account's password could guess the six-digit passcode by trying codes at a high rate and sign in despite two-factor authentication. After five failed passcodes, further attempts for the account are now refused for 15 minutes.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00314,
-    "epss_percentile": 0.24832,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-307"
-    ],
-    "published_at": "2026-11-16T03:17:18.050Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123002",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/39993",
-      "https://github.com/go-gitea/gitea/pull/40374",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-5mx6-8rwm-52wf"
-    ]
-  },
-  {
-    "id": "CVE-2026-120991",
-    "cve_id": "CVE-2026-120991",
-    "ghsa_id": null,
-    "title": "When a container blob upload was rejected, for example because it exceeded a package size quota, the cleanup rem...",
-    "description": "When a container blob upload was rejected, for example because it exceeded a package size quota, the cleanup removed the blob from storage even if the same content already existed and was used by other packages. On an instance with a package quota configured, a user who can upload container images and has the exact content of another owner's package file or image layer could make it undownloadable. The cleanup now...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-    "epss_score": 0.00305,
-    "epss_percentile": 0.23747,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-460"
-    ],
-    "published_at": "2026-11-16T03:17:17.907Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120991",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40120",
-      "https://github.com/go-gitea/gitea/pull/40268",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-q8pg-ggp9-rm9m"
-    ]
-  },
-  {
-    "id": "CVE-2026-120729",
-    "cve_id": "CVE-2026-120729",
-    "ghsa_id": null,
-    "title": "The popup shown when hovering an issue reference loaded its data from the path of the hovered link and inserted ...",
-    "description": "The popup shown when hovering an issue reference loaded its data from the path of the hovered link and inserted part of the response as HTML. A user who can post a comment or other rendered content could add a link that is displayed as an ordinary issue reference but points to a file in a repository they control, so that the popup inserted that file's content into the page of anyone hovering the link and ran scrip...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.0021,
-    "epss_percentile": 0.11294,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-79"
-    ],
-    "published_at": "2026-11-16T03:17:17.773Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120729",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40207",
-      "https://github.com/go-gitea/gitea/pull/40225",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-wmr3-xg9x-vc55"
-    ]
-  },
-  {
-    "id": "CVE-2026-120725",
-    "cve_id": "CVE-2026-120725",
-    "ghsa_id": null,
-    "title": "With `REQUIRE_SIGNIN_VIEW = true`, the Git LFS endpoints still answered unauthenticated requests for repositorie...",
-    "description": "With `REQUIRE_SIGNIN_VIEW = true`, the Git LFS endpoints still answered unauthenticated requests for repositories that are not private. An anonymous client who knows the path of such a repository and the SHA-256 of an LFS object could download the object, and could use the batch endpoint to test whether an object exists. The Git LFS endpoints now require authentication when sign-in is required to view the instance.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "LOW",
-    "cvss_score": 3.7,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00265,
-    "epss_percentile": 0.18662,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-306"
-    ],
-    "published_at": "2026-11-16T03:17:17.633Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120725",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-8pmc-9g44-v9gw"
-    ]
-  },
-  {
-    "id": "CVE-2026-118535",
-    "cve_id": "CVE-2026-118535",
-    "ghsa_id": null,
-    "title": "A repository registered by its owner as a source of scoped workflows kept that registration when it was transfer...",
-    "description": "A repository registered by its owner as a source of scoped workflows kept that registration when it was transferred to another owner. The new owner could then change the workflows in the transferred repository, and they kept running in the previous owner's repositories with access to their Actions secrets and job tokens. A transfer now removes the owner-level registrations of the repository, and registrations whos...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L",
-    "epss_score": 0.00152,
-    "epss_percentile": 0.04459,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T03:17:17.500Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118535",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/40131",
-      "https://github.com/go-gitea/gitea/pull/40281",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.4.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-q3q9-39vr-q35j"
-    ]
-  },
-  {
-    "id": "CVE-2026-118389",
-    "cve_id": "CVE-2026-118389",
-    "ghsa_id": null,
-    "title": "The RubyGems package registry accepted gems whose platform, dependency names or dependency version requirements ...",
-    "description": "The RubyGems package registry accepted gems whose platform, dependency names or dependency version requirements contain newline characters. Because the compact index served to clients is line-based, a user who can publish a gem to an owner's registry could forge index entries, such as packages that do not exist or additional versions of an existing gem with dependencies of their choice. Clients that resolve gems f...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00352,
-    "epss_percentile": 0.29465,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-74"
-    ],
-    "published_at": "2026-11-16T03:17:17.350Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118389",
-    "references": [
-      "https://blog.gitea.com/release-of-28.4.0/",
-      "https://github.com/go-gitea/gitea/pull/39782",
-      "https://github.com/go-gitea/gitea/pull/39900",
-      "https://github.com/go-gitea/gitea/releases/tag/v28.3.0",
-      "https://github.com/go-gitea/gitea/security/advisories/GHSA-49c9-hm8q-6rvq"
-    ]
-  },
-  {
-    "id": "CVE-2026-129543",
-    "cve_id": "CVE-2026-129543",
-    "ghsa_id": null,
-    "title": "Access of resource using incompatible type ('type confusion') vulnerability in Samsung Open Source Starfish allo...",
-    "description": "Access of resource using incompatible type ('type confusion') vulnerability in Samsung Open Source Starfish allows Input Data Manipulation.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H",
-    "epss_score": 0.00175,
-    "epss_percentile": 0.07216,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-843"
-    ],
-    "published_at": "2026-11-16T02:17:12.557Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129543",
-    "references": [
-      "https://github.com/Samsung/starfish"
-    ]
-  },
-  {
-    "id": "CVE-2026-129542",
-    "cve_id": "CVE-2026-129542",
-    "ghsa_id": null,
-    "title": "Files or directories accessible to external parties vulnerability in Samsung Open Source Starfish allows Probe S...",
-    "description": "Files or directories accessible to external parties vulnerability in Samsung Open Source Starfish allows Probe System Files.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "LOW",
-    "cvss_score": 3.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
-    "epss_score": 0.00207,
-    "epss_percentile": 0.10986,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-552"
-    ],
-    "published_at": "2026-11-16T02:17:12.427Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129542",
-    "references": [
-      "https://github.com/Samsung/starfish"
-    ]
-  },
-  {
-    "id": "CVE-2026-129541",
-    "cve_id": "CVE-2026-129541",
-    "ghsa_id": null,
-    "title": "EdgeChat 2.5.0 through 2.21.0 contains a cross-site scripting vulnerability that allows invited users to inject ...",
-    "description": "EdgeChat 2.5.0 through 2.21.0 contains a cross-site scripting vulnerability that allows invited users to inject HTML through unescaped usernames in the Vditor @-mention autocomplete. Attackers can register with a username containing an img onerror payload that executes when mentioned, stealing the localStorage session token to take over victim accounts.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.00214,
-    "epss_percentile": 0.11985,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-79"
-    ],
-    "published_at": "2026-11-16T02:17:12.273Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129541",
-    "references": [
-      "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L112-L117",
-      "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L42-L54",
-      "https://github.com/aozorae/Edgechat/issues/60",
-      "https://vul.yulun.ac.cn/20261115/edgechat/",
-      "https://www.vulncheck.com/advisories/edgechat-2.5.0-through-2.21.0-xss-via-mention-autocomplete-username"
-    ]
-  },
-  {
-    "id": "CVE-2026-129540",
-    "cve_id": "CVE-2026-129540",
-    "ghsa_id": null,
-    "title": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL b...",
-    "description": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GET /api/log. Attackers can read the HS256 JWT signing secret from the option table and forge a manager role token to take over the /api/m/* management API.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00275,
-    "epss_percentile": 0.20317,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-89"
-    ],
-    "published_at": "2026-11-16T02:17:12.100Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129540",
-    "references": [
-      "https://github.com/VoAPI/VoAPI/issues/78",
-      "https://vul.yulun.ac.cn/20261115/voapi/",
-      "https://www.vulncheck.com/advisories/voapi-1.0.0-through-1.2.0-sql-injection-via-search-filter-key"
-    ]
-  },
-  {
-    "id": "CVE-2026-129539",
-    "cve_id": "CVE-2026-129539",
-    "ghsa_id": null,
-    "title": "SSCMS 7.2.0 through 7.4.0 contains an arbitrary file read vulnerability that allows any registered user-center a...",
-    "description": "SSCMS 7.2.0 through 7.4.0 contains an arbitrary file read vulnerability that allows any registered user-center account to copy server files by supplying source paths to the layerImageUpload endpoint. Attackers can send siteId 0 with crafted filePaths entries to copy configuration files into their public sitefiles/home upload directory and download them anonymously.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-    "epss_score": 0.0026,
-    "epss_percentile": 0.18052,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-73"
-    ],
-    "published_at": "2026-11-16T02:17:11.940Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129539",
-    "references": [
-      "https://github.com/siteserver/cms/blob/09ab59b9dd422782d9e1fe54f05088645f7c93e7/src/SSCMS.Web/Controllers/Home/Common/Form/LayerImageUploadController.Submit.cs#L114-L130",
-      "https://github.com/siteserver/cms/issues/3909",
-      "https://vul.yulun.ac.cn/20261114/siteserver-cms/",
-      "https://www.vulncheck.com/advisories/sscms-7.2.0-through-7.4.0-arbitrary-file-read-via-layerimageupload-endpoint"
     ]
   }
 ];
