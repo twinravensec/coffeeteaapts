@@ -30,7 +30,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T23:50:01.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r",
     "references": [
       "https://github.com/Budibase/budibase/security/advisories/GHSA-25qc-m4pw-2w8r",
@@ -68,7 +68,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1021"
     ],
     "published_at": "2026-11-20T23:49:47.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg",
     "references": [
       "https://github.com/Budibase/budibase/security/advisories/GHSA-r2q3-7m4h-63qg",
@@ -104,7 +104,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-20T23:49:18.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf",
     "references": [
       "https://github.com/facelessuser/wcmatch/security/advisories/GHSA-53pm-wgxf-c6qf",
@@ -141,7 +141,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-407"
     ],
     "published_at": "2026-11-20T23:48:51.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-q87h-c5m7-659j",
     "references": [
       "https://github.com/weblyzard/inscriptis/security/advisories/GHSA-q87h-c5m7-659j",
@@ -178,7 +178,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-776"
     ],
     "published_at": "2026-11-20T23:47:58.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-555j-qj3j-c8jv",
     "references": [
       "https://github.com/deeplook/svglib/security/advisories/GHSA-555j-qj3j-c8jv",
@@ -214,7 +214,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-79"
     ],
     "published_at": "2026-11-20T23:46:56.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
     "references": [
       "https://github.com/contao/contao/security/advisories/GHSA-h57j-5f5m-789v",
@@ -251,7 +251,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-266"
     ],
     "published_at": "2026-11-20T23:45:41.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
     "references": [
       "https://github.com/contao/contao/security/advisories/GHSA-r9qp-pqx5-8369",
@@ -288,7 +288,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T23:44:33.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
     "references": [
       "https://github.com/contao/contao/security/advisories/GHSA-23w9-4pg3-xwm3",
@@ -325,7 +325,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T23:43:26.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
     "references": [
       "https://github.com/contao/contao/security/advisories/GHSA-3r9g-pfhv-3228",
@@ -361,7 +361,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-362"
     ],
     "published_at": "2026-11-20T23:38:15.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
     "references": [
       "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-72jh-722p-rqr3",
@@ -397,7 +397,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-116"
     ],
     "published_at": "2026-11-20T23:37:39.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
     "references": [
       "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-43hx-xm7w-3mhj",
@@ -434,7 +434,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-459"
     ],
     "published_at": "2026-11-20T23:36:41.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
     "references": [
       "https://github.com/NASA-AMMOS/AIT-GUI/security/advisories/GHSA-jrjx-9jjw-747m",
@@ -471,7 +471,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-23"
     ],
     "published_at": "2026-11-20T23:33:14.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
     "references": [
       "https://github.com/hasenbanck/sevenz-rust2/security/advisories/GHSA-qh76-45cr-8xrc",
@@ -507,7 +507,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-400"
     ],
     "published_at": "2026-11-20T23:32:35.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
     "references": [
       "https://github.com/moscajs/aedes/security/advisories/GHSA-xxqp-5qx8-gj5q",
@@ -543,7 +543,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T23:31:59.000Z",
-    "relative_time": "1h ago",
+    "relative_time": "12h ago",
     "url": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h",
     "references": [
       "https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h",
@@ -580,7 +580,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-367"
     ],
     "published_at": "2026-11-20T16:39:34.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-9rv8-9hvg-92mq",
@@ -615,7 +615,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-20"
     ],
     "published_at": "2026-11-20T16:36:31.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "url": "https://github.com/advisories/GHSA-xhrc-7f76-vh96",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-xhrc-7f76-vh96",
@@ -651,7 +651,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-367"
     ],
     "published_at": "2026-11-20T16:33:27.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
     "references": [
       "https://github.com/uutils/coreutils/security/advisories/GHSA-fjjq-8hw5-cf9f",
@@ -687,7 +687,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-384"
     ],
     "published_at": "2026-11-20T16:25:26.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
     "references": [
       "https://github.com/ckan/ckan/security/advisories/GHSA-6499-jgj4-2wpf",
@@ -723,7 +723,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-772"
     ],
     "published_at": "2026-11-20T16:22:09.000Z",
-    "relative_time": "8h ago",
+    "relative_time": "19h ago",
     "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
     "references": [
       "https://github.com/netty/netty-incubator-codec-ohttp/security/advisories/GHSA-cg26-4c6j-2x8h",
@@ -760,7 +760,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1286"
     ],
     "published_at": "2026-11-20T14:59:40.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-x72p-hmqp-46hw",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x72p-hmqp-46hw",
@@ -796,7 +796,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-144"
     ],
     "published_at": "2026-11-20T14:58:53.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-xrgv-7vx6-5vx6",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-xrgv-7vx6-5vx6",
@@ -832,7 +832,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T14:56:58.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
     "references": [
       "https://github.com/openremote/core/security/advisories/GHSA-3h6w-xcw3-9xjj",
@@ -870,7 +870,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-915"
     ],
     "published_at": "2026-11-20T14:56:03.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
     "references": [
       "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-prhx-9q2h-ph2x",
@@ -906,7 +906,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-22"
     ],
     "published_at": "2026-11-20T14:55:18.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
     "references": [
       "https://github.com/webflorist/storyblok-backup/security/advisories/GHSA-vcx7-pfrh-mcfg",
@@ -943,7 +943,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-772"
     ],
     "published_at": "2026-11-20T14:54:50.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
     "references": [
       "https://github.com/Yakifo/amqtt/security/advisories/GHSA-wcqj-wx85-c75p",
@@ -980,7 +980,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-338"
     ],
     "published_at": "2026-11-20T14:52:33.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
     "references": [
       "https://github.com/poweradmin/poweradmin/security/advisories/GHSA-9657-8vc2-7g2p",
@@ -1018,7 +1018,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-863"
     ],
     "published_at": "2026-11-20T14:51:25.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8",
     "references": [
       "https://github.com/fabiolb/fabio/security/advisories/GHSA-4hrh-34w3-5ww8",
@@ -1054,7 +1054,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-522"
     ],
     "published_at": "2026-11-20T14:49:47.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-x7xj-4j4f-88xr",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x7xj-4j4f-88xr",
@@ -1090,7 +1090,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-78"
     ],
     "published_at": "2026-11-20T14:47:01.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-w3f2-pr6x-wwjc",
     "references": [
       "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-w3f2-pr6x-wwjc",
@@ -1127,7 +1127,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-862"
     ],
     "published_at": "2026-11-20T14:45:04.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
     "references": [
       "https://github.com/nilsteampassnet/TeamPass/security/advisories/GHSA-66q9-mxf2-xqw6",
@@ -1165,7 +1165,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-1333"
     ],
     "published_at": "2026-11-20T14:43:41.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
     "references": [
       "https://github.com/Yakifo/amqtt/security/advisories/GHSA-2hjf-7455-w946",
@@ -1203,7 +1203,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-248"
     ],
     "published_at": "2026-11-20T14:42:18.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-hghq-53p7-c582",
     "references": [
       "https://github.com/phires/go-guerrilla/security/advisories/GHSA-hghq-53p7-c582",
@@ -1239,7 +1239,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-89"
     ],
     "published_at": "2026-11-20T14:41:42.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-v9v2-98xq-627c",
     "references": [
       "https://github.com/prest/prest/security/advisories/GHSA-v9v2-98xq-627c",
@@ -1276,7 +1276,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-674"
     ],
     "published_at": "2026-11-20T14:40:45.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5",
     "references": [
       "https://github.com/sunnyadn/js-toml/security/advisories/GHSA-3g82-77xr-68x5",
@@ -1313,7 +1313,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-918"
     ],
     "published_at": "2026-11-20T14:35:29.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-x6w4-f264-3vvr",
     "references": [
       "https://github.com/christianhelle/refitter/security/advisories/GHSA-x6w4-f264-3vvr",
@@ -1350,7 +1350,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-73"
     ],
     "published_at": "2026-11-20T14:34:30.000Z",
-    "relative_time": "10h ago",
+    "relative_time": "21h ago",
     "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr",
     "references": [
       "https://github.com/appium/appium/security/advisories/GHSA-jwgx-mp9m-jwcr",
@@ -1386,7 +1386,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-502"
     ],
     "published_at": "2026-11-20T12:00:00.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
     "references": [
       "https://lists.apache.org/thread/cc0jck13nb9vvcmzxzwotr6n16mx28z9",
@@ -1419,7 +1419,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-288"
     ],
     "published_at": "2026-11-20T12:00:00.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
     "references": [
       "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495",
@@ -1452,7 +1452,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-943"
     ],
     "published_at": "2026-11-20T12:00:00.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
     "references": [
       "https://support.sap.com/en/my-support/knowledge-base/security-notes-news/bulletin-2025.html",
@@ -1485,7 +1485,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-798"
     ],
     "published_at": "2026-11-20T12:00:00.000Z",
-    "relative_time": "13h ago",
+    "relative_time": "1d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
     "references": [
       "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
@@ -3708,7 +3708,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-116"
     ],
     "published_at": "2026-11-18T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
     "references": [
       "https://www.synology.com/zh-tw/security/advisory/Synology_SA_24_20",
@@ -3741,7 +3741,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-420"
     ],
     "published_at": "2026-11-18T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
     "references": [
       "https://github.com/BerriAI/litellm/security/advisories/GHSA-wxxx-gvqv-xp7p",
@@ -3775,7 +3775,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-94"
     ],
     "published_at": "2026-11-18T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
     "references": [
       "https://projectredcap.org/resources/community",
@@ -3808,7 +3808,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-470"
     ],
     "published_at": "2026-11-18T12:00:00.000Z",
-    "relative_time": "2d ago",
+    "relative_time": "3d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
     "references": [
       "https://lists.apache.org/thread/8slf0j9gz35z56t0glt5h0ncwlbn4bdz",
@@ -3842,7 +3842,7 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
       "CWE-94"
     ],
     "published_at": "2026-11-17T12:00:00.000Z",
-    "relative_time": "3d ago",
+    "relative_time": "4d ago",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
     "references": [
       "https://portal.perforce.com/s/cve/a91Qi000003IaHpIAK/report-deserialization-code-execution",
@@ -3850,500 +3850,20 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     ]
   },
   {
-    "id": "CVE-2026-21158",
-    "cve_id": "CVE-2026-21158",
+    "id": "CVE-2026-129320",
+    "cve_id": "CVE-2026-129320",
     "ghsa_id": null,
-    "title": "Improper certificate validation in CP prior to SMR Nov-2026 Release 1 allows local privileged attackers to bypas...",
-    "description": "Improper certificate validation in CP prior to SMR Nov-2026 Release 1 allows local privileged attackers to bypass SIM lock.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.3,
-    "cvss_vector": "CVSS:4.0/AV:P/AC:L/AT:P/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00096,
-    "epss_percentile": 0.00693,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-295"
-    ],
-    "published_at": "2026-11-16T12:17:56.413Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21158",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21156",
-    "cve_id": "CVE-2026-21156",
-    "ghsa_id": null,
-    "title": "Out-of-bounds write in libsmkvextractor.so prior to SMR Nov-2026 Release 1 allows local attackers to write out-o...",
-    "description": "Out-of-bounds write in libsmkvextractor.so prior to SMR Nov-2026 Release 1 allows local attackers to write out-of-bounds memory.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.9,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00119,
-    "epss_percentile": 0.01834,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-787"
-    ],
-    "published_at": "2026-11-16T12:17:56.290Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21156",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21155",
-    "cve_id": "CVE-2026-21155",
-    "ghsa_id": null,
-    "title": "Out-of-bounds write in bootloader prior to SMR Nov-2026 Release 1 allows physical attackers to write out-of-boun...",
-    "description": "Out-of-bounds write in bootloader prior to SMR Nov-2026 Release 1 allows physical attackers to write out-of-bounds memory.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.7,
-    "cvss_vector": "CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00269,
-    "epss_percentile": 0.19477,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-787"
-    ],
-    "published_at": "2026-11-16T12:17:56.143Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21155",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21154",
-    "cve_id": "CVE-2026-21154",
-    "ghsa_id": null,
-    "title": "Improper authorization in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to access dump data.",
-    "description": "Improper authorization in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to access dump data.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.9,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00113,
-    "epss_percentile": 0.01479,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-285"
-    ],
-    "published_at": "2026-11-16T12:17:56.023Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21154",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21153",
-    "cve_id": "CVE-2026-21153",
-    "ghsa_id": null,
-    "title": "Stack-based buffer overflow in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to execute a...",
-    "description": "Stack-based buffer overflow in libsecuibc.so prior to SMR Nov-2026 Release 1 allows local attackers to execute arbitrary code.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7.4,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00139,
-    "epss_percentile": 0.03338,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-121"
-    ],
-    "published_at": "2026-11-16T12:17:55.883Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21153",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21152",
-    "cve_id": "CVE-2026-21152",
-    "ghsa_id": null,
-    "title": "Improper input validation in libMyFilterPlugin.camera.samsung.so prior to SMR Nov-2026 Release 1 allows local at...",
-    "description": "Improper input validation in libMyFilterPlugin.camera.samsung.so prior to SMR Nov-2026 Release 1 allows local attackers to potentially execute arbitrary code. User interaction is required for triggering this vulnerability.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 7,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.0015,
-    "epss_percentile": 0.04235,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-20"
-    ],
-    "published_at": "2026-11-16T12:17:55.757Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21152",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21151",
-    "cve_id": "CVE-2026-21151",
-    "ghsa_id": null,
-    "title": "Improper privilege management in TransitionPlayer prior to SMR Nov-2026 Release 1 allows local privileged attack...",
-    "description": "Improper privilege management in TransitionPlayer prior to SMR Nov-2026 Release 1 allows local privileged attackers to execute arbitrary code with launcher privilege.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.3,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00145,
-    "epss_percentile": 0.038,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-269"
-    ],
-    "published_at": "2026-11-16T12:17:55.627Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21151",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21150",
-    "cve_id": "CVE-2026-21150",
-    "ghsa_id": null,
-    "title": "Improper access control in edmnativehelper prior to SMR Nov-2026 Release 1 allows local attackers to access sens...",
-    "description": "Improper access control in edmnativehelper prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.1,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00149,
-    "epss_percentile": 0.04133,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-284"
-    ],
-    "published_at": "2026-11-16T12:17:55.503Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21150",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21149",
-    "cve_id": "CVE-2026-21149",
-    "ghsa_id": null,
-    "title": "Improper access control in StatusBarManagerService prior to SMR Nov-2026 Release 1 allows local attackers to use...",
-    "description": "Improper access control in StatusBarManagerService prior to SMR Nov-2026 Release 1 allows local attackers to use the privileged APIs.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.9,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00149,
-    "epss_percentile": 0.04133,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-284"
-    ],
-    "published_at": "2026-11-16T12:17:55.387Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21149",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21148",
-    "cve_id": "CVE-2026-21148",
-    "ghsa_id": null,
-    "title": "Incorrect authorization in Samsung Messages prior to SMR Nov-2026 Release 1 allows local attackers to access sen...",
-    "description": "Incorrect authorization in Samsung Messages prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.1,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00113,
-    "epss_percentile": 0.0148,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T12:17:55.260Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21148",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21147",
-    "cve_id": "CVE-2026-21147",
-    "ghsa_id": null,
-    "title": "Improper export of android application components in CoverScreenWidgetActionActivity in Samsung Contacts prior t...",
-    "description": "Improper export of android application components in CoverScreenWidgetActionActivity in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.8,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00098,
-    "epss_percentile": 0.00766,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-926"
-    ],
-    "published_at": "2026-11-16T12:17:55.137Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21147",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21146",
-    "cve_id": "CVE-2026-21146",
-    "ghsa_id": null,
-    "title": "Improper export of android application components in CoverScreenWidgetActionActivitySmall in Samsung Contacts pr...",
-    "description": "Improper export of android application components in CoverScreenWidgetActionActivitySmall in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.8,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00098,
-    "epss_percentile": 0.00767,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-926"
-    ],
-    "published_at": "2026-11-16T12:17:55.017Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21146",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21145",
-    "cve_id": "CVE-2026-21145",
-    "ghsa_id": null,
-    "title": "Improper export of android application components in CoverScreenWidgetActionActivityLarge in Samsung Contacts pr...",
-    "description": "Improper export of android application components in CoverScreenWidgetActionActivityLarge in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 4.8,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00098,
-    "epss_percentile": 0.00766,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-926"
-    ],
-    "published_at": "2026-11-16T12:17:54.893Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21145",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21144",
-    "cve_id": "CVE-2026-21144",
-    "ghsa_id": null,
-    "title": "Improper authorization in RecentsCallLogLargeWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 ...",
-    "description": "Improper authorization in RecentsCallLogLargeWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.1,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00113,
-    "epss_percentile": 0.0148,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-285"
-    ],
-    "published_at": "2026-11-16T12:17:54.350Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21144",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21143",
-    "cve_id": "CVE-2026-21143",
-    "ghsa_id": null,
-    "title": "Improper authorization in CoverScreenRecentsWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 a...",
-    "description": "Improper authorization in CoverScreenRecentsWidgetProvider in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to make a call without proper permission.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.1,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00113,
-    "epss_percentile": 0.01479,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-285"
-    ],
-    "published_at": "2026-11-16T12:17:54.133Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21143",
-    "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
-    ]
-  },
-  {
-    "id": "CVE-2026-21142",
-    "cve_id": "CVE-2026-21142",
-    "ghsa_id": null,
-    "title": "Incorrect default permissions in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to acce...",
-    "description": "Incorrect default permissions in Samsung Contacts prior to SMR Nov-2026 Release 1 allows local attackers to access profile configuration.",
+    "title": "The shiro:principal tags in shiro-web (Jakarta Pages) and shiro-jakarta-ee (Jakarta Faces) did not escape their ...",
+    "description": "The shiro:principal tags in shiro-web (Jakarta Pages) and shiro-jakarta-ee (Jakarta Faces) did not escape their output, which could allow cross-site scripting when a principal value is not fully trusted. This issue affects all Apache Shiro versions through 3.0.1, only when the principal tag is used. Mitigation: Upgrade to version 3.0.2 or later, which escapes the output. Alternatively, validate principal values on...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "LOW",
     "cvss_score": 2.1,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00149,
-    "epss_percentile": 0.04132,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:N/R:X/V:D/RE:L/U:Green",
+    "epss_score": 0.00449,
+    "epss_percentile": 0.39927,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4352,30 +3872,64 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [
-      "CWE-276"
+      "CWE-79"
     ],
-    "published_at": "2026-11-16T12:17:53.997Z",
+    "published_at": "2026-11-16T14:17:06.780Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21142",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129320",
     "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+      "https://lists.apache.org/thread/wjs177lbrzpslkz8zvc31n07lgf7j0n1",
+      "http://www.openwall.com/lists/oss-security/2026/11/14/2"
     ]
   },
   {
-    "id": "CVE-2026-21141",
-    "cve_id": "CVE-2026-21141",
+    "id": "CVE-2026-128846",
+    "cve_id": "CVE-2026-128846",
     "ghsa_id": null,
-    "title": "Improper access control in Samsung Dialer prior to SMR Nov-2026 Release 1 allows local attackers to access sensi...",
-    "description": "Improper access control in Samsung Dialer prior to SMR Nov-2026 Release 1 allows local attackers to access sensitive information.",
+    "title": "@fastify/busboy is a streaming parser for multipart form data used by Fastify.",
+    "description": "@fastify/busboy is a streaming parser for multipart form data used by Fastify. In versions 3.2.1 through 3.2.5, the parser can interpret the same multipart bytes differently depending on how they are split across socket reads: when the sequence that terminates a part's header block arrives split exactly at the configured header size limit, an off by one error drops the final header line, so a part declared as a bi...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "LOW",
+    "cvss_score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "epss_score": 0.00253,
+    "epss_percentile": 0.17187,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-193"
+    ],
+    "published_at": "2026-11-16T14:17:06.650Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128846",
+    "references": [
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/busboy/security/advisories/GHSA-2q57-jvxc-h47j"
+    ]
+  },
+  {
+    "id": "CVE-2026-128842",
+    "cve_id": "CVE-2026-128842",
+    "ghsa_id": null,
+    "title": "@fastify/busboy is a streaming parser for multipart and url-encoded form data used by Fastify.",
+    "description": "@fastify/busboy is a streaming parser for multipart and url-encoded form data used by Fastify. In versions 1.0.0 through 3.2.5, the url-encoded parser stops accumulating a field only when the decoded length exactly equals the configured per-field size limit, and a malformed percent escape is passed through verbatim by the decoder, so the decoded length can jump from just below the limit to just above it and skip t...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "MEDIUM",
-    "cvss_score": 6.9,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00149,
-    "epss_percentile": 0.04133,
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "epss_score": 0.00247,
+    "epss_percentile": 0.1629,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4384,272 +3938,31 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [
-      "CWE-284"
+      "CWE-400"
     ],
-    "published_at": "2026-11-16T12:17:53.860Z",
+    "published_at": "2026-11-16T14:17:06.530Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21141",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128842",
     "references": [
-      "https://security.samsungmobile.com/securityUpdate.smsb?year=2026&month=11"
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/busboy/security/advisories/GHSA-x578-65c5-rvww"
     ]
   },
   {
-    "id": "CVE-2026-15707",
-    "cve_id": "CVE-2026-15707",
+    "id": "CVE-2026-128835",
+    "cve_id": "CVE-2026-128835",
     "ghsa_id": null,
-    "title": "An uncontrolled search path vulnerability (CWE-427) in statically linked OpenSSL libraries within Netskope Clien...",
-    "description": "An uncontrolled search path vulnerability (CWE-427) in statically linked OpenSSL libraries within Netskope Client (stAgentSvc.exe) and Endpoint DLP (epdlp.exe) on Windows allows an authenticated local attacker to execute arbitrary code with elevated SYSTEM privileges. The services retain internal build-time paths referencing a secondary drive location. On Windows systems where default volume permissions allow stan...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.5,
-    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00162,
-    "epss_percentile": 0.05551,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-427"
-    ],
-    "published_at": "2026-11-16T12:17:53.653Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15707",
-    "references": [
-      "https://www.netskope.com/resources/netskope-resources/netskope-security-advisory-nskpsa-2026-005"
-    ]
-  },
-  {
-    "id": "CVE-2026-129553",
-    "cve_id": "CVE-2026-129553",
-    "ghsa_id": null,
-    "title": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackContr...",
-    "description": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackController that allows unauthenticated attackers to redirect users by supplying an unvalidated clientCallback query parameter. Attackers can craft links to the /:provider/callback route that send victims to attacker-controlled sites for phishing and leak the issued temporary access token appended after login.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.00189,
-    "epss_percentile": 0.08758,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-601"
-    ],
-    "published_at": "2026-11-16T12:17:53.490Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129553",
-    "references": [
-      "https://github.com/tenseijs/tensei",
-      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/social-auth/src/index.js#L18-L28",
-      "https://github.com/tenseijs/tensei/issues/398",
-      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-open-redirect-via-tensei-social-auth-oauth-callback"
-    ]
-  },
-  {
-    "id": "CVE-2026-129552",
-    "cve_id": "CVE-2026-129552",
-    "ghsa_id": null,
-    "title": "Tensei through 0.11.5 contains an authentication bypass vulnerability in @tensei/auth that falls back to the har...",
-    "description": "Tensei through 0.11.5 contains an authentication bypass vulnerability in @tensei/auth that falls back to the hard-coded JWT signing key 'auth-secret-key' when JWT_SECRET is unset. Unauthenticated attackers can sign tokens with arbitrary user ids accepted by populateContextFromToken to impersonate any user, including administrators.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "CRITICAL",
-    "cvss_score": 9.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00535,
-    "epss_percentile": 0.46075,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-1394"
-    ],
-    "published_at": "2026-11-16T12:17:53.337Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129552",
-    "references": [
-      "https://github.com/tenseijs/tensei",
-      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/auth/src/index.ts#L94-L98",
-      "https://github.com/tenseijs/tensei/issues/398",
-      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-authentication-bypass-via-hard-coded-jwt-secret-in-tensei-auth"
-    ]
-  },
-  {
-    "id": "CVE-2026-129551",
-    "cve_id": "CVE-2026-129551",
-    "ghsa_id": null,
-    "title": "Tensei through 0.11.5 contains a prototype pollution vulnerability in parseSortFromStringToObject of @tensei/res...",
-    "description": "Tensei through 0.11.5 contains a prototype pollution vulnerability in parseSortFromStringToObject of @tensei/rest that allows unauthenticated attackers to set Object.prototype properties via the sort parameter. Attackers can send a sort value like __proto__.<name>:<value> to list, fetch-one, update or delete routes before authorization, altering application logic and causing denial of service.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
-    "epss_score": 0.00378,
-    "epss_percentile": 0.32639,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-1321"
-    ],
-    "published_at": "2026-11-16T12:17:53.190Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129551",
-    "references": [
-      "https://github.com/tenseijs/tensei",
-      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/rest/src/populate-helpers.ts#L5-L20",
-      "https://github.com/tenseijs/tensei/issues/398",
-      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-unauthenticated-prototype-pollution-via-sort-parameter"
-    ]
-  },
-  {
-    "id": "CVE-2026-129550",
-    "cve_id": "CVE-2026-129550",
-    "ghsa_id": null,
-    "title": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated ...",
-    "description": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated or authenticated users to assign themselves arbitrary roles via the exposed User Roles field. Attackers can supply a roles array during registration, a POST to the users route, or a PATCH to their own record to gain administrator permissions.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "CRITICAL",
-    "cvss_score": 9.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-    "epss_score": 0.00395,
-    "epss_percentile": 0.34584,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-915"
-    ],
-    "published_at": "2026-11-16T12:17:53.033Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129550",
-    "references": [
-      "https://github.com/tenseijs/tensei",
-      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/auth/src/index.ts#L311-L333",
-      "https://github.com/tenseijs/tensei/issues/398",
-      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-privilege-escalation-via-self-assigned-roles-in-tensei-auth"
-    ]
-  },
-  {
-    "id": "CVE-2026-129549",
-    "cve_id": "CVE-2026-129549",
-    "ghsa_id": null,
-    "title": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows...",
-    "description": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows unauthenticated attackers to upload dangerous file types via the files/upload route. Attackers can set the multipart Content-Type to upload HTML or SVG files served from the application origin, causing stored cross-site scripting and storage consumption.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.1,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.00202,
-    "epss_percentile": 0.10381,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-434"
-    ],
-    "published_at": "2026-11-16T12:17:52.860Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129549",
-    "references": [
-      "https://github.com/tenseijs/tensei",
-      "https://github.com/tenseijs/tensei/blob/630f39038c7751178465f990fb358b0c2d5b1914/packages/media/server/helpers/process-request.ts#L189-L216",
-      "https://github.com/tenseijs/tensei/issues/398",
-      "https://www.vulncheck.com/advisories/tensei-through-0.11.5-unauthenticated-file-upload-via-tensei-media-files-upload"
-    ]
-  },
-  {
-    "id": "CVE-2026-129548",
-    "cve_id": "CVE-2026-129548",
-    "ghsa_id": null,
-    "title": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated us...",
-    "description": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated users to upload HTML or SVG files via the upload-file endpoint without type restrictions. Attackers can share links to files served unauthenticated through the file get route, executing JavaScript in the admin origin to steal administrator JWTs from localStorage.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.4,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
-    "epss_score": 0.00214,
-    "epss_percentile": 0.11986,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-434"
-    ],
-    "published_at": "2026-11-16T12:17:52.707Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129548",
-    "references": [
-      "https://github.com/DifuseHQ/Kalmia",
-      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/handlers/file.go#L19-L61",
-      "https://github.com/DifuseHQ/Kalmia/issues/35",
-      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-stored-xss-via-unrestricted-file-upload"
-    ]
-  },
-  {
-    "id": "CVE-2026-129547",
-    "cve_id": "CVE-2026-129547",
-    "ghsa_id": null,
-    "title": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenti...",
-    "description": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenticated attackers to access private documentation by supplying any non-empty viewToken cookie. Attackers can send requests with a forged viewToken cookie, which is never validated as a JWT, to read all pages and assets of RequireAuth documentation sites.",
+    "title": "@fastify/busboy is a streaming parser for multipart form data used by Fastify.",
+    "description": "@fastify/busboy is a streaming parser for multipart form data used by Fastify. In versions 1.0.0 through 3.2.5, a multipart part whose header block is never terminated before the next boundary is counted by the vendored Dicer parser as an open part that never ends, so the parser emits neither a finish nor an error event and the request hangs. A single unauthenticated request of roughly one hundred bytes triggers t...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "HIGH",
     "cvss_score": 7.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-    "epss_score": 0.00463,
-    "epss_percentile": 0.41008,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": 0.00278,
+    "epss_percentile": 0.20771,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4658,68 +3971,31 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [
-      "CWE-287"
+      "CWE-400"
     ],
-    "published_at": "2026-11-16T12:17:52.550Z",
+    "published_at": "2026-11-16T14:17:06.413Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129547",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128835",
     "references": [
-      "https://github.com/DifuseHQ/Kalmia",
-      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/middleware/rspress.go#L20-L70",
-      "https://github.com/DifuseHQ/Kalmia/issues/35",
-      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-authentication-bypass-via-viewtoken-cookie"
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/busboy/security/advisories/GHSA-pvmq-3jr9-v5qh"
     ]
   },
   {
-    "id": "CVE-2026-129546",
-    "cve_id": "CVE-2026-129546",
+    "id": "CVE-2026-124724",
+    "cve_id": "CVE-2026-124724",
     "ghsa_id": null,
-    "title": "Kalmia through 0.2.0 contains an information disclosure vulnerability that allows authenticated read-only users ...",
-    "description": "Kalmia through 0.2.0 contains an information disclosure vulnerability that allows authenticated read-only users to retrieve Git deployment credentials via documentation API responses. Attackers can query GET /kal-api/docs/documentations or POST /kal-api/docs/documentation to obtain plaintext gitUser and gitPassword values and authenticate to external Git repositories.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-    "epss_score": 0.00348,
-    "epss_percentile": 0.29139,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-200"
-    ],
-    "published_at": "2026-11-16T12:17:52.383Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129546",
-    "references": [
-      "https://github.com/DifuseHQ/Kalmia",
-      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/services/docs_docs.go#L52-L55",
-      "https://github.com/DifuseHQ/Kalmia/issues/35",
-      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-git-credential-disclosure-via-documentation-api"
-    ]
-  },
-  {
-    "id": "CVE-2026-129545",
-    "cve_id": "CVE-2026-129545",
-    "ghsa_id": null,
-    "title": "Kalmia through 0.2.0 contains a privilege escalation vulnerability that allows low-privileged authenticated user...",
-    "description": "Kalmia through 0.2.0 contains a privilege escalation vulnerability that allows low-privileged authenticated users to modify any account via the /kal-api/auth/user/edit endpoint. Attackers holding only read permission can set their admin flag and 'all' permission or reset an administrator's password to fully take over the instance.",
+    "title": "@fastify/busboy is a streaming parser for multipart form data used by Fastify.",
+    "description": "@fastify/busboy is a streaming parser for multipart form data used by Fastify. In versions 1.0.0 through 3.2.5, when a request reaches the configured limit on the number of multipart parts, each further part is skipped without attaching an error listener to the skipped part stream. If the request body ends in the middle of such a skipped part, the vendored Dicer parser emits an error on that stream, and because no...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00283,
-    "epss_percentile": 0.21359,
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": 0.00405,
+    "epss_percentile": 0.35659,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4728,225 +4004,32 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [
-      "CWE-269"
-    ],
-    "published_at": "2026-11-16T12:17:52.203Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129545",
-    "references": [
-      "https://github.com/DifuseHQ/Kalmia",
-      "https://github.com/DifuseHQ/Kalmia/blob/1bc059450c3901b17e1be99209965b12f6d163e4/services/auth.go#L183-L232",
-      "https://github.com/DifuseHQ/Kalmia/issues/35",
-      "https://www.vulncheck.com/advisories/kalmia-through-0.2.0-privilege-escalation-via-kal-api-auth-user-edit"
-    ]
-  },
-  {
-    "id": "CVE-2026-124631",
-    "cve_id": "CVE-2026-124631",
-    "ghsa_id": null,
-    "title": "In affected versions of Octopus Server, insufficient authorization checks allowed a low-privileged authenticated...",
-    "description": "In affected versions of Octopus Server, insufficient authorization checks allowed a low-privileged authenticated user to register an Argo CD gateway, which could result in unauthorized changes to Argo CD Application data for projects and environments outside their permissions within the same Space.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00269,
-    "epss_percentile": 0.19536,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T12:17:46.773Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124631",
-    "references": [
-      "https://advisories.octopus.com/post/2026/sa2026-27"
-    ]
-  },
-  {
-    "id": "CVE-2026-124629",
-    "cve_id": "CVE-2026-124629",
-    "ghsa_id": null,
-    "title": "In affected versions of Octopus Server, insufficient authorization checks on scheduled project triggers allowed ...",
-    "description": "In affected versions of Octopus Server, insufficient authorization checks on scheduled project triggers allowed users who were permitted to deploy existing releases, but not to create new ones, to configure a trigger that could result in new releases being created and deployed without the required permission being assigned. The resulting audit events were attributed to the system rather than to the user who config...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 5.3,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00324,
-    "epss_percentile": 0.26115,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-863"
-    ],
-    "published_at": "2026-11-16T12:17:46.640Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124629",
-    "references": [
-      "https://advisories.octopus.com/post/2026/sa2026-25"
-    ]
-  },
-  {
-    "id": "CVE-2026-123745",
-    "cve_id": "CVE-2026-123745",
-    "ghsa_id": null,
-    "title": "In affected versions of Octopus Server, improper path validation allowed a user with scoped runbook permissions ...",
-    "description": "In affected versions of Octopus Server, improper path validation allowed a user with scoped runbook permissions to execute runbooks on offline package drop targets, this could result in exposure of Server working-directory files outside their permitted scope and deletion of those files.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.1,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00292,
-    "epss_percentile": 0.22309,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-22"
-    ],
-    "published_at": "2026-11-16T12:17:46.170Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123745",
-    "references": [
-      "https://advisories.octopus.com/post/2026/sa2026-26"
-    ]
-  },
-  {
-    "id": "CVE-2026-116288",
-    "cve_id": "CVE-2026-116288",
-    "ghsa_id": null,
-    "title": "In affected versions of Octopus Server, a user with permission to edit team scoped roles could escalate their pr...",
-    "description": "In affected versions of Octopus Server, a user with permission to edit team scoped roles could escalate their privileges to deploy to projects and environments that they were not authorised to so.",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "HIGH",
-    "cvss_score": 8.6,
-    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "epss_score": 0.00298,
-    "epss_percentile": 0.23039,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-269"
-    ],
-    "published_at": "2026-11-16T12:17:43.347Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116288",
-    "references": [
-      "https://advisories.octopus.com/post/2026/sa2026-28"
-    ]
-  },
-  {
-    "id": "CVE-2026-110941",
-    "cve_id": "CVE-2026-110941",
-    "ghsa_id": null,
-    "title": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to monitor secondary browser windows in the local netwo...",
-    "description": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to monitor secondary browser windows in the local network access filter which allows an attacker-controlled server to access private network resources via opening pop-out or widget windows. Mattermost Advisory ID: MMSA-2026-00778",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
-    "epss_score": 0.00326,
-    "epss_percentile": 0.2633,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
-      "CWE-693"
-    ],
-    "published_at": "2026-11-16T12:17:41.753Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110941",
-    "references": [
-      "https://mattermost.com/security-updates"
-    ]
-  },
-  {
-    "id": "CVE-2026-85240",
-    "cve_id": "CVE-2026-85240",
-    "ghsa_id": null,
-    "title": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to handle filesystem errors that can occur when finaliz...",
-    "description": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to handle filesystem errors that can occur when finalizing certain file downloads, which allows a malicious or compromised server to cause a denial of service by crashing the entire desktop application via a specially crafted download Mattermost Advisory ID: MMSA-2026-00779",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "MEDIUM",
-    "cvss_score": 6.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-    "epss_score": 0.00344,
-    "epss_percentile": 0.28715,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [
+      "CWE-248",
       "CWE-754"
     ],
-    "published_at": "2026-11-16T11:16:46.850Z",
+    "published_at": "2026-11-16T14:17:06.113Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85240",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124724",
     "references": [
-      "https://mattermost.com/security-updates"
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/busboy/security/advisories/GHSA-wh8h-qr34-3rj3"
     ]
   },
   {
-    "id": "CVE-2026-63245",
-    "cve_id": "CVE-2026-63245",
+    "id": "CVE-2026-124289",
+    "cve_id": "CVE-2026-124289",
     "ghsa_id": null,
-    "title": "A local privilege escalation (LPE) vulnerability in the Audigy Rx driver’s Emupia2k.sys file could allow a local...",
-    "description": "A local privilege escalation (LPE) vulnerability in the Audigy Rx driver’s Emupia2k.sys file could allow a local attacker with low privilege access to gain higher privileges, such as administrator rights.",
+    "title": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads.",
+    "description": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads. In versions 7.4.0 through 10.1.8, when the plugin is registered with the attachFieldsToBody option, the saveRequestFiles helper treats any object in the parsed request body that carries truthy file and buffer properties as an uploaded file. An unauthenticated client can forge such an object through a plain JSON request or a...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "HIGH",
-    "cvss_score": 7.3,
-    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
-    "epss_score": 0.0013,
-    "epss_percentile": 0.02708,
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "epss_score": 0.00355,
+    "epss_percentile": 0.3003,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4955,30 +4038,64 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [
-      "CWE-269"
+      "CWE-22",
+      "CWE-843"
     ],
-    "published_at": "2026-11-16T11:16:46.710Z",
+    "published_at": "2026-11-16T14:17:05.990Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63245",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124289",
     "references": [
-      "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-163/"
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/fastify-multipart/security/advisories/GHSA-gmhr-r4mc-w935"
     ]
   },
   {
-    "id": "CVE-2026-129784",
-    "cve_id": "CVE-2026-129784",
+    "id": "CVE-2026-114737",
+    "cve_id": "CVE-2026-114737",
     "ghsa_id": null,
-    "title": "The httpx Ruby gem parses JSON response bodies through its transcoder layer.",
-    "description": "The httpx Ruby gem parses JSON response bodies through its transcoder layer. HTTPX::Response#json delegates to Transcoder::JSON.decode, and when the oj gem is loaded and multi_json is absent, the decoder falls back to json_load, which calls Oj.load(response.to_s) with no mode option. Oj.load defaults to :object mode, in which a response document can allocate any already-loaded Ruby class (\"^o\":\"ClassName\") and set...",
+    "title": "The fix for  CVE-2026-23903 https://shiro.apache.org/security-reports.html#cve_2026_23903  was incomplete for ma...",
+    "description": "The fix for CVE-2026-23903 https://shiro.apache.org/security-reports.html#cve_2026_23903 was incomplete for manually-created ShiroFilterFactoryBean, which still matched paths case-sensitively by default. This issue affects Apache Shiro version 3.0.1, only when ShiroFilterFactoryBean is created manually by the application and static files are served from a case-insensitive filesystem. Applications that let Shiro Sp...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
-    "severity": "HIGH",
-    "cvss_score": 8.5,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-    "epss_score": 0.00659,
-    "epss_percentile": 0.52453,
+    "severity": "LOW",
+    "cvss_score": 2.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:P/AU:Y/R:X/V:D/RE:L/U:Green",
+    "epss_score": 0.00367,
+    "epss_percentile": 0.31309,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-289"
+    ],
+    "published_at": "2026-11-16T14:17:05.310Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114737",
+    "references": [
+      "https://lists.apache.org/thread/nmqxhw28s09njngncqohq6zy3ohzj1vg"
+    ]
+  },
+  {
+    "id": "CVE-2026-93664",
+    "cve_id": "CVE-2026-93664",
+    "ghsa_id": null,
+    "title": "A Deserialization of Untrusted Data vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from R...",
+    "description": "A Deserialization of Untrusted Data vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2026x could lead to an unauthenticated remote code execution.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "CRITICAL",
+    "cvss_score": 10,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "epss_score": 0.00707,
+    "epss_percentile": 0.5431,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -4989,65 +4106,28 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "cwes": [
       "CWE-502"
     ],
-    "published_at": "2026-11-16T11:16:45.537Z",
+    "published_at": "2026-11-16T13:17:23.313Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129784",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93664",
     "references": [
-      "https://github.com/HoneyryderChuck/httpx",
-      "https://github.com/HoneyryderChuck/httpx/commit/eeb785d3250eee9379494fb62c37c315a31e327c",
-      "https://github.com/HoneyryderChuck/httpx/releases/tag/v1.9.1",
-      "https://github.com/ohler55/oj/blob/develop/pages/Security.md",
-      "https://gitlab.com/os85/httpx"
+      "https://www.3ds.com/trust-center/security/security-advisories/cve-2026-93664"
     ]
   },
   {
-    "id": "CVE-2026-99311",
-    "cve_id": "CVE-2026-99311",
+    "id": "CVE-2026-77033",
+    "cve_id": "CVE-2026-77033",
     "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nudf: fix return value for non-recorded-allo...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: udf: fix return value for non-recorded-allocated extents in udf_map_block() When someone creates a corrupted UDF filesystem where symlink contains other extent type than EXT_RECORDED_ALLOCATED, it can leads to a crash like: Oops: general protection fault KASAN: maybe wild-memory-access RIP: 0010:page_get_link (fs/namei.c:6503) Call Trace: vfs_read...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.0496,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:06.633Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99311",
-    "references": [
-      "https://git.kernel.org/stable/c/0d7f6c2b3c07fa239ebc169280eba9932cc56f46",
-      "https://git.kernel.org/stable/c/0f242ca0878896df30292f4922700a32e8fdd039",
-      "https://git.kernel.org/stable/c/df713b82b4b9671c16b52b60f3412c677719e2b8",
-      "https://git.kernel.org/stable/c/f022984a4a1c18aa9c506790eb47da000dce95a7"
-    ]
-  },
-  {
-    "id": "CVE-2026-99310",
-    "cve_id": "CVE-2026-99310",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: hold cl_lock in client_has_openowners...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: nfsd: hold cl_lock in client_has_openowners() client_has_openowners() walks clp->cl_openowners and reads so_stateids without clp->cl_lock. nfs4_put_stateowner() unhashes that openowner under cl_lock and then frees it, so a concurrent EXCHANGE_ID with mismatched creds can use-after-free the nfs4_openowner. BUG: KASAN: slab-use-after-free in client_...",
+    "title": "An OS Command Injection vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXP...",
+    "description": "An OS Command Injection vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2026x could allow an attacker to execute arbitrary commands on the server.",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "CRITICAL",
-    "cvss_score": 9.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00349,
-    "epss_percentile": 0.2927,
+    "cvss_score": 9.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+    "epss_score": 0.01271,
+    "epss_percentile": 0.70558,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -5055,32 +4135,592 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "vendor_product": null,
     "affected_versions": null,
     "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:06.377Z",
+    "cwes": [
+      "CWE-78"
+    ],
+    "published_at": "2026-11-16T13:17:23.003Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99310",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77033",
     "references": [
-      "https://git.kernel.org/stable/c/202b7a6c462daa55a9f4b01f0a25eca2b8d5f2e3",
-      "https://git.kernel.org/stable/c/5336899b5491eaa2ac22c2925d87daab2b140eb3",
-      "https://git.kernel.org/stable/c/540649cb8543472f6edfe9ae8b42c04aa3bd67e9",
-      "https://git.kernel.org/stable/c/a596d1979fcb4e5011d3d48ac4d927f81c9c9cab"
+      "https://www.3ds.com/trust-center/security/security-advisories/cve-2026-77033"
     ]
   },
   {
-    "id": "CVE-2026-99309",
-    "cve_id": "CVE-2026-99309",
+    "id": "CVE-2026-19732",
+    "cve_id": "CVE-2026-19732",
     "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix overflow in dacloffset bounds ch...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix overflow in dacloffset bounds check in build_sec_desc() When the large dacl_offset is provided, dacl_offset + sizeof(struct smb_acl) overflows on 32-bit builds and the check is passed, Which makes le16_to_cpu(ppdacl_ptr->size) read out-of-bounds. This only happens for dacl_offset in range [0xFFFFFFF8, 0xFFFFFFFF]. So the oob read is max...",
+    "title": "An OS Command Injection vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXP...",
+    "description": "An OS Command Injection vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2026x could allow an attacker to execute arbitrary commands on the server.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "CRITICAL",
+    "cvss_score": 9.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+    "epss_score": 0.01302,
+    "epss_percentile": 0.71191,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-78"
+    ],
+    "published_at": "2026-11-16T13:17:22.843Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19732",
+    "references": [
+      "https://www.3ds.com/trust-center/security/security-advisories/cve-2026-19732"
+    ]
+  },
+  {
+    "id": "CVE-2026-121192",
+    "cve_id": "CVE-2026-121192",
+    "ghsa_id": null,
+    "title": "@fastify/proxy-addr determines which network hops are trusted proxies and backs Fastify's trustProxy setting, so...",
+    "description": "@fastify/proxy-addr determines which network hops are trusted proxies and backs Fastify's trustProxy setting, so that forwarded headers can be believed. In versions 3.0.0 through 5.1.2, when trustProxy is configured with a zoned IPv6 link-local address, the trust comparison checks only the address bits and ignores the zone identifier, so a host on another link of a multi-homed server that carries the same link-loc...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.8,
+    "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "epss_score": 0.00314,
+    "epss_percentile": 0.24962,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-290",
+      "CWE-697"
+    ],
+    "published_at": "2026-11-16T13:17:20.860Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121192",
+    "references": [
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/proxy-addr/security/advisories/GHSA-fmr2-3fr5-78g8"
+    ]
+  },
+  {
+    "id": "CVE-2026-113456",
+    "cve_id": "CVE-2026-113456",
+    "ghsa_id": null,
+    "title": "visualTicket exposes sensitive information in error messages in the cinema report generator.",
+    "description": "visualTicket exposes sensitive information in error messages in the cinema report generator. An authenticated attacker with an admin privileges can supply an invalid date_from value causing the application to return a detailed error page that discloses the full SELECT statement (table and column names, JOIN, GROUP BY and ORDER BY clauses, bind parameter placeholders) and a PHP DateTime parsing exception. This issu...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00334,
+    "epss_percentile": 0.27489,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-209"
+    ],
+    "published_at": "2026-11-16T13:17:20.723Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113456",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113455",
+    "cve_id": "CVE-2026-113455",
+    "ghsa_id": null,
+    "title": "visualTicket displays secret token value in admin settings panel.",
+    "description": "visualTicket displays secret token value in admin settings panel. The \"KSeF - Token API\" edit form renders a pre-filled field containing the actual KSeF API integration secret without any masking. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00315,
+    "epss_percentile": 0.25039,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-497"
+    ],
+    "published_at": "2026-11-16T13:17:20.570Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113455",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113454",
+    "cve_id": "CVE-2026-113454",
+    "ghsa_id": null,
+    "title": "visualTicket exposes sensitive information in error messages in the administrative report generator.",
+    "description": "visualTicket exposes sensitive information in error messages in the administrative report generator. Because application exception details and SQL queries are rendered in the HTTP response in the production environment, an authenticated administrator submitting an invalid date_from value in the report request receives a detailed error page disclosing the full SELECT statement, table and column names, JOINs, bind p...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00315,
+    "epss_percentile": 0.25039,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-209"
+    ],
+    "published_at": "2026-11-16T13:17:20.433Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113454",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113453",
+    "cve_id": "CVE-2026-113453",
+    "ghsa_id": null,
+    "title": "visualTicket does not require authentication for the PDF invoice file serving functionality.",
+    "description": "visualTicket does not require authentication for the PDF invoice file serving functionality. Invoice PDF files reside in a web-accessible static path without a session check, while authorization is enforced only at the invoice registry page. A remote unauthenticated attacker who obtains the URL of an invoice PDF can download the document without authorization. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00427,
+    "epss_percentile": 0.37836,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-862"
+    ],
+    "published_at": "2026-11-16T13:17:20.297Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113453",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113452",
+    "cve_id": "CVE-2026-113452",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to  Reflected Cross-Site Scripting via the selectedDate parameter in the order summar...",
+    "description": "visualTicket is vulnerable to Reflected Cross-Site Scripting via the selectedDate parameter in the order summary page. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's browser. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00417,
+    "epss_percentile": 0.36847,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published_at": "2026-11-16T13:17:20.157Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113452",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113451",
+    "cve_id": "CVE-2026-113451",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Cross-Site Request Forgery (CSRF) across multiple endpoints.",
+    "description": "visualTicket is vulnerable to Cross-Site Request Forgery (CSRF) across multiple endpoints. State-changing operations are exposed via GET requests without any CSRF protection. A remote attacker can persuade an authenticated user (including administrator) into navigating to a prepared URL, causing the victim's browser to issue requests that carry the active session cookie and perform unintended actions. This issue w...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00233,
+    "epss_percentile": 0.1446,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-352"
+    ],
+    "published_at": "2026-11-16T13:17:20.017Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113451",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113450",
+    "cve_id": "CVE-2026-113450",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Reflected Cross-Site Scripting via the JSONP callback parameter.",
+    "description": "visualTicket is vulnerable to Reflected Cross-Site Scripting via the JSONP callback parameter. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's browser. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00417,
+    "epss_percentile": 0.36847,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published_at": "2026-11-16T13:17:19.883Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113450",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113449",
+    "cve_id": "CVE-2026-113449",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to information exposure through JSONP on session-bound cart service endpoints.",
+    "description": "visualTicket is vulnerable to information exposure through JSONP on session-bound cart service endpoints. Session-bound data (including the session id, cart id, item ids, ticket/event metadata, quantities and prices) is returned inside a script wrapper, and since the symfony session token can also be passed in the URL, a remote attacker who obtains the token can read the cart session token and cart data. This issu...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00445,
+    "epss_percentile": 0.39589,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-862"
+    ],
+    "published_at": "2026-11-16T13:17:19.740Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113449",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113448",
+    "cve_id": "CVE-2026-113448",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Reflected Cross-Site Scripting in logon functionality.",
+    "description": "visualTicket is vulnerable to Reflected Cross-Site Scripting in logon functionality. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's browser. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00417,
+    "epss_percentile": 0.36847,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published_at": "2026-11-16T13:17:19.593Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113448",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113447",
+    "cve_id": "CVE-2026-113447",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Session Fixation via the symfony session identifier passed in the URL.",
+    "description": "visualTicket is vulnerable to Session Fixation via the symfony session identifier passed in the URL. The application accepts the symfony session ID from the query string and set it as a session cookie in the HTTP response, allowing the browser's active session to be overwritten. This behaviour enables an attacker to fix a session ID for a victim and later hijack the authenticated session. This issue was fixed in v...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.0042,
+    "epss_percentile": 0.37193,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-384"
+    ],
+    "published_at": "2026-11-16T13:17:19.443Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113447",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113446",
+    "cve_id": "CVE-2026-113446",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Reflected Cross-Site Scripting via the \"culture\" and \"sf_culture\" parameters.",
+    "description": "visualTicket is vulnerable to Reflected Cross-Site Scripting via the \"culture\" and \"sf_culture\" parameters. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the error page in the victim's browser. This issue was fixed in version 20260817.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00501,
+    "epss_percentile": 0.43826,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-79"
+    ],
+    "published_at": "2026-11-16T13:17:19.300Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113446",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113445",
+    "cve_id": "CVE-2026-113445",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to information exposure through an error message in the order creation functionality.",
+    "description": "visualTicket is vulnerable to information exposure through an error message in the order creation functionality. Because detailed data-layer exceptions are returned to the client instead of being logged server-side only, a remote unauthenticated attacker can submit a valid checkout request with an invalid payment_type value, causing the application to return a detailed SQL/ORM error that discloses the database nam...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00503,
+    "epss_percentile": 0.43944,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-209"
+    ],
+    "published_at": "2026-11-16T13:17:19.150Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113445",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113444",
+    "cve_id": "CVE-2026-113444",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Path Traversal in the thumbnail generation mechanism.",
+    "description": "visualTicket is vulnerable to Path Traversal in the thumbnail generation mechanism. The file parameter is used directly when constructing the output filesystem path without restriction to the uploads directory, allowing a remote attacker to use ../ sequences to escape /uploads/user_temp_images/ and write the generated JPEG file to other writable locations, including the web root. This allows unauthorized creation ...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00495,
+    "epss_percentile": 0.43413,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-22"
+    ],
+    "published_at": "2026-11-16T13:17:19.000Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113444",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-113443",
+    "cve_id": "CVE-2026-113443",
+    "ghsa_id": null,
+    "title": "visualTicket is vulnerable to Insecure Direct Object Reference  in the cart service.",
+    "description": "visualTicket is vulnerable to Insecure Direct Object Reference in the cart service. The server modifies or deletes a cart item based solely on the supplied \"cart_id\" without checking whether the object belongs to the current symfony session. Cart identifiers are created sequentially and allows prediction of valid values. An attacker holding an independent session can reference another user's \"cart_id\" and change i...",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00288,
+    "epss_percentile": 0.21881,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-639"
+    ],
+    "published_at": "2026-11-16T13:17:18.847Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113443",
+    "references": [
+      "https://cert.pl/posts/2026/11/CVE-2026-113443",
+      "https://systembiletowy.pl/"
+    ]
+  },
+  {
+    "id": "CVE-2026-111559",
+    "cve_id": "CVE-2026-111559",
+    "ghsa_id": null,
+    "title": "Batflat CMS does not sanitize data passed to the /contact endpoint.",
+    "description": "Batflat CMS does not sanitize data passed to the /contact endpoint. A remote unauthenticated attacker can send a POST request with a crafted message, causing arbitrary PHP code execution with www-data user privileges. The project is no longer maintained and the issue has not been fixed.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "CRITICAL",
+    "cvss_score": 9.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00939,
+    "epss_percentile": 0.6178,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-1336"
+    ],
+    "published_at": "2026-11-16T13:17:18.683Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111559",
+    "references": [
+      "https://cert.pl/en/posts/2026/11/CVE-2026-111559",
+      "https://github.com/Tymbark7372/CVE-2026-111559"
+    ]
+  },
+  {
+    "id": "CVE-2026-110710",
+    "cve_id": "CVE-2026-110710",
+    "ghsa_id": null,
+    "title": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads.",
+    "description": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads. In versions 3.0.0 through 10.1.3, temporary files written by the saveRequestFiles helper are removed only by a response hook that runs when the response finishes or errors. When a client completes an upload and then disconnects before the handler writes the reply, for example while the handler scans, hashes or forwards the ...",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "HIGH",
-    "cvss_score": 8.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00325,
-    "epss_percentile": 0.26267,
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "epss_score": 0.00419,
+    "epss_percentile": 0.37134,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -5088,131 +4728,97 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "vendor_product": null,
     "affected_versions": null,
     "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:06.110Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99309",
-    "references": [
-      "https://git.kernel.org/stable/c/4f238380ea3803afdc815c615521c6f6b13989a3",
-      "https://git.kernel.org/stable/c/bd92e03122f33c159b552867a4abc098d405dfed",
-      "https://git.kernel.org/stable/c/d1e92aa651caa352261fb3b78460b7722357835c",
-      "https://git.kernel.org/stable/c/eb96e2a0e817807c48dc8387ca6a5249fdeae3a0"
-    ]
-  },
-  {
-    "id": "CVE-2026-99308",
-    "cve_id": "CVE-2026-99308",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: xhci: Fix bounce buffer overflow\n\nHigh...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: usb: xhci: Fix bounce buffer overflow High-speed devices with out of spec 1024 byte bulk endpoints exist and are allowed by USB core, but xhci-hcd always sets packet size to 512. The exact nature of these devices isn't documented, commit fb5ee84ea72c (\"USB: Accept bulk endpoints with 1024-byte maxpacket\") only states that they \"don't work with xHC...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
+    "cwes": [
+      "CWE-459",
+      "CWE-772"
     ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00173,
-    "epss_percentile": 0.06972,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:05.853Z",
+    "published_at": "2026-11-16T13:17:18.527Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99308",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110710",
     "references": [
-      "https://git.kernel.org/stable/c/68c5cb7574c567e83ba95258cb146db95e069a87",
-      "https://git.kernel.org/stable/c/d0d15d7a11f2a45e5d29ab4780a094992d7a26a2",
-      "https://git.kernel.org/stable/c/dab2792e136385bd34b36d2b95db94862ed902cc",
-      "https://git.kernel.org/stable/c/e95ace4abebd564b50b856513e24853d35be06cd"
+      "https://cna.openjsf.org/security-advisories.html",
+      "https://github.com/fastify/fastify-multipart/security/advisories/GHSA-r9rg-mfh6-f225"
     ]
   },
   {
-    "id": "CVE-2026-99307",
-    "cve_id": "CVE-2026-99307",
+    "id": "CVE-2026-67250",
+    "cve_id": "CVE-2026-67250",
     "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: require the dentry lease record to co...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ceph: require the dentry lease record to cover struct ceph_mds_reply_lease parse_reply_info_lease() reads a 32-bit struct_len off the wire and only checks that many bytes are present, without requiring struct_len to cover sizeof(struct ceph_mds_reply_lease) (10 bytes). A malicious MDS can declare a shorter record and still get the pointer publishe...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
-    "epss_score": 0.00157,
-    "epss_percentile": 0.04936,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:05.567Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99307",
-    "references": [
-      "https://git.kernel.org/stable/c/058e1c38722a6d5b0181f38fdec03d5da95c3ad1",
-      "https://git.kernel.org/stable/c/380bc69a0dbc50549cb196da40409aed69c84cfc",
-      "https://git.kernel.org/stable/c/5ab17ed54e8b7ca64a8d167a09d6a2c865ed51cc",
-      "https://git.kernel.org/stable/c/7286b2ffe04d4b39b4e9884f714792589d94f316"
-    ]
-  },
-  {
-    "id": "CVE-2026-99306",
-    "cve_id": "CVE-2026-99306",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: reject mdsmaps that claim more than C...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ceph: reject mdsmaps that claim more than CEPH_MAX_MDS ranks check_new_map() sizes its export-target bitmap from CEPH_MAX_MDS but walks it with newmap->possible_max_rank, which comes straight off the wire: ceph_mdsmap_decode() sets it to max(m_num_active_mds, m_max_mds), then overwrites it with the size of the \"in\" set. Neither is bounded by CEPH_...",
-    "source": "NIST NVD",
-    "sources": [
-      "NIST NVD"
-    ],
-    "severity": "CRITICAL",
-    "cvss_score": 9.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00359,
-    "epss_percentile": 0.30423,
-    "is_kev": false,
-    "ransomware_use": false,
-    "kev_due_date": null,
-    "ecosystem": null,
-    "vendor_product": null,
-    "affected_versions": null,
-    "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:05.293Z",
-    "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99306",
-    "references": [
-      "https://git.kernel.org/stable/c/0574e4aff8e4b28e0d5636204ed4ba2350b8701a",
-      "https://git.kernel.org/stable/c/7931e6798f419bda9ac8cf0c095323eff90a7f52",
-      "https://git.kernel.org/stable/c/c1742590d2b2fc5fb217e1a9b520108f1fe282e5",
-      "https://git.kernel.org/stable/c/e9d72cf5d1bf5b4ddfe86707ada614973d75bf64"
-    ]
-  },
-  {
-    "id": "CVE-2026-99305",
-    "cve_id": "CVE-2026-99305",
-    "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nfbdev: udlfb: don't rebuild the mode list w...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: fbdev: udlfb: don't rebuild the mode list while the framebuffer is in use dlfb_setup_modes() frees info->modelist with fb_destroy_modelist() and rebuilds it, but fbcon holds raw pointers into that list in fb_display[i].mode and nothing un-publishes them the way do_unregister_framebuffer() and store_modes() do with fbcon_delete_modelist(). The func...",
+    "title": "A local privilege escalation (LPE) vulnerability in Pebble’s installers could allow a local attacker with low pr...",
+    "description": "A local privilege escalation (LPE) vulnerability in Pebble’s installers could allow a local attacker with low privilege access to place a malicious Dynamic Link Library (DLL) where a privileged executable file will load it.",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
     "severity": "HIGH",
-    "cvss_score": 7.8,
-    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00117,
-    "epss_percentile": 0.01699,
+    "cvss_score": 7.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+    "epss_score": 0.00146,
+    "epss_percentile": 0.03886,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-427"
+    ],
+    "published_at": "2026-11-16T12:17:59.303Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67250",
+    "references": [
+      "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-163/"
+    ]
+  },
+  {
+    "id": "CVE-2026-63246",
+    "cve_id": "CVE-2026-63246",
+    "ghsa_id": null,
+    "title": "A kernel pool buffer overflow vulnerability in the\nct0531fl.sys file of the Creative WDM Audio Driver (64-bit), ...",
+    "description": "A kernel pool buffer overflow vulnerability in the ct0531fl.sys file of the Creative WDM Audio Driver (64-bit), Sound Blaster Audigy 4 and Sound Blaster Audigy 5/Rx could allow a local attacker with low privilege access to cause a denial of service.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+    "epss_score": 0.00129,
+    "epss_percentile": 0.02601,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-119"
+    ],
+    "published_at": "2026-11-16T12:17:59.187Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63246",
+    "references": [
+      "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-163/"
+    ]
+  },
+  {
+    "id": "CVE-2026-21177",
+    "cve_id": "CVE-2026-21177",
+    "ghsa_id": null,
+    "title": "Improper input validation in Settings Suggestions prior to One UI 8.5 allows local attackers to automatically la...",
+    "description": "Improper input validation in Settings Suggestions prior to One UI 8.5 allows local attackers to automatically launch an application in the background. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.2,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00135,
+    "epss_percentile": 0.03021,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -5221,31 +4827,28 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "affected_versions": null,
     "patched_versions": null,
     "cwes": [],
-    "published_at": "2026-11-16T10:17:05.030Z",
+    "published_at": "2026-11-16T12:17:58.853Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99305",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21177",
     "references": [
-      "https://git.kernel.org/stable/c/1e13b8957510cfbc7367b3be1f08adc1757bb6d4",
-      "https://git.kernel.org/stable/c/291010d5de1c9efc38e98c416b6230500bfae438",
-      "https://git.kernel.org/stable/c/4bc608af98a3da0fa0b17af67a64d0d11d625a1d",
-      "https://git.kernel.org/stable/c/ac9cfa552102b8e80e88c2872e80dc9cb5f07dda"
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
     ]
   },
   {
-    "id": "CVE-2026-99304",
-    "cve_id": "CVE-2026-99304",
+    "id": "CVE-2026-21176",
+    "cve_id": "CVE-2026-21176",
     "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nceph: fix integer overflow in the snap trac...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: ceph: fix integer overflow in the snap trace bounds check ceph_update_snap_trace() bounds the two encoded snapid arrays that follow a struct ceph_mds_snap_realm with sizeof(u64) * (num_snaps + num_prior_parent_snaps). Both counts come straight off the wire as __le32, so the addition is evaluated in unsigned int and wraps before sizeof(u64) promote...",
+    "title": "Unquoted search path or element in Samsung Device Care prior to version 4.0.80 allows local attackers to execute...",
+    "description": "Unquoted search path or element in Samsung Device Care prior to version 4.0.80 allows local attackers to execute arbitrary code.",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
-    "severity": "CRITICAL",
-    "cvss_score": 9.8,
-    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-    "epss_score": 0.00364,
-    "epss_percentile": 0.30979,
+    "severity": "HIGH",
+    "cvss_score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00182,
+    "epss_percentile": 0.07969,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -5253,32 +4856,223 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "vendor_product": null,
     "affected_versions": null,
     "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:04.763Z",
+    "cwes": [
+      "CWE-428"
+    ],
+    "published_at": "2026-11-16T12:17:58.733Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99304",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21176",
     "references": [
-      "https://git.kernel.org/stable/c/25ae51760b751d170e29425b7851ee577e2cd5ba",
-      "https://git.kernel.org/stable/c/b3bf89767e3ca9506f1c7167cac97c41ec254d42",
-      "https://git.kernel.org/stable/c/bf8f13872959af1d87e36b7d27096a09fdcf6e47",
-      "https://git.kernel.org/stable/c/f0dbd6b9b05e919ebab668f3479aebbcd2431fce"
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
     ]
   },
   {
-    "id": "CVE-2026-99303",
-    "cve_id": "CVE-2026-99303",
+    "id": "CVE-2026-21175",
+    "cve_id": "CVE-2026-21175",
     "ghsa_id": null,
-    "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nspeakup: Fix NULL pointer dereference on VT...",
-    "description": "In the Linux kernel, the following vulnerability has been resolved: speakup: Fix NULL pointer dereference on VT switch + selection When selecting/pasting very quickly after VT switch, the tty is not set yet, leading to a NULL dereference. We can just abort the operation.",
+    "title": "Incorrect permission assignment for critical resource in Samsung Update prior to version 3.0.111.0 allows local ...",
+    "description": "Incorrect permission assignment for critical resource in Samsung Update prior to version 3.0.111.0 allows local attackers to execute arbitrary code.",
     "source": "NIST NVD",
     "sources": [
       "NIST NVD"
     ],
-    "severity": "UNKNOWN",
-    "cvss_score": null,
-    "cvss_vector": null,
+    "severity": "HIGH",
+    "cvss_score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00151,
+    "epss_percentile": 0.04331,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-732"
+    ],
+    "published_at": "2026-11-16T12:17:58.607Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21175",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21174",
+    "cve_id": "CVE-2026-21174",
+    "ghsa_id": null,
+    "title": "Improper access control in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass APK verifi...",
+    "description": "Improper access control in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass APK verification.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00196,
+    "epss_percentile": 0.09484,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-284"
+    ],
+    "published_at": "2026-11-16T12:17:58.483Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21174",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21173",
+    "cve_id": "CVE-2026-21173",
+    "ghsa_id": null,
+    "title": "Improper authorization in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to initiate an unauth...",
+    "description": "Improper authorization in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to initiate an unauthorized APK restoration.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00185,
+    "epss_percentile": 0.08246,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-285"
+    ],
+    "published_at": "2026-11-16T12:17:58.353Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21173",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21172",
+    "cve_id": "CVE-2026-21172",
+    "ghsa_id": null,
+    "title": "Incomplete cleanup in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to establish an unauthori...",
+    "description": "Incomplete cleanup in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to establish an unauthorized connection.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00154,
+    "epss_percentile": 0.04554,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-459"
+    ],
+    "published_at": "2026-11-16T12:17:58.227Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21172",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21171",
+    "cve_id": "CVE-2026-21171",
+    "ghsa_id": null,
+    "title": "Improper initialization in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass user autho...",
+    "description": "Improper initialization in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass user authorization. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.8,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:A/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00163,
+    "epss_percentile": 0.05596,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-665"
+    ],
+    "published_at": "2026-11-16T12:17:58.090Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21171",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21170",
+    "cve_id": "CVE-2026-21170",
+    "ghsa_id": null,
+    "title": "Improper enforcement of behavioral workflow in Smart Switch prior to version 3.7.74.7 allows adjacent attackers ...",
+    "description": "Improper enforcement of behavioral workflow in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to write arbitrary files with Smart Switch privilege.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.1,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00154,
+    "epss_percentile": 0.04553,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-841"
+    ],
+    "published_at": "2026-11-16T12:17:57.957Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21170",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21169",
+    "cve_id": "CVE-2026-21169",
+    "ghsa_id": null,
+    "title": "Improper input validation in Smart Switch prior to version 3.7.74.1 allows adjacent attackers to install arbitra...",
+    "description": "Improper input validation in Smart Switch prior to version 3.7.74.1 allows adjacent attackers to install arbitrary applications. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
     "epss_score": 0.00157,
-    "epss_percentile": 0.04957,
+    "epss_percentile": 0.05008,
     "is_kev": false,
     "ransomware_use": false,
     "kev_due_date": null,
@@ -5286,15 +5080,206 @@ export const VULNERABILITIES: VulnerabilityItem[] = [
     "vendor_product": null,
     "affected_versions": null,
     "patched_versions": null,
-    "cwes": [],
-    "published_at": "2026-11-16T10:17:04.520Z",
+    "cwes": [
+      "CWE-20"
+    ],
+    "published_at": "2026-11-16T12:17:57.823Z",
     "relative_time": "4d ago",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99303",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21169",
     "references": [
-      "https://git.kernel.org/stable/c/0400bff986064836dd9e7adb4e1c19b0bf639af0",
-      "https://git.kernel.org/stable/c/1a40cbb9d83ad8c669125554fcd73e626a00dc65",
-      "https://git.kernel.org/stable/c/cb1b95b98b63f10f38fb96a2ba17a9919017f916",
-      "https://git.kernel.org/stable/c/e1301ab8a8411fccc7effe0711fc09939a94953c"
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21168",
+    "cve_id": "CVE-2026-21168",
+    "ghsa_id": null,
+    "title": "External control of system or configuration setting in Smart Switch prior to version 3.7.74.7 allows local attac...",
+    "description": "External control of system or configuration setting in Smart Switch prior to version 3.7.74.7 allows local attackers to bypass required user interaction.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00118,
+    "epss_percentile": 0.0177,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-15"
+    ],
+    "published_at": "2026-11-16T12:17:57.697Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21168",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21167",
+    "cve_id": "CVE-2026-21167",
+    "ghsa_id": null,
+    "title": "Binding to an unrestricted IP address in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to byp...",
+    "description": "Binding to an unrestricted IP address in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass authentication. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "HIGH",
+    "cvss_score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00198,
+    "epss_percentile": 0.09806,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-1327"
+    ],
+    "published_at": "2026-11-16T12:17:57.577Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21167",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21166",
+    "cve_id": "CVE-2026-21166",
+    "ghsa_id": null,
+    "title": "Improper authentication in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to install arbitrary...",
+    "description": "Improper authentication in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to install arbitrary applications.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00189,
+    "epss_percentile": 0.08668,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-288"
+    ],
+    "published_at": "2026-11-16T12:17:57.453Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21166",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21165",
+    "cve_id": "CVE-2026-21165",
+    "ghsa_id": null,
+    "title": "Insufficient session expiration in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass de...",
+    "description": "Insufficient session expiration in Smart Switch prior to version 3.7.74.7 allows adjacent attackers to bypass device authentication. User interaction is required for triggering this vulnerability.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 6,
+    "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.002,
+    "epss_percentile": 0.10084,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-613"
+    ],
+    "published_at": "2026-11-16T12:17:57.313Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21165",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21164",
+    "cve_id": "CVE-2026-21164",
+    "ghsa_id": null,
+    "title": "Improper handling of insufficient permission in Samsung Pay for Galaxy Watch prior to version 8.0.53 allows loca...",
+    "description": "Improper handling of insufficient permission in Samsung Pay for Galaxy Watch prior to version 8.0.53 allows local attackers to install arbitrary applications.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00113,
+    "epss_percentile": 0.01479,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-280"
+    ],
+    "published_at": "2026-11-16T12:17:57.190Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21164",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
+    ]
+  },
+  {
+    "id": "CVE-2026-21163",
+    "cve_id": "CVE-2026-21163",
+    "ghsa_id": null,
+    "title": "Improper input validation in Bixby prior to version 4.1.20 allows remote attackers to launch arbitrary activity ...",
+    "description": "Improper input validation in Bixby prior to version 4.1.20 allows remote attackers to launch arbitrary activity with Bixby privilege.",
+    "source": "NIST NVD",
+    "sources": [
+      "NIST NVD"
+    ],
+    "severity": "MEDIUM",
+    "cvss_score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "epss_score": 0.00379,
+    "epss_percentile": 0.32794,
+    "is_kev": false,
+    "ransomware_use": false,
+    "kev_due_date": null,
+    "ecosystem": null,
+    "vendor_product": null,
+    "affected_versions": null,
+    "patched_versions": null,
+    "cwes": [
+      "CWE-20"
+    ],
+    "published_at": "2026-11-16T12:17:57.057Z",
+    "relative_time": "4d ago",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21163",
+    "references": [
+      "https://security.samsungmobile.com/serviceWeb.smsb?year=2026&month=11"
     ]
   }
 ];
